@@ -1,0 +1,1839 @@
+let count = 0;
+const total = document.querySelector("#total");
+const btn = document.querySelector("button");
+const tbody = document.querySelector("tbody");
+
+const data = [
+	{
+		Rank: 1,
+		Player: "Emmitt Smith+",
+		Yds: "18,355",
+		Years: "1990-2004",
+		Tm: "2TM"
+	},
+	{
+		Rank: 2,
+		Player: "Walter Payton+",
+		Yds: "16,726",
+		Years: "1975-1987",
+		Tm: "chi"
+	},
+	{
+		Rank: 3,
+		Player: "Frank Gore",
+		Yds: "15,321",
+		Years: "2005-2019",
+		Tm: "4TM"
+	},
+	{
+		Rank: 4,
+		Player: "Barry Sanders+",
+		Yds: "15,269",
+		Years: "1989-1998",
+		Tm: "det"
+	},
+	{
+		Rank: 5,
+		Player: "Adrian Peterson",
+		Yds: "14,138",
+		Years: "2007-2019",
+		Tm: "4TM"
+	},
+	{
+		Rank: 6,
+		Player: "Curtis Martin+",
+		Yds: "14,101",
+		Years: "1995-2005",
+		Tm: "2TM"
+	},
+	{
+		Rank: 7,
+		Player: "LaDainian Tomlinson+",
+		Yds: "13,684",
+		Years: "2001-2011",
+		Tm: "2TM"
+	},
+	{
+		Rank: 8,
+		Player: "Jerome Bettis+",
+		Yds: "13,662",
+		Years: "1993-2005",
+		Tm: "2TM"
+	},
+	{
+		Rank: 9,
+		Player: "Eric Dickerson+",
+		Yds: "13,259",
+		Years: "1983-1993",
+		Tm: "4TM"
+	},
+	{
+		Rank: 10,
+		Player: "Tony Dorsett+",
+		Yds: "12,739",
+		Years: "1977-1988",
+		Tm: "2TM"
+	},
+	{
+		Rank: 11,
+		Player: "Jim Brown+",
+		Yds: "12,312",
+		Years: "1957-1965",
+		Tm: "cle"
+	},
+	{
+		Rank: 12,
+		Player: "Marshall Faulk+",
+		Yds: "12,279",
+		Years: "1994-2005",
+		Tm: "2TM"
+	},
+	{
+		Rank: 13,
+		Player: "Edgerrin James",
+		Yds: "12,246",
+		Years: "1999-2009",
+		Tm: "3TM"
+	},
+	{
+		Rank: 14,
+		Player: "Marcus Allen+",
+		Yds: "12,243",
+		Years: "1982-1997",
+		Tm: "2TM"
+	},
+	{
+		Rank: 15,
+		Player: "Franco Harris+",
+		Yds: "12,120",
+		Years: "1972-1984",
+		Tm: "2TM"
+	},
+	{
+		Rank: 16,
+		Player: "Thurman Thomas+",
+		Yds: "12,074",
+		Years: "1988-2000",
+		Tm: "2TM"
+	},
+	{
+		Rank: 17,
+		Player: "Fred Taylor",
+		Yds: "11,695",
+		Years: "1998-2010",
+		Tm: "2TM"
+	},
+	{
+		Rank: 18,
+		Player: "Steven Jackson",
+		Yds: "11,438",
+		Years: "2004-2015",
+		Tm: "3TM"
+	},
+	{
+		Rank: 19,
+		Player: "John Riggins+",
+		Yds: "11,352",
+		Years: "1971-1985",
+		Tm: "2TM"
+	},
+	{
+		Rank: 20,
+		Player: "Corey Dillon",
+		Yds: "11,241",
+		Years: "1997-2006",
+		Tm: "2TM"
+	},
+	{
+		Rank: 21,
+		Player: "O.J. Simpson+",
+		Yds: "11,236",
+		Years: "1969-1979",
+		Tm: "2TM"
+	},
+	{
+		Rank: 22,
+		Player: "LeSean McCoy",
+		Yds: "11,071",
+		Years: "2009-2019",
+		Tm: "3TM"
+	},
+	{
+		Rank: 23,
+		Player: "Warrick Dunn",
+		Yds: "10,967",
+		Years: "1997-2008",
+		Tm: "2TM"
+	},
+	{
+		Rank: 24,
+		Player: "Ricky Watters",
+		Yds: "10,643",
+		Years: "1992-2001",
+		Tm: "3TM"
+	},
+	{
+		Rank: 25,
+		Player: "Jamal Lewis",
+		Yds: "10,607",
+		Years: "2000-2009",
+		Tm: "2TM"
+	},
+	{
+		Rank: 26,
+		Player: "Thomas Jones",
+		Yds: "10,591",
+		Years: "2000-2011",
+		Tm: "5TM"
+	},
+	{
+		Rank: 27,
+		Player: "Tiki Barber",
+		Yds: "10,449",
+		Years: "1997-2006",
+		Tm: "nyg"
+	},
+	{
+		Rank: 28,
+		Player: "Eddie George",
+		Yds: "10,441",
+		Years: "1996-2004",
+		Tm: "2TM"
+	},
+	{
+		Rank: 29,
+		Player: "Marshawn Lynch",
+		Yds: "10,379",
+		Years: "2007-2018",
+		Tm: "3TM"
+	},
+	{
+		Rank: 30,
+		Player: "Ottis Anderson",
+		Yds: "10,273",
+		Years: "1979-1992",
+		Tm: "2TM"
+	},
+	{
+		Rank: 31,
+		Player: "Ricky Williams",
+		Yds: "10,009",
+		Years: "1999-2011",
+		Tm: "3TM"
+	},
+	{
+		Rank: 32,
+		Player: "Clinton Portis",
+		Yds: "9,923",
+		Years: "2002-2010",
+		Tm: "2TM"
+	},
+	{
+		Rank: 33,
+		Player: "Matt Forte",
+		Yds: "9,796",
+		Years: "2008-2017",
+		Tm: "2TM"
+	},
+	{
+		Rank: 34,
+		Player: "Joe Perry+",
+		Yds: "9,723",
+		Years: "1948-1963",
+		Tm: "2TM"
+	},
+	{
+		Rank: 35,
+		Player: "Chris Johnson",
+		Yds: "9,651",
+		Years: "2008-2017",
+		Tm: "3TM"
+	},
+	{
+		Rank: "Rank",
+		Player: "Player",
+		Yds: "Yds",
+		Years: "Years",
+		Tm: "Tm"
+	},
+	{
+		Rank: 36,
+		Player: "Shaun Alexander",
+		Yds: "9,453",
+		Years: "2000-2008",
+		Tm: "2TM"
+	},
+	{
+		Rank: 37,
+		Player: "Earl Campbell+",
+		Yds: "9,407",
+		Years: "1978-1985",
+		Tm: "2TM"
+	},
+	{
+		Rank: 38,
+		Player: "Ahman Green",
+		Yds: "9,205",
+		Years: "1998-2009",
+		Tm: "3TM"
+	},
+	{
+		Rank: 39,
+		Player: "Terry Allen",
+		Yds: "8,614",
+		Years: "1991-2001",
+		Tm: "5TM"
+	},
+	{
+		Rank: 40,
+		Player: "Jim Taylor+",
+		Yds: "8,597",
+		Years: "1958-1967",
+		Tm: "2TM"
+	},
+	{
+		Rank: 41,
+		Player: "Willis McGahee",
+		Yds: "8,474",
+		Years: "2004-2013",
+		Tm: "4TM"
+	},
+	{
+		Rank: 42,
+		Player: "Earnest Byner",
+		Yds: "8,261",
+		Years: "1984-1997",
+		Tm: "3TM"
+	},
+	{
+		Rank: 43,
+		Player: "Herschel Walker",
+		Yds: "8,225",
+		Years: "1986-1997",
+		Tm: "4TM"
+	},
+	{
+		Rank: 44,
+		Player: "Roger Craig",
+		Yds: "8,189",
+		Years: "1983-1993",
+		Tm: "3TM"
+	},
+	{
+		Rank: 45,
+		Player: "Gerald Riggs",
+		Yds: "8,188",
+		Years: "1982-1991",
+		Tm: "2TM"
+	},
+	{
+		Rank: 46,
+		Player: "Priest Holmes",
+		Yds: "8,172",
+		Years: "1997-2007",
+		Tm: "2TM"
+	},
+	{
+		Rank: 47,
+		Player: "Maurice Jones-Drew",
+		Yds: "8,167",
+		Years: "2006-2014",
+		Tm: "2TM"
+	},
+	{
+		Rank: 48,
+		Player: "DeAngelo Williams",
+		Yds: "8,096",
+		Years: "2006-2016",
+		Tm: "2TM"
+	},
+	{
+		Rank: 49,
+		Player: "Larry Csonka+",
+		Yds: "8,081",
+		Years: "1968-1979",
+		Tm: "2TM"
+	},
+	{
+		Rank: 50,
+		Player: "Freeman McNeil",
+		Yds: "8,074",
+		Years: "1981-1992",
+		Tm: "nyj"
+	},
+	{
+		Rank: 51,
+		Player: "Stephen Davis",
+		Yds: "8,052",
+		Years: "1996-2006",
+		Tm: "3TM"
+	},
+	{
+		Rank: 52,
+		Player: "Garrison Hearst",
+		Yds: "7,966",
+		Years: "1993-2004",
+		Tm: "4TM"
+	},
+	{
+		Rank: 53,
+		Player: "James Brooks",
+		Yds: "7,962",
+		Years: "1981-1992",
+		Tm: "4TM"
+	},
+	{
+		Rank: 54,
+		Player: "Chris Warren",
+		Yds: "7,696",
+		Years: "1990-2000",
+		Tm: "3TM"
+	},
+	{
+		Rank: 55,
+		Player: "Terrell Davis+",
+		Yds: "7,607",
+		Years: "1995-2001",
+		Tm: "den"
+	},
+	{
+		Rank: 56,
+		Player: "Jamaal Charles",
+		Yds: "7,563",
+		Years: "2008-2018",
+		Tm: "3TM"
+	},
+	{
+		Rank: 57,
+		Player: "Mike Pruitt",
+		Yds: "7,378",
+		Years: "1976-1986",
+		Tm: "3TM"
+	},
+	{
+		Rank: 58,
+		Player: "Michael Turner",
+		Yds: "7,338",
+		Years: "2004-2012",
+		Tm: "2TM"
+	},
+	{
+		Rank: 59,
+		Player: "Jonathan Stewart",
+		Yds: "7,335",
+		Years: "2008-2018",
+		Tm: "2TM"
+	},
+	{
+		Rank: 60,
+		Player: "Leroy Kelly+",
+		Yds: "7,274",
+		Years: "1964-1973",
+		Tm: "cle"
+	},
+	{
+		Rank: 61,
+		Player: "George Rogers",
+		Yds: "7,176",
+		Years: "1981-1987",
+		Tm: "2TM"
+	},
+	{
+		Rank: 62,
+		Player: "DeMarco Murray",
+		Yds: "7,174",
+		Years: "2011-2017",
+		Tm: "3TM"
+	},
+	{
+		Rank: 63,
+		Player: "Charlie Garner",
+		Yds: "7,097",
+		Years: "1994-2004",
+		Tm: "4TM"
+	},
+	{
+		Rank: 64,
+		Player: "Mark Ingram",
+		Yds: "7,025",
+		Years: "2011-2019",
+		Tm: "2TM"
+	},
+	{
+		Rank: 65,
+		Player: "Rodney Hampton",
+		Yds: "6,897",
+		Years: "1990-1997",
+		Tm: "nyg"
+	},
+	{
+		Rank: 66,
+		Player: "Antowain Smith",
+		Yds: "6,881",
+		Years: "1997-2005",
+		Tm: "4TM"
+	},
+	{
+		Rank: 67,
+		Player: "Curt Warner",
+		Yds: "6,844",
+		Years: "1983-1990",
+		Tm: "2TM"
+	},
+	{
+		Rank: 68,
+		Player: "Robert Smith",
+		Yds: "6,818",
+		Years: "1993-2000",
+		Tm: "min"
+	},
+	{
+		Rank: 69,
+		Player: "John Henry Johnson+",
+		Yds: "6,803",
+		Years: "1954-1966",
+		Tm: "4TM"
+	},
+	{
+		Rank: 70,
+		Player: "Wilbert Montgomery",
+		Yds: "6,789",
+		Years: "1977-1985",
+		Tm: "2TM"
+	},
+	{
+		Rank: "Rank",
+		Player: "Player",
+		Yds: "Yds",
+		Years: "Years",
+		Tm: "Tm"
+	},
+	{
+		Rank: 71,
+		Player: "Chuck Muncie",
+		Yds: "6,702",
+		Years: "1976-1984",
+		Tm: "2TM"
+	},
+	{
+		Rank: 72,
+		Player: "Mark van Eeghen",
+		Yds: "6,651",
+		Years: "1974-1983",
+		Tm: "2TM"
+	},
+	{
+		Rank: 73,
+		Player: "Lawrence McCutcheon",
+		Yds: "6,578",
+		Years: "1972-1981",
+		Tm: "4TM"
+	},
+	{
+		Rank: 74,
+		Player: "Lydell Mitchell",
+		Yds: "6,534",
+		Years: "1972-1980",
+		Tm: "3TM"
+	},
+	{
+		Rank: 75,
+		Player: "Arian Foster",
+		Yds: "6,527",
+		Years: "2009-2016",
+		Tm: "2TM"
+	},
+	{
+		Rank: 76,
+		Player: "Wendell Tyler",
+		Yds: "6,378",
+		Years: "1977-1986",
+		Tm: "2TM"
+	},
+	{
+		Rank: 77,
+		Player: "Brian Westbrook",
+		Yds: "6,335",
+		Years: "2002-2010",
+		Tm: "2TM"
+	},
+	{
+		Rank: 78,
+		Player: "Floyd Little+",
+		Yds: "6,323",
+		Years: "1967-1975",
+		Tm: "den"
+	},
+	{
+		Rank: 79,
+		Player: "LeGarrette Blount",
+		Yds: "6,306",
+		Years: "2010-2018",
+		Tm: "5TM"
+	},
+	{
+		Rank: 80,
+		Player: "Larry Johnson",
+		Yds: "6,223",
+		Years: "2003-2011",
+		Tm: "4TM"
+	},
+	{
+		Rank: 81,
+		Player: "Don Perkins",
+		Yds: "6,217",
+		Years: "1961-1968",
+		Tm: "dal"
+	},
+	{
+		Rank: 82,
+		Player: "Ray Rice",
+		Yds: "6,180",
+		Years: "2008-2013",
+		Tm: "rav"
+	},
+	{
+		Rank: 83,
+		Player: "Neal Anderson",
+		Yds: "6,166",
+		Years: "1986-1993",
+		Tm: "chi"
+	},
+	{
+		Rank: 84,
+		Player: "Michael Vick",
+		Yds: "6,109",
+		Years: "2001-2015",
+		Tm: "4TM"
+	},
+	{
+		Rank: 85,
+		Player: "Ken Willard",
+		Yds: "6,105",
+		Years: "1965-1974",
+		Tm: "2TM"
+	},
+	{
+		Rank: 86,
+		Player: "Deuce McAllister",
+		Yds: "6,096",
+		Years: "2001-2008",
+		Tm: "nor"
+	},
+	{
+		Rank: 87,
+		Player: "Travis Henry",
+		Yds: "6,086",
+		Years: "2001-2007",
+		Tm: "3TM"
+	},
+	{
+		Rank: 88,
+		Player: "Le'Veon Bell",
+		Yds: "6,084",
+		Years: "2013-2019",
+		Tm: "2TM"
+	},
+	{
+		Rank: 89,
+		Player: "Calvin Hill",
+		Yds: "6,083",
+		Years: "1969-1981",
+		Tm: "3TM"
+	},
+	{
+		Rank: 90,
+		Player: "Cedric Benson",
+		Yds: "6,017",
+		Years: "2005-2012",
+		Tm: "3TM"
+	},
+	{
+		Rank: 91,
+		Player: "James Wilder",
+		Yds: "6,008",
+		Years: "1981-1990",
+		Tm: "3TM"
+	},
+	{
+		Rank: 92,
+		Player: "William Andrews",
+		Yds: "5,986",
+		Years: "1979-1986",
+		Tm: "atl"
+	},
+	{
+		Rank: 93,
+		Player: "Rudi Johnson",
+		Yds: "5,979",
+		Years: "2001-2008",
+		Tm: "2TM"
+	},
+	{
+		Rank: 94,
+		Player: "Chuck Foreman",
+		Yds: "5,950",
+		Years: "1973-1980",
+		Tm: "2TM"
+	},
+	{
+		Rank: 95,
+		Player: "Alfred Morris",
+		Yds: "5,935",
+		Years: "2012-2019",
+		Tm: "4TM"
+	},
+	{
+		Rank: 96,
+		Player: "Larry Brown",
+		Yds: "5,875",
+		Years: "1969-1976",
+		Tm: "was"
+	},
+	{
+		Rank: 97,
+		Player: "Lamar Miller",
+		Yds: "5,864",
+		Years: "2012-2018",
+		Tm: "2TM"
+	},
+	{
+		Rank: 98,
+		Player: "Steve Van Buren+",
+		Yds: "5,860",
+		Years: "1944-1951",
+		Tm: "phi"
+	},
+	{
+		Rank: 99,
+		Player: "James Stewart",
+		Yds: "5,841",
+		Years: "1995-2002",
+		Tm: "2TM"
+	},
+	{
+		Rank: 100,
+		Player: "Bill Brown",
+		Yds: "5,838",
+		Years: "1961-1974",
+		Tm: "2TM"
+	},
+	{
+		Rank: 101,
+		Player: "Rick Casares",
+		Yds: "5,797",
+		Years: "1955-1966",
+		Tm: "3TM"
+	},
+	{
+		Rank: 102,
+		Player: "Duce Staley",
+		Yds: "5,785",
+		Years: "1997-2006",
+		Tm: "2TM"
+	},
+	{
+		Rank: 103,
+		Player: "Fred Jackson",
+		Yds: "5,746",
+		Years: "2007-2015",
+		Tm: "2TM"
+	},
+	{
+		Rank: 104,
+		Player: "Greg Pruitt",
+		Yds: "5,672",
+		Years: "1973-1984",
+		Tm: "2TM"
+	},
+	{
+		Rank: 105,
+		Player: "Michael Pittman",
+		Yds: "5,627",
+		Years: "1998-2008",
+		Tm: "3TM"
+	},
+	{
+		Rank: "Rank",
+		Player: "Player",
+		Yds: "Yds",
+		Years: "Years",
+		Tm: "Tm"
+	},
+	{
+		Rank: 106,
+		Player: "Pete Johnson",
+		Yds: "5,626",
+		Years: "1977-1984",
+		Tm: "3TM"
+	},
+	{
+		Rank: 107,
+		Player: "Delvin Williams",
+		Yds: "5,598",
+		Years: "1974-1981",
+		Tm: "3TM"
+	},
+	{
+		Rank: 108,
+		Player: "Joe Morris",
+		Yds: "5,585",
+		Years: "1982-1991",
+		Tm: "2TM"
+	},
+	{
+		Rank: 109,
+		Player: "Reggie Bush",
+		Yds: "5,490",
+		Years: "2006-2016",
+		Tm: "5TM"
+	},
+	{
+		Rank: 110,
+		Player: "Mike Garrett",
+		Yds: "5,481",
+		Years: "1966-1973",
+		Tm: "2TM"
+	},
+	{
+		Rank: 111,
+		Player: "Sam Cunningham",
+		Yds: "5,453",
+		Years: "1973-1982",
+		Tm: "nwe"
+	},
+	{
+		Rank: 112,
+		Player: "Sammy Winder",
+		Yds: "5,427",
+		Years: "1982-1990",
+		Tm: "den"
+	},
+	{
+		Rank: 113,
+		Player: "Darren McFadden",
+		Yds: "5,421",
+		Years: "2008-2017",
+		Tm: "2TM"
+	},
+	{
+		Rank: 114,
+		Player: "Dick Bass",
+		Yds: "5,417",
+		Years: "1960-1969",
+		Tm: "ram"
+	},
+	{
+		Rank: 115,
+		Player: "Jim Nance",
+		Yds: "5,401",
+		Years: "1965-1973",
+		Tm: "2TM"
+	},
+	{
+		Rank: 116,
+		Player: "Ronnie Brown",
+		Yds: "5,391",
+		Years: "2005-2014",
+		Tm: "4TM"
+	},
+	{
+		Rank: 117,
+		Player: "Willie Parker",
+		Yds: "5,378",
+		Years: "2004-2009",
+		Tm: "pit"
+	},
+	{
+		Rank: 118,
+		Player: "Joe Cribbs",
+		Yds: "5,356",
+		Years: "1980-1988",
+		Tm: "4TM"
+	},
+	{
+		Rank: 118,
+		Player: "Doug Martin",
+		Yds: "5,356",
+		Years: "2012-2018",
+		Tm: "2TM"
+	},
+	{
+		Rank: 120,
+		Player: "Jamal Anderson",
+		Yds: "5,336",
+		Years: "1994-2001",
+		Tm: "atl"
+	},
+	{
+		Rank: 120,
+		Player: "Todd Gurley",
+		Yds: "5,336",
+		Years: "2015-2019",
+		Tm: "ram"
+	},
+	{
+		Rank: 122,
+		Player: "Ezekiel Elliott",
+		Yds: "5,283",
+		Years: "2016-2019",
+		Tm: "dal"
+	},
+	{
+		Rank: 123,
+		Player: "Hugh McElhenny+",
+		Yds: "5,281",
+		Years: "1952-1964",
+		Tm: "4TM"
+	},
+	{
+		Rank: 124,
+		Player: "Ryan Mathews",
+		Yds: "5,261",
+		Years: "2010-2016",
+		Tm: "2TM"
+	},
+	{
+		Rank: 125,
+		Player: "Chris Ivory",
+		Yds: "5,237",
+		Years: "2010-2018",
+		Tm: "4TM"
+	},
+	{
+		Rank: 126,
+		Player: "Natrone Means",
+		Yds: "5,215",
+		Years: "1993-2000",
+		Tm: "3TM"
+	},
+	{
+		Rank: 127,
+		Player: "Adrian Murrell",
+		Yds: "5,199",
+		Years: "1993-2003",
+		Tm: "4TM"
+	},
+	{
+		Rank: 128,
+		Player: "John Brockington",
+		Yds: "5,185",
+		Years: "1971-1977",
+		Tm: "2TM"
+	},
+	{
+		Rank: 128,
+		Player: "Marion Butts",
+		Yds: "5,185",
+		Years: "1989-1995",
+		Tm: "3TM"
+	},
+	{
+		Rank: 130,
+		Player: "Lenny Moore+",
+		Yds: "5,174",
+		Years: "1956-1967",
+		Tm: "clt"
+	},
+	{
+		Rank: 131,
+		Player: "Ollie Matson+",
+		Yds: "5,173",
+		Years: "1952-1966",
+		Tm: "4TM"
+	},
+	{
+		Rank: 132,
+		Player: "Clem Daniels",
+		Yds: "5,138",
+		Years: "1960-1968",
+		Tm: "3TM"
+	},
+	{
+		Rank: 133,
+		Player: "Emerson Boozer",
+		Yds: "5,135",
+		Years: "1966-1975",
+		Tm: "nyj"
+	},
+	{
+		Rank: 134,
+		Player: "Kevin Mack",
+		Yds: "5,123",
+		Years: "1985-1993",
+		Tm: "cle"
+	},
+	{
+		Rank: 135,
+		Player: "Billy Sims",
+		Yds: "5,106",
+		Years: "1980-1984",
+		Tm: "det"
+	},
+	{
+		Rank: 136,
+		Player: "Dexter Bussey",
+		Yds: "5,105",
+		Years: "1974-1984",
+		Tm: "det"
+	},
+	{
+		Rank: 137,
+		Player: "Brandon Jacobs",
+		Yds: "5,094",
+		Years: "2005-2013",
+		Tm: "2TM"
+	},
+	{
+		Rank: 138,
+		Player: "Mike Alstott",
+		Yds: "5,088",
+		Years: "1996-2006",
+		Tm: "tam"
+	},
+	{
+		Rank: 139,
+		Player: "Julius Jones",
+		Yds: "5,068",
+		Years: "2004-2010",
+		Tm: "3TM"
+	},
+	{
+		Rank: 140,
+		Player: "John Williams",
+		Yds: "5,006",
+		Years: "1986-1995",
+		Tm: "2TM"
+	},
+	{
+		Rank: "Rank",
+		Player: "Player",
+		Yds: "Yds",
+		Years: "Years",
+		Tm: "Tm"
+	},
+	{
+		Rank: 141,
+		Player: "Paul Lowe",
+		Yds: "4,995",
+		Years: "1960-1969",
+		Tm: "2TM"
+	},
+	{
+		Rank: 142,
+		Player: "John David Crow",
+		Yds: "4,963",
+		Years: "1958-1968",
+		Tm: "2TM"
+	},
+	{
+		Rank: 143,
+		Player: "Tyrone Wheatley",
+		Yds: "4,962",
+		Years: "1995-2004",
+		Tm: "2TM"
+	},
+	{
+		Rank: 144,
+		Player: "Greg Bell",
+		Yds: "4,959",
+		Years: "1984-1990",
+		Tm: "3TM"
+	},
+	{
+		Rank: 145,
+		Player: "Gale Sayers+",
+		Yds: "4,956",
+		Years: "1965-1971",
+		Tm: "chi"
+	},
+	{
+		Rank: 146,
+		Player: "Dorsey Levens",
+		Yds: "4,955",
+		Years: "1994-2004",
+		Tm: "3TM"
+	},
+	{
+		Rank: 147,
+		Player: "Ahmad Bradshaw",
+		Yds: "4,928",
+		Years: "2007-2015",
+		Tm: "2TM"
+	},
+	{
+		Rank: 147,
+		Player: "Randall Cunningham",
+		Yds: "4,928",
+		Years: "1985-2001",
+		Tm: "4TM"
+	},
+	{
+		Rank: 149,
+		Player: "Christian Okoye",
+		Yds: "4,897",
+		Years: "1987-1992",
+		Tm: "kan"
+	},
+	{
+		Rank: 150,
+		Player: "Lamar Smith",
+		Yds: "4,853",
+		Years: "1994-2003",
+		Tm: "4TM"
+	},
+	{
+		Rank: 151,
+		Player: "Joe Washington",
+		Yds: "4,839",
+		Years: "1977-1985",
+		Tm: "4TM"
+	},
+	{
+		Rank: 152,
+		Player: "Cam Newton",
+		Yds: "4,806",
+		Years: "2011-2019",
+		Tm: "car"
+	},
+	{
+		Rank: 153,
+		Player: "Napoleon Kaufman",
+		Yds: "4,792",
+		Years: "1995-2000",
+		Tm: "rai"
+	},
+	{
+		Rank: 154,
+		Player: "Robert Newhouse",
+		Yds: "4,784",
+		Years: "1972-1983",
+		Tm: "dal"
+	},
+	{
+		Rank: 155,
+		Player: "Marion Barber",
+		Yds: "4,780",
+		Years: "2005-2011",
+		Tm: "2TM"
+	},
+	{
+		Rank: 156,
+		Player: "Chester Taylor",
+		Yds: "4,740",
+		Years: "2002-2011",
+		Tm: "4TM"
+	},
+	{
+		Rank: 157,
+		Player: "Marion Motley+",
+		Yds: "4,720",
+		Years: "1946-1955",
+		Tm: "2TM"
+	},
+	{
+		Rank: 158,
+		Player: "Donny Anderson",
+		Yds: "4,696",
+		Years: "1966-1974",
+		Tm: "2TM"
+	},
+	{
+		Rank: 159,
+		Player: "J.D. Smith",
+		Yds: "4,672",
+		Years: "1956-1966",
+		Tm: "3TM"
+	},
+	{
+		Rank: 160,
+		Player: "MacArthur Lane",
+		Yds: "4,656",
+		Years: "1968-1978",
+		Tm: "3TM"
+	},
+	{
+		Rank: 161,
+		Player: "Stump Mitchell",
+		Yds: "4,649",
+		Years: "1981-1989",
+		Tm: "crd"
+	},
+	{
+		Rank: 162,
+		Player: "Tony Collins",
+		Yds: "4,647",
+		Years: "1981-1990",
+		Tm: "2TM"
+	},
+	{
+		Rank: 163,
+		Player: "Tom Matte",
+		Yds: "4,646",
+		Years: "1961-1972",
+		Tm: "clt"
+	},
+	{
+		Rank: 164,
+		Player: "Alex Webster",
+		Yds: "4,638",
+		Years: "1955-1964",
+		Tm: "nyg"
+	},
+	{
+		Rank: 165,
+		Player: "Abner Haynes",
+		Yds: "4,630",
+		Years: "1960-1967",
+		Tm: "4TM"
+	},
+	{
+		Rank: 166,
+		Player: "Bob Hoernschemeyer",
+		Yds: "4,548",
+		Years: "1946-1955",
+		Tm: "3TM"
+	},
+	{
+		Rank: 167,
+		Player: "Ted Brown",
+		Yds: "4,546",
+		Years: "1979-1986",
+		Tm: "min"
+	},
+	{
+		Rank: 168,
+		Player: "Marv Hubbard",
+		Yds: "4,544",
+		Years: "1969-1977",
+		Tm: "2TM"
+	},
+	{
+		Rank: 169,
+		Player: "Dave Hampton",
+		Yds: "4,536",
+		Years: "1969-1976",
+		Tm: "3TM"
+	},
+	{
+		Rank: 170,
+		Player: "Mike Rozier",
+		Yds: "4,462",
+		Years: "1985-1991",
+		Tm: "2TM"
+	},
+	{
+		Rank: 171,
+		Player: "Joseph Addai",
+		Yds: "4,453",
+		Years: "2006-2011",
+		Tm: "clt"
+	},
+	{
+		Rank: 171,
+		Player: "Otis Armstrong",
+		Yds: "4,453",
+		Years: "1973-1980",
+		Tm: "den"
+	},
+	{
+		Rank: 173,
+		Player: "Ed Podolak",
+		Yds: "4,451",
+		Years: "1969-1977",
+		Tm: "kan"
+	},
+	{
+		Rank: 174,
+		Player: "Darrin Nelson",
+		Yds: "4,442",
+		Years: "1982-1992",
+		Tm: "2TM"
+	},
+	{
+		Rank: 175,
+		Player: "Harold Green",
+		Yds: "4,365",
+		Years: "1990-1998",
+		Tm: "3TM"
+	},
+	{
+		Rank: "Rank",
+		Player: "Player",
+		Yds: "Yds",
+		Years: "Years",
+		Tm: "Tm"
+	},
+	{
+		Rank: 176,
+		Player: "Rob Carpenter",
+		Yds: "4,363",
+		Years: "1977-1986",
+		Tm: "3TM"
+	},
+	{
+		Rank: 177,
+		Player: "Carlos Hyde",
+		Yds: "4,357",
+		Years: "2014-2019",
+		Tm: "4TM"
+	},
+	{
+		Rank: 178,
+		Player: "Jim Otis",
+		Yds: "4,350",
+		Years: "1970-1978",
+		Tm: "3TM"
+	},
+	{
+		Rank: 179,
+		Player: "Dave Osborn",
+		Yds: "4,336",
+		Years: "1965-1976",
+		Tm: "2TM"
+	},
+	{
+		Rank: 180,
+		Player: "Ron Johnson",
+		Yds: "4,308",
+		Years: "1969-1975",
+		Tm: "2TM"
+	},
+	{
+		Rank: 180,
+		Player: "Altie Taylor",
+		Yds: "4,308",
+		Years: "1969-1976",
+		Tm: "2TM"
+	},
+	{
+		Rank: 182,
+		Player: "Craig Heyward",
+		Yds: "4,301",
+		Years: "1988-1998",
+		Tm: "5TM"
+	},
+	{
+		Rank: 183,
+		Player: "Gary Brown",
+		Yds: "4,300",
+		Years: "1991-1999",
+		Tm: "3TM"
+	},
+	{
+		Rank: 184,
+		Player: "Cookie Gilchrist",
+		Yds: "4,293",
+		Years: "1962-1967",
+		Tm: "3TM"
+	},
+	{
+		Rank: 185,
+		Player: "Matt Snell",
+		Yds: "4,285",
+		Years: "1964-1972",
+		Tm: "nyj"
+	},
+	{
+		Rank: 186,
+		Player: "Johnny Hector",
+		Yds: "4,280",
+		Years: "1983-1992",
+		Tm: "nyj"
+	},
+	{
+		Rank: 187,
+		Player: "Latavius Murray",
+		Yds: "4,274",
+		Years: "2014-2019",
+		Tm: "3TM"
+	},
+	{
+		Rank: 188,
+		Player: "Lorenzo White",
+		Yds: "4,242",
+		Years: "1988-1995",
+		Tm: "2TM"
+	},
+	{
+		Rank: 189,
+		Player: "Steve Young+",
+		Yds: "4,239",
+		Years: "1985-1999",
+		Tm: "2TM"
+	},
+	{
+		Rank: 190,
+		Player: "Rashard Mendenhall",
+		Yds: "4,236",
+		Years: "2008-2013",
+		Tm: "2TM"
+	},
+	{
+		Rank: 191,
+		Player: "Tommy Mason",
+		Yds: "4,203",
+		Years: "1961-1971",
+		Tm: "3TM"
+	},
+	{
+		Rank: 192,
+		Player: "Tony Canadeo+",
+		Yds: "4,197",
+		Years: "1941-1952",
+		Tm: "gnb"
+	},
+	{
+		Rank: 192,
+		Player: "Carl Garrett",
+		Yds: "4,197",
+		Years: "1969-1977",
+		Tm: "4TM"
+	},
+	{
+		Rank: 194,
+		Player: "Mike Thomas",
+		Yds: "4,196",
+		Years: "1975-1980",
+		Tm: "2TM"
+	},
+	{
+		Rank: 195,
+		Player: "Melvin Gordon",
+		Yds: "4,194",
+		Years: "2015-2019",
+		Tm: "sdg"
+	},
+	{
+		Rank: 196,
+		Player: "Earnest Jackson",
+		Yds: "4,167",
+		Years: "1983-1988",
+		Tm: "3TM"
+	},
+	{
+		Rank: 197,
+		Player: "Dalton Hilliard",
+		Yds: "4,164",
+		Years: "1986-1993",
+		Tm: "nor"
+	},
+	{
+		Rank: 198,
+		Player: "Ryan Grant",
+		Yds: "4,148",
+		Years: "2007-2012",
+		Tm: "2TM"
+	},
+	{
+		Rank: 199,
+		Player: "Errict Rhett",
+		Yds: "4,143",
+		Years: "1994-2000",
+		Tm: "3TM"
+	},
+	{
+		Rank: 200,
+		Player: "Mercury Morris",
+		Yds: "4,133",
+		Years: "1969-1976",
+		Tm: "2TM"
+	},
+	{
+		Rank: 201,
+		Player: "Shonn Greene",
+		Yds: "4,110",
+		Years: "2009-2014",
+		Tm: "2TM"
+	},
+	{
+		Rank: 202,
+		Player: "Johnny Johnson",
+		Yds: "4,078",
+		Years: "1990-1994",
+		Tm: "2TM"
+	},
+	{
+		Rank: 203,
+		Player: "Tony Galbreath",
+		Yds: "4,072",
+		Years: "1976-1987",
+		Tm: "3TM"
+	},
+	{
+		Rank: 204,
+		Player: "Mike Anderson",
+		Yds: "4,067",
+		Years: "2000-2007",
+		Tm: "2TM"
+	},
+	{
+		Rank: 205,
+		Player: "Alan Ameche",
+		Yds: "4,045",
+		Years: "1955-1960",
+		Tm: "clt"
+	},
+	{
+		Rank: 206,
+		Player: "Cadillac Williams",
+		Yds: "4,038",
+		Years: "2005-2011",
+		Tm: "2TM"
+	},
+	{
+		Rank: 207,
+		Player: "Nick Pietrosante",
+		Yds: "4,026",
+		Years: "1959-1967",
+		Tm: "2TM"
+	},
+	{
+		Rank: 208,
+		Player: "Curtis Dickey",
+		Yds: "4,019",
+		Years: "1980-1986",
+		Tm: "2TM"
+	},
+	{
+		Rank: 209,
+		Player: "Edgar Bennett",
+		Yds: "3,992",
+		Years: "1992-1999",
+		Tm: "2TM"
+	},
+	{
+		Rank: 210,
+		Player: "Frank Pollard",
+		Yds: "3,989",
+		Years: "1980-1988",
+		Tm: "pit"
+	},
+	{
+		Rank: "Rank",
+		Player: "Player",
+		Yds: "Yds",
+		Years: "Years",
+		Tm: "Tm"
+	},
+	{
+		Rank: 211,
+		Player: "Kevan Barlow",
+		Yds: "3,984",
+		Years: "2001-2006",
+		Tm: "2TM"
+	},
+	{
+		Rank: 212,
+		Player: "Leonard Russell",
+		Yds: "3,973",
+		Years: "1991-1996",
+		Tm: "4TM"
+	},
+	{
+		Rank: 213,
+		Player: "Dick Hoak",
+		Yds: "3,965",
+		Years: "1961-1970",
+		Tm: "pit"
+	},
+	{
+		Rank: 214,
+		Player: "Leroy Hoard",
+		Yds: "3,964",
+		Years: "1990-1999",
+		Tm: "4TM"
+	},
+	{
+		Rank: 214,
+		Player: "Russell Wilson",
+		Yds: "3,964",
+		Years: "2012-2019",
+		Tm: "sea"
+	},
+	{
+		Rank: 216,
+		Player: "Harvey Williams",
+		Yds: "3,952",
+		Years: "1991-1998",
+		Tm: "2TM"
+	},
+	{
+		Rank: 217,
+		Player: "Barry Foster",
+		Yds: "3,943",
+		Years: "1990-1994",
+		Tm: "pit"
+	},
+	{
+		Rank: 218,
+		Player: "Devonta Freeman",
+		Yds: "3,914",
+		Years: "2014-2019",
+		Tm: "atl"
+	},
+	{
+		Rank: 218,
+		Player: "BenJarvus Green-Ellis",
+		Yds: "3,914",
+		Years: "2008-2013",
+		Tm: "2TM"
+	},
+	{
+		Rank: 220,
+		Player: "Jordan Howard",
+		Yds: "3,895",
+		Years: "2016-2019",
+		Tm: "2TM"
+	},
+	{
+		Rank: 221,
+		Player: "Anthony Thomas",
+		Yds: "3,891",
+		Years: "2001-2007",
+		Tm: "4TM"
+	},
+	{
+		Rank: 222,
+		Player: "Justin Forsett",
+		Yds: "3,890",
+		Years: "2008-2016",
+		Tm: "7TM"
+	},
+	{
+		Rank: 223,
+		Player: "Walt Garrison",
+		Yds: "3,886",
+		Years: "1966-1974",
+		Tm: "dal"
+	},
+	{
+		Rank: 224,
+		Player: "Randy McMillan",
+		Yds: "3,876",
+		Years: "1981-1986",
+		Tm: "clt"
+	},
+	{
+		Rank: 225,
+		Player: "Rocky Bleier",
+		Yds: "3,865",
+		Years: "1968-1980",
+		Tm: "pit"
+	},
+	{
+		Rank: 226,
+		Player: "Timmy Brown",
+		Yds: "3,862",
+		Years: "1959-1968",
+		Tm: "3TM"
+	},
+	{
+		Rank: 227,
+		Player: "Clarke Hinkle+",
+		Yds: "3,860",
+		Years: "1932-1941",
+		Tm: "gnb"
+	},
+	{
+		Rank: 228,
+		Player: "Wilbur Jackson",
+		Yds: "3,852",
+		Years: "1974-1982",
+		Tm: "2TM"
+	},
+	{
+		Rank: 229,
+		Player: "Jon Arnett",
+		Yds: "3,833",
+		Years: "1957-1966",
+		Tm: "2TM"
+	},
+	{
+		Rank: 230,
+		Player: "Gerry Ellis",
+		Yds: "3,826",
+		Years: "1980-1986",
+		Tm: "gnb"
+	},
+	{
+		Rank: 231,
+		Player: "Bam Morris",
+		Yds: "3,809",
+		Years: "1994-1999",
+		Tm: "4TM"
+	},
+	{
+		Rank: 231,
+		Player: "Pierre Thomas",
+		Yds: "3,809",
+		Years: "2007-2015",
+		Tm: "3TM"
+	},
+	{
+		Rank: 233,
+		Player: "Isaiah Crowell",
+		Yds: "3,803",
+		Years: "2014-2018",
+		Tm: "2TM"
+	},
+	{
+		Rank: 234,
+		Player: "Pete Banaszak",
+		Yds: "3,772",
+		Years: "1966-1978",
+		Tm: "rai"
+	},
+	{
+		Rank: 234,
+		Player: "Rashad Jennings",
+		Yds: "3,772",
+		Years: "2009-2016",
+		Tm: "3TM"
+	},
+	{
+		Rank: 236,
+		Player: "Jim Kiick",
+		Yds: "3,759",
+		Years: "1968-1977",
+		Tm: "3TM"
+	},
+	{
+		Rank: 237,
+		Player: "Wendell Hayes",
+		Yds: "3,758",
+		Years: "1963-1974",
+		Tm: "3TM"
+	},
+	{
+		Rank: 238,
+		Player: "Johnny Roland",
+		Yds: "3,750",
+		Years: "1966-1973",
+		Tm: "2TM"
+	},
+	{
+		Rank: 239,
+		Player: "Reggie Cobb",
+		Yds: "3,743",
+		Years: "1990-1996",
+		Tm: "4TM"
+	},
+	{
+		Rank: 240,
+		Player: "LaMont Jordan",
+		Yds: "3,734",
+		Years: "2001-2009",
+		Tm: "4TM"
+	},
+	{
+		Rank: 241,
+		Player: "Ron Dayne",
+		Yds: "3,722",
+		Years: "2000-2007",
+		Tm: "3TM"
+	},
+	{
+		Rank: 242,
+		Player: "Paul Hornung+",
+		Yds: "3,711",
+		Years: "1957-1966",
+		Tm: "gnb"
+	},
+	{
+		Rank: 243,
+		Player: "Michael Bennett",
+		Yds: "3,703",
+		Years: "2001-2010",
+		Tm: "5TM"
+	},
+	{
+		Rank: 244,
+		Player: "Fran Tarkenton+",
+		Yds: "3,674",
+		Years: "1961-1978",
+		Tm: "2TM"
+	},
+	{
+		Rank: 245,
+		Player: "Rickey Young",
+		Yds: "3,666",
+		Years: "1975-1983",
+		Tm: "2TM"
+	},
+	{
+		Rank: "Rank",
+		Player: "Player",
+		Yds: "Yds",
+		Years: "Years",
+		Tm: "Tm"
+	},
+	{
+		Rank: 246,
+		Player: "Clarence Peaks",
+		Yds: "3,660",
+		Years: "1957-1965",
+		Tm: "2TM"
+	},
+	{
+		Rank: 247,
+		Player: "Hoyle Granger",
+		Yds: "3,653",
+		Years: "1966-1972",
+		Tm: "2TM"
+	},
+	{
+		Rank: 248,
+		Player: "Maurice Morris",
+		Yds: "3,648",
+		Years: "2002-2011",
+		Tm: "2TM"
+	},
+	{
+		Rank: 248,
+		Player: "Bilal Powell",
+		Yds: "3,648",
+		Years: "2011-2019",
+		Tm: "nyj"
+	},
+	{
+		Rank: 250,
+		Player: "Clarence Davis",
+		Yds: "3,640",
+		Years: "1971-1978",
+		Tm: "rai"
+	},
+	{
+		Rank: 250,
+		Player: "Tank Younger",
+		Yds: "3,640",
+		Years: "1949-1958",
+		Tm: "2TM"
+	}
+];
+
+let previous;
+
+const loadData = (e) => {
+	console.log(e);
+	data.forEach((item) => {
+		const tr = document.createElement("tr");
+		const thRank = document.createElement("th");
+
+		thRank.innerText = item["Rank"];
+		thRank.setAttribute("scope", "row");
+		tr.appendChild(thRank);
+
+		const tdPlayer = document.createElement("th");
+		tdPlayer.innerText = item["Player"];
+		tr.appendChild(tdPlayer);
+
+		const tdYards = document.createElement("th");
+		tdYards.innerText = item["Yds"];
+		tr.appendChild(tdYards);
+
+		tbody.appendChild(tr);
+	});
+};
+
+btn.addEventListener("click", loadData);
