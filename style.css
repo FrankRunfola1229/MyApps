@@ -1,5 +1,5 @@
 html {
-	background-color: rgb(0, 162, 255);
+	background-color: #dddddd;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
 	height: auto;
 	background-color: rgb(169, 197, 192);
 	box-shadow: 5px 5px 15px 10px #8d8a89;
+	color: darkblue;
 }
 
 .flex-container {
@@ -43,8 +44,9 @@ table {
 
 .table thead th,
 .table thead td {
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	padding: 5px;
+	color: darkgray;
 }
 .table tbody th,
 .table tbody td {

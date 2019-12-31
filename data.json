@@ -245,13 +245,6 @@
 		"Tm": "3TM"
 	},
 	{
-		"Rank": "Rank",
-		"Player": "Player",
-		"Yds": "Yds",
-		"Years": "Years",
-		"Tm": "Tm"
-	},
-	{
 		"Rank": 36,
 		"Player": "Shaun Alexander",
 		"Yds": "9,453",
@@ -495,13 +488,6 @@
 		"Yds": "6,789",
 		"Years": "1977-1985",
 		"Tm": "2TM"
-	},
-	{
-		"Rank": "Rank",
-		"Player": "Player",
-		"Yds": "Yds",
-		"Years": "Years",
-		"Tm": "Tm"
 	},
 	{
 		"Rank": 71,
@@ -749,13 +735,6 @@
 		"Tm": "3TM"
 	},
 	{
-		"Rank": "Rank",
-		"Player": "Player",
-		"Yds": "Yds",
-		"Years": "Years",
-		"Tm": "Tm"
-	},
-	{
 		"Rank": 106,
 		"Player": "Pete Johnson",
 		"Yds": "5,626",
@@ -847,11 +826,11 @@
 		"Tm": "4TM"
 	},
 	{
-		"Rank": "Doug Martin",
-		"Player": "5,356",
-		"Yds": "2012-2018",
-		"Years": "2TM",
-		"Tm": ""
+		"Rank": 118,
+		"Player": "Doug Martin",
+		"Yds": "5,356",
+		"Years": "2012-2018",
+		"Tm": "2TM"
 	},
 	{
 		"Rank": 120,
@@ -861,11 +840,11 @@
 		"Tm": "atl"
 	},
 	{
-		"Rank": "Todd Gurley",
-		"Player": "5,336",
-		"Yds": "2015-2019",
-		"Years": "ram",
-		"Tm": ""
+		"Rank": 120,
+		"Player": "Todd Gurley",
+		"Yds": "5,336",
+		"Years": "2015-2019",
+		"Tm": "ram"
 	},
 	{
 		"Rank": 122,
@@ -917,11 +896,11 @@
 		"Tm": "2TM"
 	},
 	{
-		"Rank": "Marion Butts",
-		"Player": "5,185",
-		"Yds": "1989-1995",
-		"Years": "3TM",
-		"Tm": ""
+		"Rank": 128,
+		"Player": "Marion Butts",
+		"Yds": "5,185",
+		"Years": "1989-1995",
+		"Tm": "3TM"
 	},
 	{
 		"Rank": 130,
@@ -1001,13 +980,6 @@
 		"Tm": "2TM"
 	},
 	{
-		"Rank": "Rank",
-		"Player": "Player",
-		"Yds": "Yds",
-		"Years": "Years",
-		"Tm": "Tm"
-	},
-	{
 		"Rank": 141,
 		"Player": "Paul Lowe",
 		"Yds": "4,995",
@@ -1057,11 +1029,11 @@
 		"Tm": "2TM"
 	},
 	{
-		"Rank": "Randall Cunningham",
-		"Player": "4,928",
-		"Yds": "1985-2001",
-		"Years": "4TM",
-		"Tm": ""
+		"Rank": 147,
+		"Player": "Randall Cunningham",
+		"Yds": "4,928",
+		"Years": "1985-2001",
+		"Tm": "4TM"
 	},
 	{
 		"Rank": 149,
@@ -1225,11 +1197,11 @@
 		"Tm": "clt"
 	},
 	{
-		"Rank": "Otis Armstrong",
-		"Player": "4,453",
-		"Yds": "1973-1980",
-		"Years": "den",
-		"Tm": ""
+		"Rank": 171,
+		"Player": "Otis Armstrong",
+		"Yds": "4,453",
+		"Years": "1973-1980",
+		"Tm": "den"
 	},
 	{
 		"Rank": 173,
@@ -1251,13 +1223,6 @@
 		"Yds": "4,365",
 		"Years": "1990-1998",
 		"Tm": "3TM"
-	},
-	{
-		"Rank": "Rank",
-		"Player": "Player",
-		"Yds": "Yds",
-		"Years": "Years",
-		"Tm": "Tm"
 	},
 	{
 		"Rank": 176,
@@ -1295,11 +1260,11 @@
 		"Tm": "2TM"
 	},
 	{
-		"Rank": "Altie Taylor",
-		"Player": "4,308",
-		"Yds": "1969-1976",
-		"Years": "2TM",
-		"Tm": ""
+		"Rank": 180,
+		"Player": "Altie Taylor",
+		"Yds": "4,308",
+		"Years": "1969-1976",
+		"Tm": "2TM"
 	},
 	{
 		"Rank": 182,
@@ -1379,11 +1344,11 @@
 		"Tm": "gnb"
 	},
 	{
-		"Rank": "Carl Garrett",
-		"Player": "4,197",
-		"Yds": "1969-1977",
-		"Years": "4TM",
-		"Tm": ""
+		"Rank": 192,
+		"Player": "Carl Garrett",
+		"Yds": "4,197",
+		"Years": "1969-1977",
+		"Tm": "4TM"
 	},
 	{
 		"Rank": 194,
@@ -1505,13 +1470,6 @@
 		"Tm": "pit"
 	},
 	{
-		"Rank": "Rank",
-		"Player": "Player",
-		"Yds": "Yds",
-		"Years": "Years",
-		"Tm": "Tm"
-	},
-	{
 		"Rank": 211,
 		"Player": "Kevan Barlow",
 		"Yds": "3,984",
@@ -1540,11 +1498,11 @@
 		"Tm": "4TM"
 	},
 	{
-		"Rank": "Russell Wilson",
-		"Player": "3,964",
-		"Yds": "2012-2019",
-		"Years": "sea",
-		"Tm": ""
+		"Rank": 214,
+		"Player": "Russell Wilson",
+		"Yds": "3,964",
+		"Years": "2012-2019",
+		"Tm": "sea"
 	},
 	{
 		"Rank": 216,
@@ -1568,11 +1526,11 @@
 		"Tm": "atl"
 	},
 	{
-		"Rank": "BenJarvus Green-Ellis",
-		"Player": "3,914",
-		"Yds": "2008-2013",
-		"Years": "2TM",
-		"Tm": ""
+		"Rank": 218,
+		"Player": "BenJarvus Green-Ellis",
+		"Yds": "3,914",
+		"Years": "2008-2013",
+		"Tm": "2TM"
 	},
 	{
 		"Rank": 220,
@@ -1659,11 +1617,11 @@
 		"Tm": "4TM"
 	},
 	{
-		"Rank": "Pierre Thomas",
-		"Player": "3,809",
-		"Yds": "2007-2015",
-		"Years": "3TM",
-		"Tm": ""
+		"Rank": 231,
+		"Player": "Pierre Thomas",
+		"Yds": "3,809",
+		"Years": "2007-2015",
+		"Tm": "3TM"
 	},
 	{
 		"Rank": 233,
@@ -1680,11 +1638,11 @@
 		"Tm": "rai"
 	},
 	{
-		"Rank": "Rashad Jennings",
-		"Player": "3,772",
-		"Yds": "2009-2016",
-		"Years": "3TM",
-		"Tm": ""
+		"Rank": 234,
+		"Player": "Rashad Jennings",
+		"Yds": "3,772",
+		"Years": "2009-2016",
+		"Tm": "3TM"
 	},
 	{
 		"Rank": 236,
@@ -1757,13 +1715,6 @@
 		"Tm": "2TM"
 	},
 	{
-		"Rank": "Rank",
-		"Player": "Player",
-		"Yds": "Yds",
-		"Years": "Years",
-		"Tm": "Tm"
-	},
-	{
 		"Rank": 246,
 		"Player": "Clarence Peaks",
 		"Yds": "3,660",
@@ -1785,11 +1736,11 @@
 		"Tm": "2TM"
 	},
 	{
-		"Rank": "Bilal Powell",
-		"Player": "3,648",
-		"Yds": "2011-2019",
-		"Years": "nyj",
-		"Tm": ""
+		"Rank": 248,
+		"Player": "Bilal Powell",
+		"Yds": "3,648",
+		"Years": "2011-2019",
+		"Tm": "nyj"
 	},
 	{
 		"Rank": 250,
@@ -1799,10 +1750,10 @@
 		"Tm": "rai"
 	},
 	{
-		"Rank": "Tank Younger",
-		"Player": "3,640",
-		"Yds": "1949-1958",
-		"Years": "2TM",
-		"Tm": ""
+		"Rank": 250,
+		"Player": "Tank Younger",
+		"Yds": "3,640",
+		"Years": "1949-1958",
+		"Tm": "2TM"
 	}
 ]
