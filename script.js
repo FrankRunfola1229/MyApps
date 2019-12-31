@@ -4,7 +4,7 @@ const tbody = document.querySelector("tbody")
 let count = 0
 
 const readJsonFile = () => {
-	fetch("/Data/RushingData.json") //
+	fetch("Data/RushingData.json") //
 		.then(response => response.json())
 		.then(data => createTable(data))
 		.catch(err => {})
