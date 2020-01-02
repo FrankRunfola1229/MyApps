@@ -13,17 +13,12 @@ body {
 	background-color: rgb(169, 197, 192);
 	box-shadow: 5px 5px 15px 10px #8d8a89;
 	color: darkblue;
+	max-width: 90%;
 }
 
 .flex-container {
 	justify-content: center;
 	text-align: center;
-}
-
-button {
-	display: block;
-	margin: auto;
-	margin: 1px;
 }
 
 #total {
@@ -39,7 +34,7 @@ table {
 }
 .table {
 	margin: auto;
-	width: 40%;
+	width: 60%;
 }
 
 .table thead th,
@@ -58,13 +53,22 @@ table {
 /***********************************************
 		RESPONSIVE RESIZING
 ***********************************************/
+@media only screen and (max-width: 992px) {
+	.container {
+		max-width: 90%;
+	}
+	.table {
+		width: 80%;
+	}
+}
+
 @media only screen and (max-width: 800px) {
 	body {
 		background-color: #aaaaaa;
 	}
 
 	.container {
-		width: 90%;
+		width: 100%;
 		height: 50%;
 	}
 
@@ -72,7 +76,7 @@ table {
 		width: 10em;
 	}
 	.table {
-		width: 100%;
+		width: 99%;
 	}
 	#title {
 		font-size: 2em;
@@ -88,9 +92,8 @@ table {
 	}
 }
 
-@media only screen and (max-width: 400px) {
-	.btn {
-		font-size: .8em;
-		padding: .4em;
+@media only screen and (max-width: 600px) {
+	.table tbody td {
+		font-size: 60%;
 	}
 }

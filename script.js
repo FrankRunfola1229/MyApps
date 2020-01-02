@@ -16,24 +16,24 @@ const createTable = data => {
 	data.forEach(item => {
 		const tr = document.createElement("tr")
 
-		const thRank = document.createElement("th")
+		const thRank = document.createElement("td")
 		thRank.innerText = item["Rank"]
 		thRank.setAttribute("scope", "row")
 		tr.appendChild(thRank)
 
-		const tdPlayer = document.createElement("th")
+		const tdPlayer = document.createElement("td")
 		tdPlayer.innerText = item["Player"]
 		tr.appendChild(tdPlayer)
 
-		const tdYards = document.createElement("th")
+		const tdYards = document.createElement("td")
 		tdYards.innerText = item["Yds"]
 		tr.appendChild(tdYards)
 
-		const tdYear = document.createElement("th")
+		const tdYear = document.createElement("td")
 		tdYear.innerText = item["Years"]
 		tr.appendChild(tdYear)
 
-		const tdTeam = document.createElement("th")
+		const tdTeam = document.createElement("td")
 		tdTeam.innerText = item["Tm"]
 		tr.appendChild(tdTeam)
 
