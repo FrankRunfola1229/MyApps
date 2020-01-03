@@ -1,32 +1,25 @@
-html {
-	background-color: #dddddd;
-}
-
 body {
-	background-color: #dddddd;
+	background-color: rgb(160, 156, 156);
+	text-align: center;
 }
 
+img {
+	width: 40%;
+}
 .container {
+	margin: 5rem auto;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	margin: auto;
-	height: auto;
-	background-color: rgb(169, 197, 192);
-	box-shadow: 5px 5px 15px 10px #8d8a89;
-	color: darkblue;
-	max-width: 90%;
+	max-width: 85%;
 }
 
 .flex-container {
 	justify-content: center;
-	text-align: center;
 }
 
 #total {
 	font-size: 1.5em;
-	text-align: center;
 }
 table {
-	text-align: center;
 	box-shadow: 10px 10px 5px #aaaaaa;
 	background-color: rgb(180, 214, 211);
 	border-collapse: separate;
@@ -47,7 +40,7 @@ table {
 .table tbody td {
 	font-family: Arial, Helvetica, sans-serif;
 	padding: 4px;
-	font-size: .8em;
+	font-size: 90%;
 }
 
 /***********************************************
@@ -72,9 +65,6 @@ table {
 		height: 50%;
 	}
 
-	img {
-		width: 10em;
-	}
 	.table {
 		width: 99%;
 	}
@@ -86,14 +76,33 @@ table {
 	.table thead td {
 		font-size: 1rem;
 	}
-	.table tbody th,
+}
+
+@media only screen and (max-width: 500px) {
+	.table tbody td {
+		font-size: 75%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
 	.table tbody td {
 		font-size: 70%;
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
 	.table tbody td {
-		font-size: 60%;
+		font-size: 62.5%;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.table tbody td {
+		font-size: 50%;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.table tbody td {
+		font-size: 45%;
 	}
 }

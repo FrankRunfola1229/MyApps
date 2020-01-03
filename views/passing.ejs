@@ -2,24 +2,17 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <title>Document</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <link rel="stylesheet" href="style.css">
-
-   <!-- **************** NAV BAR ********************-->
-   <script> $(() => $("#navbar-frame").load("nav.html")) </script>
+   <%- include('partials/header') %>
+   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 
 <body>
+   <%- include('partials/nav') %>
+
    <!-- **************** CONTAINER ********************-->
    <div id="navbar-frame"> </div>
 
-   <div class="container my-5 py-2">
+   <div class="container">
       <div class="flex-container">
          <h2 id="title">Passing Yards</h2>
       </div>
@@ -37,6 +30,7 @@
                   <th id="Player" scope="col">Player</th>
                   <th id="Yards" scope="col">Yards</th>
                   <th id="Years" scope="col">Years</th>
+                  <th id="Team" scope="col">Team</th>
 
                </tr>
             </thead>
@@ -46,9 +40,13 @@
          </table>
       </div>
 
-      <script src="script1.js"></script>
+      <footer>
+         <%- include('partials/footer') %>
+      </footer>
+
+      <script type="text/javascript" src="javascripts/passing.js"></script>
+   </div>
 
 </body>
-
 
 </html>
