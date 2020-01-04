@@ -25,7 +25,7 @@ app.get("/passing", function(req, res) {
 	res.render("passing")
 })
 
-const port = 3000
+const port = listen(process.env.PORT || 5000)
 
 app.listen(port, function() {
 	console.log("The Server Has Started!..")
