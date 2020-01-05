@@ -88,11 +88,25 @@ table {
 	.table tbody td {
 		font-size: 70%;
 	}
+        .container {
+		width: 100%;
+		height: 50%;
+	}
+	.table {
+		width: 99%;
+	}
 }
 
 @media only screen and (max-width: 400px) {
 	.table tbody td {
 		font-size: 62.5%;
+	}
+        .container {
+		width: 100%;
+		height: 50%;
+	}
+	.table {
+		width: 99%;
 	}
 }
 
@@ -100,12 +114,24 @@ table {
 	.table tbody td {
 		font-size: 50%;
 	}
+        .container {
+		width: 100%;
+		height: 50%;
+	}
+
+	.table {
+		width: 99%;
+	}
 }
 @media only screen and (max-width: 350px) {
 	.table tbody td {
 		font-size: 45%;
 	}
-         .container {
-		width: 95%;
+        .container {
+		width: 100%;
+		height: 50%;
+	}
+	.table {
+		width: 99%;
 	}
 }
