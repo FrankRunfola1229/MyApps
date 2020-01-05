@@ -88,27 +88,17 @@ table {
 	.table tbody td {
 		font-size: 70%;
 	}
-        
-        .container {
-		width: 95%;
-	}
 }
 
 @media only screen and (max-width: 400px) {
 	.table tbody td {
 		font-size: 62.5%;
 	}
-         .container {
-		width: 95%;
-	}
 }
 
 @media only screen and (max-width: 375px) {
 	.table tbody td {
 		font-size: 50%;
-	}
-         .container {
-		width: 95%;
 	}
 }
 @media only screen and (max-width: 350px) {
