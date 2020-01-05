@@ -88,6 +88,10 @@ table {
 	.table tbody td {
 		font-size: 70%;
 	}
+        
+        .table {
+		width: 95%;
+	}
 }
 
 @media only screen and (max-width: 400px) {
