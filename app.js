@@ -25,11 +25,14 @@ app.get("/passing", function(req, res) {
 	res.render("passing")
 })
 
+// rushing route
+app.get("/receiving", function(req, res) {
+	res.render("receiving")
+})
+
 var port = process.env.PORT || 3000;
 
 app.listen(port, function() {
 	console.log("The Server Has Started!..")
 	console.log("Port= " + port)
 })
-
-
