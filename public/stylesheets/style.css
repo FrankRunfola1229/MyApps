@@ -32,7 +32,7 @@ table {
 
 .table thead th {
 	font-size: 150%;
-	padding: 10px 5px;
+	padding: 10px 10px;
 	color: darkgray;
 }
 .table tbody td {
@@ -54,10 +54,6 @@ table {
 }
 
 @media only screen and (max-width: 800px) {
-	body {
-		background-color: #aaaaaa;
-	}
-
 	.container {
 		width: 100%;
 		height: 50%;
@@ -89,14 +85,6 @@ table {
 	.table tbody td {
 		font-size: 60%;
 	}
-
-	.container {
-		width: 100%;
-		height: 50%;
-	}
-	.table {
-		max-width: 99%;
-	}
 }
 
 @media only screen and (max-width: 450px) {
@@ -106,26 +94,11 @@ table {
 	.table thead th {
 		font-size: 90%;
 	}
-	.container {
-		max-width: 100%;
-		height: 50%;
-	}
-	.table {
-		max-width: 99%;
-	}
 }
 
 @media only screen and (max-width: 400px) {
 	.table tbody td {
 		font-size: 70.5%;
-	}
-
-	.container {
-		max-width: 100%;
-		height: 50%;
-	}
-	.table {
-		max-width: 99%;
 	}
 }
 
@@ -133,24 +106,9 @@ table {
 	.table tbody td {
 		font-size: 60%;
 	}
-	.container {
-		max-width: 100%;
-		height: 50%;
-	}
-
-	.table {
-		max-width: 99%;
-	}
 }
 @media only screen and (max-width: 350px) {
 	.table tbody td {
 		font-size: 55%;
-	}
-	.container {
-		max-width: 100%;
-		height: 50%;
-	}
-	.table {
-		max-width: 99%;
 	}
 }
