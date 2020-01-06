@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-   <%- include ('partials/head') %>
+   <%- include('partials/head') %>
    <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 
 <body>
    <%- include('partials/nav') %>
-   <!-- **************** CONTAINER ********************-->
-   <div id="navbar-frame"> </div>
 
+   <!-- **************** CONTAINER ********************-->
    <div class="container">
+
       <div class="flex-container">
          <h2 id="title">Rushing Yards</h2>
       </div>
@@ -20,12 +20,13 @@
       <div class="table-responsive-md my-3">
          <table class="table table-striped table-dark">
             <thead>
+               <span> + denotes HOF </span>
                <tr>
                   <!-- ***************** TOTAL ********************-->
                   <th id="total" scope="col" colspan="5"> Total=0 </th>
                </tr>
                <tr>
-                  <th id="Rank" scope="col"> </th>
+                  <th id="Rank" scope="col"></th>
                   <th id="Player" scope="col">Player</th>
                   <th id="Yards" scope="col">Yards</th>
                   <th id="Years" scope="col">Years</th>
@@ -37,15 +38,14 @@
             <tbody>
          </table>
       </div>
+
+      <footer>
+         <%- include('partials/footer') %>
+      </footer>
+
    </div>
+
+   <script type="text/javascript" src="javascripts/rushing.js"></script>
 </body>
-
-<footer>
-   <%- include('partials/footer') %>
-</footer>
-
-<script type="text/javascript" src="javascripts/rushing.js"></script>
-</body>
-
 
 </html>

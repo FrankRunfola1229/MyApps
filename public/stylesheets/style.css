@@ -9,7 +9,7 @@ img {
 .container {
 	margin: 5rem auto;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	max-width: 85%;
+	max-width: 65%;
 }
 
 .flex-container {
@@ -27,19 +27,17 @@ table {
 }
 .table {
 	margin: auto;
-	width: 100%;
+	width: auto;
 }
 
-.table thead th,
-.table thead td {
-	font-size: 1.1rem;
-	padding: 5px;
+.table thead th {
+	font-size: 150%;
+	padding: 10px 5px;
 	color: darkgray;
 }
-.table tbody th,
 .table tbody td {
 	font-family: Arial, Helvetica, sans-serif;
-	padding: 4px;
+	padding: 5px 5px;
 	font-size: 90%;
 }
 
@@ -72,17 +70,27 @@ table {
 		font-size: 2em;
 	}
 
-	.table thead th,
-	.table thead td {
-		font-size: 1rem;
+	.table thead th {
+		font-size: 120%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.table tbody td {
+		font-size: 70%;
+	}
+	.container {
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 }
 
 @media only screen and (max-width: 500px) {
 	.table tbody td {
-		font-size: 80%;
+		font-size: 60%;
 	}
-        .container {
+
+	.container {
 		width: 100%;
 		height: 50%;
 	}
@@ -93,9 +101,12 @@ table {
 
 @media only screen and (max-width: 450px) {
 	.table tbody td {
-		font-size: 75%;
+		font-size: 65%;
 	}
-        .container {
+	.table thead th {
+		font-size: 90%;
+	}
+	.container {
 		max-width: 100%;
 		height: 50%;
 	}
@@ -108,7 +119,8 @@ table {
 	.table tbody td {
 		font-size: 70.5%;
 	}
-        .container {
+
+	.container {
 		max-width: 100%;
 		height: 50%;
 	}
@@ -121,7 +133,7 @@ table {
 	.table tbody td {
 		font-size: 60%;
 	}
-        .container {
+	.container {
 		max-width: 100%;
 		height: 50%;
 	}
@@ -134,7 +146,7 @@ table {
 	.table tbody td {
 		font-size: 55%;
 	}
-        .container {
+	.container {
 		max-width: 100%;
 		height: 50%;
 	}

@@ -13,10 +13,10 @@ const createTable = data => {
 	data.forEach(item => {
 		const tr = document.createElement("tr")
 
-		const thRank = document.createElement("td")
-		thRank.innerText = item["Rank"]
-		thRank.setAttribute("scope", "row")
-		tr.appendChild(thRank)
+		const tdRank = document.createElement("td")
+		tdRank.innerText = item["Rank"]
+		tdRank.setAttribute("scope", "row")
+		tr.appendChild(tdRank)
 
 		const tdPlayer = document.createElement("td")
 		tdPlayer.innerText = item["Player"]
