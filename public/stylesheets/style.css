@@ -9,7 +9,6 @@ img {
 .container {
 	margin: 5rem auto;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	max-width: 75%;
 }
 
 .flex-container {
@@ -74,11 +73,10 @@ table {
 		font-size: 70%
 	}
 	.container {
-		max-width: 99%
                 margin: auto 5px;
 	}
 	.table {
-		max-width: 99%;
+		width: 99%;
 	}
 }
 
