@@ -44,15 +44,6 @@ table {
 /***********************************************
 		RESPONSIVE RESIZING
 ***********************************************/
-@media only screen and (max-width: 992px) {
-	.container {
-		max-width: 90%;
-	}
-	.table {
-		max-width: 80%;
-	}
-}
-
 @media only screen and (max-width: 800px) {
 	.container {
 		width: 100%;
@@ -70,7 +61,7 @@ table {
 
 @media only screen and (max-width: 600px) {
 	.table tbody td {
-		font-size: 70%;
+		font-size: 75%;
 	}
 	.container {
 		padding-left: 5px;
@@ -78,27 +69,16 @@ table {
 	}
 }
 
-@media only screen and (max-width: 500px) {
-	.table tbody td {
-		font-size: 60%;
-	}
-}
-
 @media only screen and (max-width: 450px) {
 	.table tbody td {
-		font-size: 65%;
+		font-size: 70%
 	}
 	.container {
 		max-width: 99%
+                margin: auto 5px;
 	}
 	.table {
 		max-width: 99%;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	.table tbody td {
-		font-size: 70.5%;
 	}
 }
 
