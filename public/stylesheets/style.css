@@ -59,9 +59,6 @@ table {
 		height: 50%;
 	}
 
-	.table {
-		max-width: 99%;
-	}
 	#title {
 		font-size: 2em;
 	}
@@ -91,8 +88,11 @@ table {
 	.table tbody td {
 		font-size: 65%;
 	}
-	.table thead th {
-		font-size: 90%;
+	.container {
+		width: 99%
+	}
+	.table {
+		width: 99%;
 	}
 }
 
