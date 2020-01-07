@@ -8,15 +8,18 @@
 <body class="bg-gradient-primary">
    <%- include('partials/nav') %>
 
-   <div class="jumbotron container bg-secondary">
-      <img src="https://abc6onyourside.com/resources/media/d7f81e71-255d-4c01-9aef-117e76446edb-large16x9_nfllogo.jpg?1553858372512" class="img-fluid" alt="Responsive image">
+   <div class="container" style="padding-top:1rem;">
+      <div class="jumbotron container bg-secondary" style="margin-top:100px;">
+         <img src="https://abc6onyourside.com/resources/media/d7f81e71-255d-4c01-9aef-117e76446edb-large16x9_nfllogo.jpg?1553858372512" class="img-fluid" alt="Responsive image">
+      </div>
+
+      <footer>
+         <%- include('partials/footer') %>
+      </footer>
+
+      <%- include('partials/scripts') %>
    </div>
+
 </body>
-
-<%- include('partials/scripts') %>
-
-<footer>
-   <%- include('partials/footer') %>
-</footer>
 
 </html>
