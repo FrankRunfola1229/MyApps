@@ -1,93 +1,109 @@
 body {
-	background-color: rgb(160, 156, 156);
-	text-align: center;
-}
-
-img {
-	width: 40%;
+   background-color: rgb(160, 156, 156);
+   text-align: center;
 }
 
 .container {
-	width: 100%;
-	margin: auto auto auto auto;
-	padding: 4em 1%;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   justify-content: center;
+   width: 100%;
+   margin: auto auto auto auto;
+   padding: 4em 20px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.row {
+   width: auto;
+   border: 2px solid black;
+   padding: 1px;
+}
+
+.cards {
+   justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+.cards img {
+   margin: 10px;
+   width: 200px;
+   height: 150px;
+   border: 2px solid #000;
+   box-shadow: 3px 3px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
 .flex-container {
-	justify-content: center;
+   justify-content: center;
 }
 
-#total {
-	font-size: 1.5em;
-}
 table {
-	box-shadow: 10px 10px 5px #aaaaaa;
-	background-color: rgb(180, 214, 211);
-	border-collapse: separate;
-	border-spacing: 2px;
+   box-shadow: 10px 10px 5px #aaaaaa;
+   background-color: rgb(180, 214, 211);
+   border-collapse: separate;
+   border-spacing: 2px;
 }
 .table {
-	margin: auto;
-	width: auto;
+   margin: auto;
+   width: auto;
 }
 
 .table thead th {
-	font-size: 150%;
-	padding: 10px 10px;
-	color: darkgray;
+   font-size: 150%;
+   padding: 10px 10px;
+   color: darkgray;
 }
 .table tbody td {
-	font-family: Arial, Helvetica, sans-serif;
-	padding: 5px 5px;
-	font-size: 90%;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 5px 5px;
+   font-size: 90%;
 }
-
+#total {
+   font-size: 1.5em;
+}
 /***********************************************
 		RESPONSIVE RESIZING
 ***********************************************/
 @media only screen and (max-width: 800px) {
-	.table {
-		width: 95%;
-	}
+   .table {
+      width: 95%;
+   }
 
-	#title {
-		font-size: 2em;
-	}
+   #title {
+      font-size: 2em;
+   }
 
-	.table thead th {
-		font-size: 120%;
-	}
+   .table thead th {
+      font-size: 120%;
+   }
 }
 
 @media only screen and (max-width: 600px) {
-	.table thead th {
-		font-size: 105%;
-	}
-	.table tbody td {
-		font-size: 80%;
-	}
-	.table {
-		width: 100%;
-	}
-	.container {
-		padding: 4rem 5px;
-	}
+   .table thead th {
+      font-size: 105%;
+   }
+   .table tbody td {
+      font-size: 80%;
+   }
+   .table {
+      width: 100%;
+   }
+   .container {
+      padding: 4rem 5px;
+   }
 }
 
 @media only screen and (max-width: 450px) {
-	.table tbody td {
-		font-size: 75%;
-	}
+   .table tbody td {
+      font-size: 75%;
+   }
 }
 
 @media only screen and (max-width: 400px) {
-	.table tbody td {
-		font-size: 65%;
-	}
+   .table tbody td {
+      font-size: 65%;
+   }
 }
 @media only screen and (max-width: 375px) {
-	.table tbody td {
-		font-size: 55%;
-	}
+   .table tbody td {
+      font-size: 55%;
+   }
 }

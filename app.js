@@ -12,27 +12,27 @@ app.set("view engine", "ejs")
 
 // root route
 app.get("/", function(req, res) {
-	res.render("index")
+   res.render("index")
 })
 
 // rushing route
 app.get("/rushing", function(req, res) {
-	res.render("rushing")
+   res.render("rushing")
 })
 
 // root passing
 app.get("/passing", function(req, res) {
-	res.render("passing")
+   res.render("passing")
 })
 
 // rushing route
 app.get("/receiving", function(req, res) {
-	res.render("receiving")
+   res.render("receiving")
 })
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000
 
 app.listen(port, function() {
-	console.log("The Server Has Started!..")
-	console.log("Port= " + port)
+   console.log("The Server Has Started!..")
+   console.log("Port= " + port)
 })
