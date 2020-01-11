@@ -1,39 +1,42 @@
 body {
-   background-color: rgb(160, 156, 156);
    text-align: center;
+   justify-content: center;
 }
 
-.container {
-   justify-content: center;
-   width: 100%;
-   margin: auto auto auto auto;
-   padding: 4em 20px;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.container-fluid {
+   background-color: darkgray;
+   width: 90%;
+   margin: 5rem auto auto auto;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .row {
-   width: auto;
-   border: 2px solid black;
-   padding: 1px;
+   width: 50%;
+   margin: auto;
+   border: 2px solid rgb(51, 49, 49);
 }
 
-.cards {
-   justify-content: center;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-}
-.cards img {
-   margin: 10px;
-   width: 200px;
-   height: 150px;
-   border: 2px solid #000;
-   box-shadow: 3px 3px 30px 0px rgba(0, 0, 0, 0.3);
+.row div {
+   padding: 0px;
+   margin: auto;
+   border: 1px solid red;
+   height: 100px;
+   height: 70px;
 }
 
-.flex-container {
-   justify-content: center;
+button a {
+   width: 100%;
+   height: 100%;
+
 }
+
+a {
+   font-size: 2rem;
+   ;
+}
+
 
 table {
    box-shadow: 10px 10px 5px #aaaaaa;
@@ -41,28 +44,35 @@ table {
    border-collapse: separate;
    border-spacing: 2px;
 }
+
 .table {
    margin: auto;
-   width: auto;
+   width: 50%;
 }
+
 
 .table thead th {
    font-size: 150%;
    padding: 10px 10px;
    color: darkgray;
 }
+
 .table tbody td {
    font-family: Arial, Helvetica, sans-serif;
    padding: 5px 5px;
    font-size: 90%;
 }
+
 #total {
    font-size: 1.5em;
 }
+
 /***********************************************
 		RESPONSIVE RESIZING
 ***********************************************/
 @media only screen and (max-width: 800px) {
+
+   .container-fluid,
    .table {
       width: 95%;
    }
@@ -77,17 +87,26 @@ table {
 }
 
 @media only screen and (max-width: 600px) {
+   .container-fluid {
+      width: 98%;
+      padding: 4rem 2px;
+   }
+
+   .row {
+      width: 85%;
+   }
+
+   .table {
+      width: 100%;
+      margin: 0px;
+   }
+
    .table thead th {
       font-size: 105%;
    }
+
    .table tbody td {
       font-size: 80%;
-   }
-   .table {
-      width: 100%;
-   }
-   .container {
-      padding: 4rem 5px;
    }
 }
 
@@ -101,7 +120,13 @@ table {
    .table tbody td {
       font-size: 65%;
    }
+
+   .row {
+      width: 95%;
+   }
+
 }
+
 @media only screen and (max-width: 375px) {
    .table tbody td {
       font-size: 55%;

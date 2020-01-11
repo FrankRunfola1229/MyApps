@@ -5,26 +5,39 @@
   <%- include('partials/head') %>
 </head>
 
-<body class="bg-gradient-primary">
+<body>
   <%- include('partials/nav') %>
 
-  <div class="container" style="padding-top:1rem;">
 
-    <div class="jumbotron bg-secondary" style="margin-top:100px;">
-      <main class="cards">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+  <div class="container-fluid">
+    <h2>Choose A Category..</h2>
+    <hr>
 
-      </main>
+    <div class="row mt-1">
+      <div class="col-lg-3 col-md-6 col-sm-12 bg-info">
+        <a href="/passing" class="btn btn-info" role="button">passing</a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 bg-info">
+        <a href="/rushing" class="btn btn-info" role="button">rushing</a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 bg-info">
+        <a href="/receiving" class="btn btn-info" role="button">receiving</a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 bg-info">
+        <a href="/receiving" class="btn btn-info" role="button">receiving</a>
+      </div>
     </div>
 
+  </div>
 
-    <footer>
-      <%- include('partials/footer') %>
-    </footer>
+  </main>
+  </div>
 
-    <%- include('partials/scripts') %>
+  <footer>
+    <%- include('partials/footer') %>
+  </footer>
+
+  <%- include('partials/scripts') %>
   </div>
 
 </body>
