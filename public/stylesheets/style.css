@@ -1,3 +1,11 @@
+.tableSelectContainer {
+    background-color: whitesmoke;
+    margin-top: 1.0rem;
+    margin-bottom: 10rem;
+    padding: 1rem;
+    box-shadow: 5px 55px 50px -20px #b6b6b6;
+}
+
 body {
    text-align: center;
    justify-content: center;
