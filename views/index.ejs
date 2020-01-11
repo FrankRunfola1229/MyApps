@@ -27,6 +27,24 @@
       </div>
     </div>
 
+    <div class="row my-0 justify-content-between">
+            <div class="col-lg-4">
+                <a asp-controller="Home" asp-action="GetAllClaims" asp-route-tableName="EDI_XC_PROV_NAME_REJECTED_CLAIMS" class="btn btn-group btn-primary" style="padding:90px 90px">
+                    <h3>NAME</h3>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a asp-controller="Home" asp-action="GetAllClaims" asp-route-tableName="EDI_XC_PROV_NPI_REJECTED_CLAIMS" class="btn btn-group btn-primary" style="padding:90px 90px">
+                    <h3>NPI</h3>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a asp-controller="Home" asp-action="GetAllClaims" asp-route-tableName="EDI_XC_PROV_TIN_REJECTED_CLAIMS" class="btn btn-group btn-primary" style="padding:90px 90px">
+                    <h3>TIN </h3>
+                </a>
+            </div>
+        </div>
+
   </div>
 
   </main>
