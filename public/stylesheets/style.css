@@ -34,17 +34,11 @@ body {
    height: 70px;
 }
 
-button a {
+a {
    width: 100%;
    height: 100%;
-
+   padding:90px 90px;
 }
-
-a {
-   font-size: 2rem;
-   ;
-}
-
 
 table {
    box-shadow: 10px 10px 5px #aaaaaa;
