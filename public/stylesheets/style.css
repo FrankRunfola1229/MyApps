@@ -24,8 +24,9 @@ body {
    border: 1px solid black;
 }
 
-a.link{
+.link{
    padding:90px 90px;
+   text-align: center;
 }
 
 table {
