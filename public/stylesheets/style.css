@@ -10,7 +10,9 @@ body {
    padding-top: 2rem;
    padding-bottom: 2rem;
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+   box-shadow: 5px 55px 50px -20px #b6b6b6;
 }
+
 
 .row {
    width: 50%;
