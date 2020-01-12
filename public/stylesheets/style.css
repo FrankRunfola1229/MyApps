@@ -22,14 +22,14 @@ body {
 }
 
 .row {
-   width: 50%;
+   width: 35;
    margin: auto;
    justify-content: between;
    border: .5px solid grey;
 }
 
 .row div {
-   margin: auto;
+   margin: 5px;
    font-size: 3rem;
    text-align: center;
    height: 2em;
