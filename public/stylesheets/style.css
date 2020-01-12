@@ -30,6 +30,7 @@ body {
 }
 
 .row div {
+   width:50%;
    margin: 5px;
    font-size: 3rem;
    text-align: center;
