@@ -10,6 +10,7 @@ body {
    padding-bottom: 2rem;
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
    box-shadow: 5px 55px 50px -20px #b6b6b6;
+   border-radius: 25px;
 }
 
 .row {
@@ -22,11 +23,12 @@ body {
    width: 100px;
    height: 70px;
    border: 1px solid black;
+   border-radius: 25px;
 }
 
 .link{
-   
    text-align: center;
+   font-size : 3rem;
 }
 
 table {
