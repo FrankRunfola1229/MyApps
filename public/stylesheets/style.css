@@ -22,7 +22,7 @@ body {
 }
 
 .row {
-   width: 75%;
+   width: 85%;
    margin: auto;
    justify-content: between;
    vertical-align: middle;
@@ -30,7 +30,6 @@ body {
 }
 
 .row div {
-   width:80%;
    margin: 5px;
    font-size: 3rem;
    text-align: center;
@@ -38,7 +37,7 @@ body {
 }
 
 img {
-   width:30%;
+   width:50%;
    height:90%;
 }
 
