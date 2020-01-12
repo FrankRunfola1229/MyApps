@@ -29,16 +29,16 @@ body {
 }
 
 .row div {
-   margin: 5px;
+   margin: auto;
    font-size: 3rem;
    text-align: center;
    height: 2em;
+   vertical-align: middle;
 }
 
 img {
    width:30%;
    height:90%;
-   margin:auto;
 }
 
 .link {
