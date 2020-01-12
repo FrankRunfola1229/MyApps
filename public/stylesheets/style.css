@@ -21,15 +21,15 @@ body {
    box-shadow: 5px 55px 50px -20px #b6b6b6;
 }
 .row {
-   width: 50%;
+   width: 70%;
    margin: auto;
    justify-content: between;
-
 }
 
 .row div {
-   margin:auto;
+   margin:5px;
    font-size: 35px;
+   text-align: center;
 }
 
 .link {
