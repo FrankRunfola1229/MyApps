@@ -24,14 +24,12 @@ body {
    width: 50%;
    margin: auto;
    justify-content: between;
+
 }
 
 .row div {
-   margin-left: auto;
-   margin-right: auto;
-   padding: 0px;
    margin:auto;
-   font: 35px solid;
+   font-size: 35px;
 }
 
 .link {
