@@ -21,23 +21,9 @@ body {
    box-shadow: 5px 55px 50px -20px #b6b6b6;
 }
 
-.card {
+.card-class {
    width: 90%;
    margin: auto;
-}
-.row {
-   width: 50%;
-   margin: auto;
-   justify-content: between;
-   vertical-align: middle;
-   border: .5px solid grey;
-}
-
-.row div {
-   margin: 10px;
-   font-size: 3rem;
-   text-align: center;
-   height: 2em;
 }
 
 img {
