@@ -21,6 +21,10 @@ body {
    box-shadow: 5px 55px 50px -20px #b6b6b6;
 }
 
+.card {
+   margin:auto;
+}
+
 img {
    width:150px;
    height:200px;
