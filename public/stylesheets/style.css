@@ -21,7 +21,7 @@ body {
    box-shadow: 5px 55px 50px -20px #b6b6b6;
 }
 .row {
-   width: 80%;
+   width: 70%;
    margin: auto;
    justify-content: between;
    border: .5px solid grey;
@@ -31,11 +31,12 @@ body {
    margin:5px;
    font-size: 35px;
    text-align: center;
+   height: 2em;
 }
 
 img {
    width:20%;
-   height:20%;
+   height:40%;
 }
 .link {
    width: 100%;
