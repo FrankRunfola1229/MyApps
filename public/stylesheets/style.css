@@ -24,7 +24,7 @@ body {
    border: 1px solid black;
 }
 
-a {
+a.link{
    padding:90px 90px;
 }
 
