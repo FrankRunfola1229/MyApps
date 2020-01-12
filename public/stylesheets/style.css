@@ -6,6 +6,7 @@ body {
 .container-fluid {
    background-color: whitesmoke;
    width: 85%;
+   height: 500px;
    margin: 2rem auto auto auto;
    padding: 2rem 0px;
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -14,7 +15,7 @@ body {
 
 .landing-container {
    background-color: whitesmoke;
-   width: 90%;
+   width: 75%;
    margin: 2rem auto auto auto;
    padding: 2rem 0px;
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -38,7 +39,7 @@ body {
 
 img {
    width:40%;
-   height:75%
+   height:85%
 }
 
 .link {
