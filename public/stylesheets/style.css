@@ -21,9 +21,10 @@ body {
    box-shadow: 5px 55px 50px -20px #b6b6b6;
 }
 .row {
-   width: 70%;
+   width: 80%;
    margin: auto;
    justify-content: between;
+   border: .5px solid grey;
 }
 
 .row div {
@@ -33,8 +34,9 @@ body {
 }
 
 .link {
-   width:100%;
-   height:100%;
+   width: 100%;
+   height: 100%;
+   text-align: center;
 }
 
 table {
