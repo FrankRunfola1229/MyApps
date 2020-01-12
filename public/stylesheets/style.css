@@ -19,6 +19,9 @@ body {
 }
 
 .row div {
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: middle;
    padding: 0px;
    margin:auto;
    width: 100px;
@@ -27,7 +30,6 @@ body {
 }
 
 .link {
-   text-align: center;
    width:100%;
    height:100%;
 }
