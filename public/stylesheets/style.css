@@ -31,15 +31,16 @@ body {
 }
 
 .row div {
-   margin: 5px;
+   margin: auto;
    font-size: 3rem;
    text-align: center;
    height: 2em;
 }
 
 img {
-   width:40%;
-   height:85%
+   width:60%;
+   height:90%;
+   margin:5px
 }
 
 .link {
