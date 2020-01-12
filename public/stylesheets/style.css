@@ -23,6 +23,7 @@ body {
 
 .card-columns {
    width: 90%;
+   margin: auto;
 }
 .row {
    width: 50%;
