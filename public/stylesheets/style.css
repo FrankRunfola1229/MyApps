@@ -6,7 +6,7 @@ body {
 .container-fluid {
    background-color: white;
    width: 90%;
-   margin: 4rem 5px auto 5px;
+   margin: 4rem 10px auto 10px;
    padding-top: 2rem;
    padding-bottom: 2rem;
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -25,7 +25,6 @@ body {
    width: 100px;
    height: 70px;
    font: 35px solid;
-   border-radius:25px;
 }
 
 .link {
