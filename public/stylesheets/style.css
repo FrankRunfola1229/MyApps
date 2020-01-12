@@ -22,8 +22,9 @@ body {
 .row div {
    padding: 0px;
    margin: auto;
-   height: 100px;
+   width: 100px;
    height: 70px;
+   border: 1px solid black;
 }
 
 a {
@@ -41,7 +42,6 @@ table {
    margin: auto;
    width: 50%;
 }
-
 
 .table thead th {
    font-size: 150%;
