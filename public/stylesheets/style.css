@@ -11,6 +11,7 @@ body {
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
    box-shadow: 5px 55px 50px -20px #b6b6b6;
 }
+
 .landing-container {
    background-color: whitesmoke;
    width: 85%;
@@ -28,11 +29,8 @@ body {
 .row div {
    margin-left: auto;
    margin-right: auto;
-   vertical-align: middle;
    padding: 0px;
    margin:auto;
-   width: 100px;
-   height: 70px;
    font: 35px solid;
 }
 
