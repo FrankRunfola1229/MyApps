@@ -1,11 +1,11 @@
 body {
    text-align: center;
-   background-color: whitesmoke;
+   background-color: grey;
 }
 
 .container-fluid {
    background-color: white;
-   width: 70%;
+   width: 85%;
    margin: 4rem auto auto auto;
    padding: 2rem 0px;
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -13,9 +13,9 @@ body {
 }
 
 .row {
-   width: 60%;
+   width: 50%;
    margin: auto;
-   justify-content: center;
+   justify-content: between;
 }
 
 .row div {
