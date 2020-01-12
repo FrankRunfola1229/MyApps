@@ -1,16 +1,16 @@
 body {
    text-align: center;
+   background-color: whitesmoke;
 }
 
 .container-fluid {
-   background-color: darkgray;
+   background-color: white;
    width: 90%;
    margin: 4rem auto auto auto;
    padding-top: 2rem;
    padding-bottom: 2rem;
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
    box-shadow: 5px 55px 50px -20px #b6b6b6;
-   border-radius: 25px;
 }
 
 
@@ -24,8 +24,8 @@ body {
    padding: 0px;
    width: 100px;
    height: 70px;
-   font: 20px solid;
-   border: 1px solid black;
+   font: 35px solid;
+   border-radius:25px;
 }
 
 .link {
