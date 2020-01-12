@@ -11,7 +11,7 @@ body {
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
    box-shadow: 5px 55px 50px -20px #b6b6b6;
    border-radius: 25px;
-}
+
 
 .row {
    width: 50%;
@@ -23,12 +23,13 @@ body {
    width: 100px;
    height: 70px;
    border: 1px solid black;
-   border-radius: 25px;
+   border-radius: 20px;
 }
 
 .link {
    text-align: center;
-   font: 1.5vw solid;
+   font: 1.8vw solid;
+   border-radius: 20px;
 }
 
 table {
