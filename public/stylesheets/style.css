@@ -6,7 +6,7 @@ body {
 .container-fluid {
    background-color: white;
    width: 90%;
-   margin: 4rem auto auto auto;
+   margin: 4rem 5px auto 5px;
    padding-top: 2rem;
    padding-bottom: 2rem;
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
