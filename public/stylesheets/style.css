@@ -14,7 +14,7 @@ body {
 
 .landing-container {
    background-color: whitesmoke;
-   width: 75%;
+   width: 95%;
    height: 700px;
    margin: 2rem auto auto auto;
    padding: 2rem 0px;
@@ -23,7 +23,7 @@ body {
 }
 
 .row {
-   width: 75%;
+   width: 50%;
    margin: auto;
    justify-content: between;
    vertical-align: middle;
