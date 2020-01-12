@@ -14,7 +14,7 @@ body {
 
 .landing-container {
    background-color: whitesmoke;
-   width: 85%;
+   width: 95%;
    margin: 2rem auto auto auto;
    padding: 2rem 0px;
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -23,7 +23,7 @@ body {
 .row {
    width: 50%;
    margin: auto;
-   justify-content: center;
+   justify-content: between;
 }
 
 .row div {
