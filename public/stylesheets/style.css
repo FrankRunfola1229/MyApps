@@ -22,9 +22,10 @@ body {
 }
 
 .row {
-   width: 35;
+   width: 35%;
    margin: auto;
    justify-content: between;
+   vertical-align: middle;
    border: .5px solid grey;
 }
 
@@ -33,7 +34,6 @@ body {
    font-size: 3rem;
    text-align: center;
    height: 2em;
-   vertical-align: middle;
 }
 
 img {
