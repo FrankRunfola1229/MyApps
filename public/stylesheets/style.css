@@ -20,16 +20,17 @@ body {
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
    box-shadow: 5px 55px 50px -20px #b6b6b6;
 }
+
 .row {
-   width: 70%;
+   width: 50%;
    margin: auto;
    justify-content: between;
    border: .5px solid grey;
 }
 
 .row div {
-   margin:5px;
-   font-size: 35px;
+   margin: 5px;
+   font-size: 3rem;
    text-align: center;
    height: 2em;
 }
@@ -37,6 +38,7 @@ body {
 img {
    width:30%;
    height:90%;
+   margin:auto;
 }
 
 .link {
