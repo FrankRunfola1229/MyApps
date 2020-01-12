@@ -1,10 +1,10 @@
 body {
    text-align: center;
-   background-color: grey;
+   background-color: lightgrey;
 }
 
 .container-fluid {
-   background-color: white;
+   background-color: whitesmoke;
    width: 85%;
    margin: 4rem auto auto auto;
    padding: 2rem 0px;
