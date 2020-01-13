@@ -22,13 +22,13 @@ body {
 }
 
 .card {
-   margin-top:10px;
+   margin-top:10px auto auto auto;
    width:85%;
 }
 
 img {
-   width:150px;
-   height:200px;
+   width:130px;
+   height:180px;
 }
 
 .link {
