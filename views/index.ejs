@@ -1,50 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <%- include('partials/head') %>
-</head>
-
-<body>
-  <%- include('partials/nav') %>
-
-  <div class="landing-container">
-    <h2>Choose A Category..</h2>
-    <hr>
-
-<div class="card-columns">
-  <div class="card">
-     <img class="card-img-top" src="https://thumbs.tdreamstime.com/z/american-football-quarterback-throw-shield-cartoon-37607471.jpg">
-     <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <a href="/passing" class="btn btn-primary">Passing Yards</a>
-     </div>
-  </div> 
-  
-  <div class="card">
-     <img class="card-img-top" src="https://express-images.franklymedia.com/4294/sites/65/2019/12/20062404/Green-and-gold-football-150x138.png">
-     <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <a href="/rushing" class="btn btn-primary">Rushing Yards</a>
-     </div>
-  </div>
-
-  <div class="card">
-     <img class="card-img-top" src="https://d1yn1kh78jj1rr.cloudfront.net/image/preview/rDtN98Qoishumwih/american-football-wide-receiver-catching-ball-cartoon_7JEn2S_SB_PM.jpg">
-     <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <a href="/receiving" class="btn btn-primary">Receiving Yards</a>
-     </div>
-  </div>
- </div>
-
-  <footer>
-    <%- include('partials/footer') %>
-  </footer>
-
-  <%- include('partials/scripts') %>
-  </div>
-
-</body>
-
+   <head>
+      <%- include('partials/head') %>
+   </head>
+   <body>
+      <%- include('partials/nav') %>
+      <div class="landing-container">
+         <h2>Choose A Category..</h2>
+         <hr>
+         <div class="card-columns">
+            <div class="card">
+               <img class="card-img-top" src="https://images.saatchiart.com/saatchi/297296/art/2064334/1175094-32.jpg">
+               <div class="card-body">
+                  <a href="/passing" class="btn btn-primary">Passing Yards</a>
+               </div>
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="https://express-images.franklymedia.com/4294/sites/65/2019/12/20062404/Green-and-gold-football-150x138.png">
+               <div class="card-body">
+                  <a href="/rushing" class="btn btn-primary">Rushing Yards</a>
+               </div>
+            </div>
+            <div class="card">
+               <img class="card-img-top" src="https://d1yn1kh78jj1rr.cloudfront.net/image/preview/rDtN98Qoishumwih/american-football-wide-receiver-catching-ball-cartoon_7JEn2S_SB_PM.jpg">
+               <div class="card-body">
+                  <a href="/receiving" class="btn btn-primary">Receiving Yards</a>
+               </div>
+            </div>
+         </div>
+         <footer>
+            <%- include('partials/footer') %>
+         </footer>
+         <%- include('partials/scripts') %>
+      </div>
+   </body>
 </html>
