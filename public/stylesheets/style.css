@@ -6,33 +6,27 @@ body {
 .container {
    justify-content: center;
    width: 100%;
-   margin: auto auto auto auto;
+   margin: 5rem auto auto auto;
    padding: 4em 20px;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .row {
    width: auto;
-   border: 2px solid black;
-   padding: 1px;
+
+   padding: 3px;
 }
 
-.cards {
-   justify-content: center;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-}
-.cards img {
-   margin: 10px;
-   width: 200px;
-   height: 150px;
-   border: 2px solid #000;
-   box-shadow: 3px 3px 30px 0px rgba(0, 0, 0, 0.3);
+img {
+   border: 4px solid red;
+   width: 50px;
+   height: 50px;
 }
 
-.flex-container {
-   justify-content: center;
+.MyButton {
+   width: 100px;
+   height: 100px;
+   border: 2px solid blue;
 }
 
 table {
