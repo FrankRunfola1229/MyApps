@@ -22,12 +22,12 @@ body {
 
 .card {
    margin: 10px auto auto auto;
-   width:95%;
+   width:90%;
    height:300px;
 }
 
 img {
-   height:175px;
+   height:200px;
    width: 60px;
 }
 
