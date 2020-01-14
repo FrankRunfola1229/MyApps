@@ -23,9 +23,9 @@ body {
 
 .card {
    margin: 10px auto auto auto;
-   box-shadow: 0 15px 20px 0 rgba(0,0,0,0.2)
-   width: 85%;
-   height:85%
+   box-shadow: 0 15px 20px 0 rgba(0,0,0,0.2);
+   width: 70%;
+   height:60%
 }
 
 .card:hover {
