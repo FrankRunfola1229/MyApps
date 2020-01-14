@@ -28,9 +28,9 @@ body {
    height: 40%;
 }
 .card-img-top {
-   height: 11em;
-   width: 135px;
-   margin: auto;
+   height: 12em;
+   width: 140px;
+   margin: 10px auto;
 }
 
 .card:hover {
