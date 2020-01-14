@@ -15,19 +15,24 @@ app.get("/", function(req, res) {
    res.render("index")
 })
 
-// rushing route
-app.get("/rushing", function(req, res) {
-   res.render("rushing")
-})
-
-// root passing
+// passing route
 app.get("/passing", function(req, res) {
    res.render("passing")
 })
 
 // rushing route
+app.get("/rushing", function(req, res) {
+   res.render("rushing")
+})
+
+// receiving route
 app.get("/receiving", function(req, res) {
    res.render("receiving")
+})
+
+// defense route
+app.get("/defense", function(req, res) {
+   res.render("defense")
 })
 
 var port = process.env.PORT || 3000
