@@ -7,11 +7,13 @@
 
 <body>
   <%- include('partials/nav') %>
+
   <div class="landing-container">
     <h2>Choose A Category..</h2>
     <hr>
+
     <div class="card-group">
-      <div class="card">
+      <div class="card text-center">
         <img class="card-img-top" src="https://d1yn1kh78jj1rr.cloudfront.net/image/preview/rDtN98Qoishumwih/american-football-quarterback-qb-throwing-cartoon_XJRihH_SB_PM.jpg">
         <div class="card-body">
           <a href="/passing" class="btn btn-primary">Passing Yards</a>
@@ -29,13 +31,25 @@
           <a href="/receiving" class="btn btn-primary">Receiving Yards</a>
         </div>
       </div>
+      <div class="card">
+        <img class="card-img-top" src="https://www.graphicsfactory.com/clip-art/image_files/image/5/1436895-american_football_player_squat_front.jpg">
+        <div class="card-body">
+          <a href="/defense" class="btn btn-primary">Defense</a>
+        </div>
+      </div>
+
     </div>
-            
+
+
     <footer>
       <%- include('partials/footer') %>
     </footer>
     <%- include('partials/scripts') %>
   </div>
+
+
+
+
 </body>
 
 </html>
