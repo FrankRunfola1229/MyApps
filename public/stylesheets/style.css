@@ -22,8 +22,13 @@ body {
 
 .card {
    margin: 10px auto auto auto;
+   box-shadow: 0 15px 20px 0 rgba(0,0,0,0.2)
    width: 50%;
    height: 50%
+}
+
+.card:hover {
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
 }
 
 .link {
