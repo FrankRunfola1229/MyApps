@@ -22,13 +22,8 @@ body {
 
 .card {
    margin: 10px auto auto auto;
-   width: 90%;
-   height: 300px;
-}
-
-img {
-   height: 200px;
-   width: 60px;
+   width: 85%;
+   height: 250%;
 }
 
 .link {
