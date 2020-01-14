@@ -13,8 +13,8 @@ body {
 }
 
 .landing-container {
-   width: 50%;
-   height: 50%;
+   width: 95%;
+   height: 100%;
    margin: 2rem auto auto auto;
    padding: 2rem 0px;
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -31,7 +31,6 @@ body {
 .card:hover {
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
 }
-
 
 .link {
    width: 100%;
