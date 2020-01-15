@@ -27,7 +27,7 @@ body {
    height: 40%;
 }
 .card-img-top {
-   height: 60%;
+   height: 125px;
    width: 55%
    margin: 5px auto 0 auto;
 }
