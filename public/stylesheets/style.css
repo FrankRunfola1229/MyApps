@@ -22,13 +22,13 @@ body {
 .card {
    margin: 5px auto 0 auto;
    width: 85%;
-   height: 30%;
+   height: 35%;
    border: none;
 }
 
 .card-img-top {
-   height: 30%;
-   width: 50%;
+   height: 35%;
+   width: 55%;
    margin: 5px auto 0 auto;
 }
 
