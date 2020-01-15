@@ -25,11 +25,11 @@ body {
    margin: 5px auto 0 auto;
    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2);
    width: 95%;
-   height: 40%;
+   height: 50;
 }
 .card-img-top {
    height: 12em;
-   width: 175px;
+   width: 75%;
    margin: 10px auto 0 auto;
 }
 
