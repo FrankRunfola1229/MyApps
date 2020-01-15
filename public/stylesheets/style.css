@@ -23,7 +23,9 @@ body {
    margin: 5px auto 0 auto;
    width: 85%;
    height: 30%;
+   border: none;
 }
+
 .card-img-top {
    height: 30%;
    width: 50%;
