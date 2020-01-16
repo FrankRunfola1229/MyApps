@@ -39,8 +39,8 @@ body {
 .card-img-top {
    height: 65%;
    width: 55%;
-   Padding:50px;
-   margin: 5px auto 0 auto;
+   padding: 0px;
+   margin: 8px auto 0px auto;
 }
 
 .card:hover {
