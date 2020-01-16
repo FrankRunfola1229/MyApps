@@ -27,7 +27,7 @@ body {
    width: 350px;
    height: 230px;
    border: none;
-   box-shadow: 0px 1px 5px #c9c7c7;
+   /**box-shadow: 0px 1px 5px #c9c7c7;**/
    background-color: #FBFBFF;
    vertical-align: middle;
 }
