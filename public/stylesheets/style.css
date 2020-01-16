@@ -23,7 +23,7 @@ body {
 }
 
 .card {
-   margin: 5px auto 0 auto;
+   margin: auto 5px;
    width: 350px;
    height: 230px;
    border: none;
@@ -132,7 +132,7 @@ table {
       justify-content: space-between;
    }
    .card {
-      margin: 20px auto;
+      margin: 10px auto;
    }
 
    .card-img-top {
