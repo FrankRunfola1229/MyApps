@@ -31,7 +31,7 @@ body {
    vertical-align: middle;
 }
 .card-body {
-   margin: 5px auto;
+   margin: 0px auto;
    vertical-align: middle;
    flex: none;
    height: 20px;
@@ -132,7 +132,7 @@ table {
       justify-content: space-between;
    }
    .card {
-      margin: 50px 20px;
+      margin: 20px auto;
    }
 
    .card-img-top {
