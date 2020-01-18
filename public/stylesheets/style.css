@@ -34,12 +34,14 @@ body {
 .card a {
    padding: 30% 85%;
    margin:auto;
+   Border: 1px solid brown;
 }
 .card-body {
    margin: 0px auto;
    vertical-align: middle;
    flex: none;
    height: 20px;
+   Border: 1px solid green;
 }
 .card-img-top {
    height: 65%;
