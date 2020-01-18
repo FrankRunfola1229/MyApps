@@ -32,7 +32,8 @@ body {
    vertical-align: middle;
 }
 .card a {
-   padding: 20% 75%;
+   padding: 30% 85%;
+   margin:auto;
 }
 .card-body {
    margin: 0px auto;
