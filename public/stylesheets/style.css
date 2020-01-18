@@ -31,6 +31,9 @@ body {
    background-color: whitesmoke;
    vertical-align: middle;
 }
+.card a {
+   padding: 50px;
+}
 .card-body {
    margin: 0px auto;
    vertical-align: middle;
