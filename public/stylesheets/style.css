@@ -22,35 +22,6 @@ body {
    box-shadow: .8px 55px 50px -20px #b6b6b6;
 }
 
-.card {
-   margin: 0px auto;
-   width: 370px;
-   height: 230px;
-   border: none;
-   box-shadow: 0px 3px 5px 1px #c9c7c7;
-   background-color: whitesmoke;
-   vertical-align: middle;
-}
-.card a {
-   padding: 30% 85%;
-   margin:auto;
-   Border: 1px solid brown;
-}
-.card-body {
-   margin: 0px auto;
-   vertical-align: middle;
-   flex: none;
-   height: 20px;
-   Border: 1px solid green;
-}
-.card-img-top {
-   height: 65%;
-   width: 55%;
-   padding: 0px;
-   margin: 8px auto 0px auto;
-   border: 1px solid rgba(53,49,51,0.32);
-}
-
 .card:hover {
    box-shadow: 0 5px 10px 0 rgba(49, 48, 49, 0.486);
 }
