@@ -42,7 +42,7 @@ body {
    width: 55%;
    padding: 0px;
    margin: 8px auto 0px auto;
-   border: 1px solid black;
+   border: 1px solid rgba(53,49,51,0.32);
 }
 
 .card:hover {
