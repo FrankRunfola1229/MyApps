@@ -1,6 +1,18 @@
-<!doctype html>
-<title>Example</title>
-<style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <%- include('partials/head') %>
+   <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+   <%- include('partials/nav') %>
+
+   <!-- **************** CONTAINER ********************-->
+   <div class="container-fluid">
+
+      <style>
 .container { 
   display: flex;
   flex-direction: row;
@@ -38,3 +50,19 @@ body {
   <div class="green">5</div>
   <div class="blue">6</div>
 </div>
+
+      <footer>
+         <%- include('partials/footer') %>
+      </footer>
+   </div>
+
+   <script type="text/javascript" src="javascripts/passing.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!doctype html>
+<title>Example</title>
