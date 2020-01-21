@@ -35,6 +35,10 @@ app.get("/defense", function(req, res) {
    res.render("defense")
 })
 
+app.get("/flex", function(req,res) {
+   res.render("flex")
+})
+
 var port = process.env.PORT || 3000
 
 app.listen(port, function() {
