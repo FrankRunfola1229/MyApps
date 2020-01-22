@@ -4,77 +4,99 @@
 <head>
   <%- include('partials/head') %>
   <style>
-     .card {
-       margin: 0px auto;
-       width: 95%;
-       height: 230px;
-       border: none;
-       box-shadow: 0px 3px 5px 1px #c9c7c7;
-       background-color: whitesmoke;
-       vertical-align: middle;
-     }
-     .card-body {
-       margin: 0px auto;
-       vertical-align: middle;
-       flex: none;
-       Padding: 0px;
-       Width: 45%;
-     }
-     .card-body a{
-       width:100%
-     }
-     .card-img-top {
-       height: 75%;
-       width: 45%;
-       padding: 0px;
-       margin: 8px auto 5px auto;
-       border: .2px solid rgba(53,49,51,0.32);
-       border-radius: 5%
-     }
+    .card {
+
+      margin: 10px auto;
+      width: 270px;
+      height: 230px;
+      border: none;
+      box-shadow: 0px 3px 5px 1px #c9c7c7;
+      background-color: whitesmoke;
+      vertical-align: middle;
+
+    }
+
+    .card-body {
+      margin: 0px auto;
+      vertical-align: middle;
+      Padding: 0px;
+    }
+
+    .card-body a {
+      width: 100%
+    }
+
+    .card-img-top {
+      height: 75%;
+      width: 200px;
+      padding: 0px;
+      margin: 8px auto 5px auto;
+      border-radius: 5%
+    }
+
+
+    @media (min-width: 576px) {
+      .card {
+        margin: 10px 20px;
+        width: 270px;
+        height: 230px;
+        border: none;
+        box-shadow: 0px 3px 5px 1px #c9c7c7;
+        background-color: whitesmoke;
+        vertical-align: middle;
+
+      }
+    }
   </style>
 </head>
 
 <body>
   <%- include('partials/nav') %>
-  
+
+  <div class="container" style="margin-top:200px">
+
+
+  </div>
+
   <div class="landing-container">
-    <h5 class="my-4 font-weight-bold">Choose A Category</h5>
-    
+    <h5 class="font-weight-bold">Choose A Category</h5>
     <!------------------------->
     <!--    CARD GROUP       -->
     <!------------------------->
-    <div class="card-group">
-      <div class="card align-items-middle">
-        <img class="card-img-top" src="https://img.pngio.com/3dqb-drew-brees-png-hd-358_309.png">
-        <div class="card-body">
-          <a href="/passing" class="btn btn-dark">Passing Yards</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://static.clubs.nfl.com/image/private/t_editorial_squared_6_desktop/f_png/nfl100/sathyja1arm00kfpzieb.png">
-        <div class="card-body">
-          <a href="/rushing" class="btn btn-dark">Rushing Yards</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://static.clubs.nfl.com/image/private/t_editorial_squared_6_desktop/w_400,f_png/nfl100/gnu3tgv2vuqwev6eiuju.png">
-        <div class="card-body">
-          <a href="/receiving" class="btn btn-dark">Receiving Yards</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://www.seekpng.com/png/detail/159-1591343_rob-gronkowski-render-comments-rob-gronkowski-transparent-patriots.png">
-        <div class="card-body">
-          <a href="/tightend" class="btn btn-dark">Tightend</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://png2.cleanpng.com/sh/2c8f918369be2a01c11564bdb0bcdfa7/L0KzQYm3VsA0N6VugJH0aYP2gLBuTfFubaNue9N3LXbyf8XpgfxtNZlqhN9udIOwcsbthvFtd15ngd51cz3xdr20VfIyPGM1faNrOEbmdIO1UcIzPGQ9SKk6NUK7QIW8V8k0P2Y6TJD5bne=/kisspng-american-football-helmets-buffalo-bills-nfl-5b1420e1b86cd2.1224380715280457937554.png">
-        <div class="card-body">
-          <a href="/defense" class="btn btn-dark">Defense</a>
-        </div>
+
+    <div class="card align-items-middle">
+      <img class="card-img-top" src="https://img.pngio.com/3dqb-drew-brees-png-hd-358_309.png">
+      <div class="card-body">
+        <a href="/passing" class="btn btn-dark">Passing Yards</a>
       </div>
     </div>
+    <div class="card">
+      <div class="card-body">
+        <img class="card-img-top" src="https://static.clubs.nfl.com/image/private/t_editorial_squared_6_desktop/f_png/nfl100/sathyja1arm00kfpzieb.png">
+
+        <a href="/rushing" class="btn btn-dark">Rushing Yards</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://static.clubs.nfl.com/image/private/t_editorial_squared_6_desktop/w_400,f_png/nfl100/gnu3tgv2vuqwev6eiuju.png">
+      <div class="card-body">
+        <a href="/receiving" class="btn btn-dark">Receiving Yards</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://www.seekpng.com/png/detail/159-1591343_rob-gronkowski-render-comments-rob-gronkowski-transparent-patriots.png">
+      <div class="card-body">
+        <a href="/tightend" class="btn btn-dark">Tightend</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top"
+        src="https://png2.cleanpng.com/sh/2c8f918369be2a01c11564bdb0bcdfa7/L0KzQYm3VsA0N6VugJH0aYP2gLBuTfFubaNue9N3LXbyf8XpgfxtNZlqhN9udIOwcsbthvFtd15ngd51cz3xdr20VfIyPGM1faNrOEbmdIO1UcIzPGQ9SKk6NUK7QIW8V8k0P2Y6TJD5bne=/kisspng-american-football-helmets-buffalo-bills-nfl-5b1420e1b86cd2.1224380715280457937554.png">
+      <div class="card-body">
+        <a href="/defense" class="btn btn-dark">Defense</a>
+      </div>
+    </div>
+
 
     <footer>
       <%- include('partials/footer') %>
@@ -83,4 +105,5 @@
   </div>
 
 </body>
+
 </html>
