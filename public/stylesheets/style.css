@@ -15,6 +15,7 @@ body {
 /**         LANDING PAGE START              **/
 /*********************************************/
 .landing-container {
+   display:flex;
    width: 95%;
    height: 100%;
    margin: 2rem auto auto auto;
