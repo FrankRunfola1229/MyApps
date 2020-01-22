@@ -11,7 +11,9 @@
       justify-content: space-around;
       width: 100%;
       box-shadow: .8px 55px 50px -20px #b6b6b6;
-      margin: 30px auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
     }
 
     .card {
@@ -31,8 +33,9 @@
       border-radius: 5%
     }
 
-    h4 {
+    h6 {
       margin-top: 70px;
+      margin-bottom: 15px;
     }
 
     .landing-container a {
@@ -76,15 +79,14 @@
 
     @media only screen and (max-width: 380px) {
       .card {
-        height: 140px;
+        height: 150px;
         width: 140px;
       }
 
       img {
-        height: 100px;
+        height: 110px;
         width: 90px;
       }
-
     }
   </style>
 </head>
@@ -92,7 +94,7 @@
 <body>
   <%- include('partials/nav') %>
 
-  <h4 class="font-weight-bold">Choose A Category </h4>
+  <h6 class="font-weight-bold">Choose A Category </h6>
 
   <div class="landing-container">
     <a href="\passing">
@@ -119,15 +121,7 @@
         <h5>Defense</h5>
       </div>
     </a>
-
-
-
-
   </div>
-
-
-
-
 
   <footer>
     <%- include('partials/footer') %>
