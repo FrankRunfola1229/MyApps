@@ -28,7 +28,6 @@
       height: 210px;
       width: 220px;
       margin: 8px auto 5px auto;
-      border: .2px solid rgba(53, 49, 51, 0.32);
       border-radius: 5%
     }
 
@@ -40,26 +39,52 @@
       color: black
     }
 
-    @media only screen and (max-width: 450px) {
+    @media only screen and (max-width: 560px) {
       h5 {
         font-size: 1rem;
       }
 
       .card {
-        margin: 3px;
-        height: 150px;
-        width: 150px;
+        margin: 10px;
+        height: 200px;
+        width: 200px;
       }
 
       img {
-        height: 110px;
-        width: 110px;
+        height: 150px;
+        width: 150px;
         margin: 8px auto 5px auto;
       }
 
       .table tbody td {
         font-size: 75%;
       }
+    }
+
+    @media only screen and (max-width: 460px) {
+
+      .card {
+        height: 180px;
+        width: 170px;
+      }
+
+      img {
+        height: 130px;
+        width: 110px;
+      }
+    }
+
+    @media only screen and (max-width: 380px) {
+      .card {
+        height: 140px;
+        width: 140px;
+      }
+
+      img {
+        height: 100px;
+        width: 90px;
+      }
+
     }
   </style>
 </head>
