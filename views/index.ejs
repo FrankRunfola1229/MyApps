@@ -4,7 +4,13 @@
 <head>
   <%- include('partials/head') %>
   <style>
-     .card-group {
+     .landing-container {
+       display:flex;
+       width: 95%;
+       height: 100%;
+       margin: 2rem auto auto auto;
+       padding: 2rem 0px;
+       box-shadow: .8px 55px 50px -20px #b6b6b6;
        justify-content: space-between;
      }
      .card {
@@ -16,17 +22,11 @@
        background-color: whitesmoke;
        vertical-align: middle;
      }
-     .card-body {
-       margin: 0px auto;
-       vertical-align: middle;
-       flex: none;
-       Padding: 0px;
-       Width: 45%;
-     }
+    
      .card-body a{
        width:100%
      }
-     .card-img-top {
+     img {
        height: 75%;
        width: 45%;
        padding: 0px;
