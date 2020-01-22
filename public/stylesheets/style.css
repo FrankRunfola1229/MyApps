@@ -3,6 +3,9 @@ body {
    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+h2 {
+   margin-top: 15px;
+}
 .container-fluid {
    background-color: whitesmoke;
    width: 90%;
