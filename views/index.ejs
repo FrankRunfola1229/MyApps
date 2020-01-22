@@ -14,6 +14,7 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 30px;
+      padding-bottom: 20px;
     }
 
     .card {
@@ -33,17 +34,11 @@
       border-radius: 5%
     }
 
-    h6 {
-      margin-top: 70px;
-      margin-bottom: 15px;
-    }
-
     .landing-container a {
       color: black
     }
 
     @media only screen and (max-width: 560px) {
-
       h5 {
         font-size: 1rem;
       }
@@ -57,7 +52,7 @@
       img {
         height: 150px;
         width: 150px;
-        margin: 8px auto 5px auto;
+        margin: 8px auto;
       }
 
       .table tbody td {
@@ -80,13 +75,25 @@
 
     @media only screen and (max-width: 380px) {
       .card {
+        height: 160px;
+        width: 150px;
+      }
+
+      img {
+        height: 120px;
+        width: 115px;
+      }
+    }
+
+    @media only screen and (max-width: 340px) {
+      .card {
         height: 150px;
-        width: 140px;
+        width: 130px;
       }
 
       img {
         height: 110px;
-        width: 90px;
+        width: 100px;
       }
     }
   </style>
@@ -95,7 +102,7 @@
 <body>
   <%- include('partials/nav') %>
 
-  <h6 class="font-weight-bold">Choose A Category </h6>
+  <h5 class="chooseTitle">Choose A Category </h5>
 
   <div class="landing-container">
     <a href="\passing">

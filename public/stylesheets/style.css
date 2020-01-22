@@ -6,6 +6,12 @@ body {
 h2 {
    margin-top: 15px;
 }
+
+.chooseTitle {
+   font: 20px solid black;
+   margin-top: 70px;
+   margin-bottom: 15px;
+}
 .container-fluid {
    background-color: whitesmoke;
    width: 90%;
