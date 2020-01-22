@@ -13,16 +13,7 @@ body {
 
 /*********************************************
 /**         LANDING PAGE START              **/
-/*********************************************/
-.landing-container {
-   display:flex;
-   width: 95%;
-   height: 100%;
-   margin: 2rem auto auto auto;
-   padding: 2rem 0px;
-   box-shadow: .8px 55px 50px -20px #b6b6b6;
-}
-
+/*********************************************/ 
 .card:hover {
    box-shadow: 0 5px 10px 0 rgba(49, 48, 49, 0.486);
 }
