@@ -6,21 +6,20 @@
    <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 
-<body>
-   <%- include('partials/nav') %>
-
-   <!-- **************** CONTAINER ********************-->
-  
 <style>
+
+body {
+  margin: 0;
+  text-align:center;
+}
 .container { 
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: flex-center;
   background: beige;
-  height: 70%;
   flex-wrap: wrap;
   margin: 100px 100px;
-  }
+}
 .red {
   background: orangered;
 }
@@ -40,14 +39,13 @@
 .card{
   Width:100px;
 }
-body {
-  margin: 0;
-  Text-align:center;
-}
 </style>
 
-  <div class="container">
-     <div class="card align-items-middle">
+ <body>
+   <%- include('partials/nav') %>
+  
+    <div class="container">
+      <div class="card align-items-middle">
         <img class="card-img-top" src="https://img.pngio.com/3dqb-drew-brees-png-hd-358_309.png">
       </div>
       <div class="card align-items-middle">
@@ -65,25 +63,40 @@ body {
        <div class="card align-items-middle">
         <img class="card-img-top" src="https://img.pngio.com/3dqb-drew-brees-png-hd-358_309.png">
       </div>
-  </div>
+      <div class="card align-items-middle">
+        <img class="card-img-top" src="https://img.pngio.com/3dqb-drew-brees-png-hd-358_309.png">
+      </div>
+      <div class="card align-items-middle">
+        <img class="card-img-top" src="https://img.pngio.com/3dqb-drew-brees-png-hd-358_309.png">
+      </div>
+       <div class="card align-items-middle">
+        <img class="card-img-top" src="https://img.pngio.com/3dqb-drew-brees-png-hd-358_309.png">
+      </div>
+      <div class="card align-items-middle">
+        <img class="card-img-top" src="https://img.pngio.com/3dqb-drew-brees-png-hd-358_309.png">
+      </div>
+      <div class="card align-items-middle">
+        <img class="card-img-top" src="https://img.pngio.com/3dqb-drew-brees-png-hd-358_309.png">
+      </div>
+       <div class="card align-items-middle">
+        <img class="card-img-top" src="https://img.pngio.com/3dqb-drew-brees-png-hd-358_309.png">
+      </div>
+    </div>
   
-  <div class="container">
-    <div class="red">1</div>
-    <div class="green">2</div>
-    <div class="blue">3</div>
-    <div class="red">4</div>
-    <div class="green">5</div>
-    <div class="blue">6</div>
-  </div>
-     
-      
+    <div class="container">
+      <div class="red">1</div>
+      <div class="green">2</div>
+      <div class="blue">3</div>
+      <div class="red">4</div>
+      <div class="green">5</div>
+      <div class="blue">6</div>
+    </div>
   
-<footer>
-  <%- include('partials/footer') %>
-</footer>
-   
+   <footer>
+     <%- include('partials/footer') %>
+   </footer>
 
-  <script type="text/javascript" src="javascripts/passing.js"></script>
+   <script type="text/javascript" src="javascripts/passing.js"></script>
 </body>
 
 </html>
