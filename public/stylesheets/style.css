@@ -94,22 +94,7 @@ table {
    .table tbody td {
       font-size: 80%;
    }
-}
 
-@media (min-width: 576px) {
-   .card-group {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-   }
-   .card {
-      margin: 5px 5px;
-   }
-
-   .card-img-top {
-      height: 65%;
-      width: 65%;
-    }
 }
 
 @media only screen and (max-width: 450px) {
