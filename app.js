@@ -15,6 +15,19 @@ app.get("/", function(req, res) {
    res.render("index")
 })
 
+// root route
+app.get("/nfl", function(req, res) {
+   res.render("nfl")
+})
+// root route
+app.get("/movies", function(req, res) {
+   res.render("movies")
+})
+// tools route
+app.get("/tools", function(req, res) {
+   res.render("tools")
+})
+
 // passing route
 app.get("/passing", function(req, res) {
    res.render("passing")
@@ -35,7 +48,7 @@ app.get("/defense", function(req, res) {
    res.render("defense")
 })
 
-app.get("/flex", function(req,res) {
+app.get("/flex", function(req, res) {
    res.render("flex")
 })
 
