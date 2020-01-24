@@ -6,7 +6,7 @@ const app = express()
 //==================================================================================================
 app.use(express.static("public")) //https://expressjs.com/en/starter/static-files.html
 app.use(express.static("data"))
-app.use(express.static("images"))
+app.use(express.static("Images"))
 
 // view engine setup
 app.set("view engine", "ejs")
