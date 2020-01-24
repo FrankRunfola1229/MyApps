@@ -164,7 +164,7 @@ table {
 @media only screen and (max-width: 470px) {
    .card {
       height: 200px;
-      width: 200px;
+      width: 190px;
    }
 
    img {
@@ -173,17 +173,6 @@ table {
    }
 }
 
-@media only screen and (max-width: 430px) {
-   .card {
-      height: 190px;
-      width: 185px;
-   }
-
-   img {
-      height: 155px;
-      width: 140px;
-   }
-}
 @media only screen and (max-width: 400px) {
    .table tbody td {
       font-size: 65%;
