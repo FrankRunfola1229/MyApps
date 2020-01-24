@@ -2,10 +2,11 @@ const express = require("express")
 const app = express()
 //==================================================================================================
 /// To serve static files such as images, CSS files, and JavaScript files,
-// use the express.static built-in middleware function in Express. (express.static(root, [options]))
+//  use the express.static built-in middleware function in Express. (express.static(root, [options]))
 //==================================================================================================
 app.use(express.static("public")) //https://expressjs.com/en/starter/static-files.html
-app.use(express.static("data")) //https://expressjs.com/en/starter/static-files.html
+app.use(express.static("data"))
+app.use(express.static("images"))
 
 // view engine setup
 app.set("view engine", "ejs")
