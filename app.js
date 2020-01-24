@@ -15,27 +15,34 @@ app.get("/", function(req, res) {
    res.render("index")
 })
 
-// root route
+// nfl route
 app.get("/nfl", function(req, res) {
    res.render("nfl")
 })
+
 // root route
 app.get("/movies", function(req, res) {
    res.render("movies")
 })
+
 // tools route
 app.get("/tools", function(req, res) {
    res.render("tools")
 })
 
+//familyTree route
+app.get("/familyTree", function(req, res) {
+   res.render("familyTree")
+})
+
+// music route
+app.get("/music", function(req, res) {
+   res.render("music")
+})
+
 // passing route
 app.get("/passing", function(req, res) {
    res.render("passing")
-})
-
-// rushing route
-app.get("/rushing", function(req, res) {
-   res.render("rushing")
 })
 
 // receiving route
