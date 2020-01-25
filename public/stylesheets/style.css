@@ -161,8 +161,8 @@ table {
 
 @media only screen and (max-width: 470px) {
    .card {
-      height: 180px;
-      width: 195px;
+      height: 170px;
+      width: 190px;
    }
    img {
       height: 125px;
