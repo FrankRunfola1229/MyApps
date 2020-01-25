@@ -35,7 +35,7 @@ h2 {
    margin: 10px 3px;
    height: 250px;
    width: 250px;
-   border: none;
+   border: 1px solid black;
    box-shadow: 2px 2px 2px 1.5px lightgrey;
    background-color: white;
    vertical-align: middle;
