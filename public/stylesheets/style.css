@@ -164,13 +164,9 @@ table {
       height: 225px;
       width: 195px;
    }
-   card-img-top {
-      Width: 160px;
-      Height: 100px;
-   }
    img {
       height: 150px;
-      width: 100px;
+      width: 135px;
    }
 
 @media only screen and (max-width: 400px) {
