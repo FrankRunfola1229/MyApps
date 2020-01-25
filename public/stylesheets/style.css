@@ -162,11 +162,11 @@ table {
 @media only screen and (max-width: 470px) {
    .card {
       height: 180px;
-      width: 175px;
+      width: 185px;
    }
    img {
-      height: 120px;
-      width: 120px;
+      height: 130px;
+      width: 130px;
    }
 
 @media only screen and (max-width: 400px) {
