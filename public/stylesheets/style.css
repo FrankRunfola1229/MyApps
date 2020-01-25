@@ -32,7 +32,7 @@ h2 {
 }
 
 .card {
-   margin: 5px 5px;
+   margin: 5px 3px;
    height: 250px;
    width: 250px;
    border: none;
@@ -156,7 +156,7 @@ table {
 @media only screen and (max-width: 470px) {
    .card {
       height: 170px;
-      width: 180px;
+      width: 185px;
    }
    img {
       height: 130px;
