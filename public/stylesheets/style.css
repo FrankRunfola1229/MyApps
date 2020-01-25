@@ -36,7 +36,7 @@ h2 {
    height: 250px;
    width: 250px;
    border: none;
-   /**box-shadow: 0px 2px 3px 2.5px #c9c7c7;**/
+   /**box-shadow: 0px 1px 1px 1.5px #c9c7c7;**/
    background-color: white;
    vertical-align: middle;
 }
@@ -156,7 +156,7 @@ table {
 @media only screen and (max-width: 470px) {
    .card {
       height: 170px;
-      width: 185px;
+      width: 140px;
    }
    img {
       height: 130px;
