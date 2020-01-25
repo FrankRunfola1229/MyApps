@@ -7,11 +7,6 @@ h2 {
    margin-top: 15px;
 }
 
-.chooseTitle {
-   font: 20px solid black;
-   margin-top: 70px;
-   margin-bottom: 5px;
-}
 .container-fluid {
    background-color: whitesmoke;
    width: 90%;
@@ -32,9 +27,7 @@ h2 {
    justify-content: space-around;
    width: 100%;
    box-shadow: .8px 55px 50px -20px #b6b6b6;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 30px;
+   margin: 75px auto auto 30px;
    padding-bottom: 20px;
 }
 
