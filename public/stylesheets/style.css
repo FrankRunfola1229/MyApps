@@ -50,8 +50,8 @@ h2 {
 img {
    height: 210px;
    width: 220px;
-   margin: 10px 5px;
-   border-radius: 5%;
+   margin: 10px 10px;
+   border-radius: 0%;
 }
 
 .landing-container a {
@@ -153,7 +153,6 @@ table {
    img {
       height: 180px;
       width: 150px;
-      margin: 8px auto;
    }
 
    .table tbody td {
