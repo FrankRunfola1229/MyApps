@@ -27,12 +27,12 @@ h2 {
    justify-content: space-around;
    width: 100%;
    box-shadow: .8px 55px 50px -20px #b6b6b6;
-   margin: 75px auto 30px auto;
+   margin: 70px auto 30px auto;
    padding-bottom: 20px;
 }
 
 .card {
-   margin: 5px 3px;
+   margin: 3px 3px;
    height: 250px;
    width: 250px;
    border: none;
