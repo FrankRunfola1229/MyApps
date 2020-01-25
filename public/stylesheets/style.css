@@ -179,6 +179,11 @@ table {
    .row {
       width: 95%;
    }
+   
+  img {
+      height: 130px;
+      width:  100px;
+   }
 }
 
 @media only screen and (max-width: 380px) {
