@@ -47,6 +47,11 @@ h2 {
    vertical-align: middle;
 }
 
+card-img-top {
+   Width: 75%;
+   Height: 75%;
+}
+
 img {
    height: 210px;
    width: 220px;
