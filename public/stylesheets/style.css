@@ -20,7 +20,7 @@ h2 {
 /*********************************************/
 
 .landing-container {
-   Background-color:lightgrey;
+   Background-color:white;
    display: flex;
    flex-wrap: wrap;
    align-items: center;
