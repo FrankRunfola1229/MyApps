@@ -27,7 +27,7 @@ h2 {
    justify-content: space-around;
    width: 100%;
    box-shadow: .8px 55px 50px -20px #b6b6b6;
-   margin: 75px auto auto 30px;
+   margin: 75px auto 30px auto;
    padding-bottom: 20px;
 }
 
@@ -156,7 +156,7 @@ table {
 @media only screen and (max-width: 470px) {
    .card {
       height: 170px;
-      width: 190px;
+      width: 180px;
    }
    img {
       height: 125px;
