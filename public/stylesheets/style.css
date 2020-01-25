@@ -165,7 +165,6 @@ table {
       height: 225px;
       width: 195px;
    }
-
    img {
       height: 130px;
       width:  100px;
@@ -175,14 +174,8 @@ table {
    .table tbody td {
       font-size: 65%;
    }
-
    .row {
       width: 95%;
-   }
-   
-  img {
-      height: 130px;
-      width:  100px;
    }
 }
 
@@ -191,7 +184,6 @@ table {
       height: 165px; in
       width: 165px;
    }
-
    img {
       height: 130px;
       width: 105px;
