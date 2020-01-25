@@ -152,7 +152,7 @@ table {
 
    img {
       height: 180px;
-      width: 150px;
+      width: 130px;
    }
 
    .table tbody td {
@@ -163,11 +163,11 @@ table {
 @media only screen and (max-width: 470px) {
    .card {
       height: 225px;
-      width: 190px;
+      width: 185px;
    }
 
    img {
-      height: 160px;
+      height: 170px;
       width: 90px;
    }
 }
