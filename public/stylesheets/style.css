@@ -67,7 +67,7 @@ a.btn:hover {
 }
 
 /*********************************************
-/**           LANDING PAGE END **/
+/**           Table                        **/
 /*********************************************/
 
 table {
@@ -162,7 +162,7 @@ table {
 
 @media only screen and (max-width: 470px) {
    .card {
-      height: 205px;
+      height: 225px;
       width: 190px;
    }
 
