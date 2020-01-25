@@ -47,11 +47,6 @@ h2 {
    vertical-align: middle;
 }
 
-card-img-top {
-   Width: 75%;
-   Height: 75%;
-}
-
 img {
    height: 210px;
    width: 220px;
@@ -170,9 +165,9 @@ table {
       height: 225px;
       width: 195px;
    }
-   img {
-      height: 130px;
-      width:  100px;
+   card-img-top {
+      Width: 160px;
+      Height: 100px;
    }
 
 @media only screen and (max-width: 400px) {
