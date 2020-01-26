@@ -1,79 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <%- include('partials/head') %>
+  </head>
 
-<head>
-  <%- include('partials/head') %>
-</head>
+  <body>
+    <%- include('partials/nav') %>
 
-<body>
-  <%- include('partials/nav') %>
+    <div class="landing-container">
+      <a href="\nfl">
+        <div class="card">
+          <img src="/images/movies.png" />
+          <h5>Sports</h5>
+        </div>
+      </a>
+      <a href="\movies">
+        <div class="card">
+          <img src=/images/movies.png" />
+          <h5>Movies</h5>
+        </div>
+      </a>
 
-  <div class="landing-container">
+      <a href="\tools">
+        <div class="card">
+          <img src="/images/tools.png" />
+          <h5>Useful Tools</h5>
+        </div>
+      </a>
 
-    <a href="\nfl">
-      <div class="card">
-        <img src="https://png.pngtree.com/svg/20170128/_american_football_853168.png">
-        <h5>Sports</h5>
-      </div>
-    </a>
-    <a href="\movies">
-      <div class="card">
-        <img src="https://i1.wp.com/legnor.com/wp-content/uploads/2018/10/video.jpg?fit=338%2C338&ssl=1">
-        <h5>Movies</h5>
-      </div>
-    </a>
+      <a href="\familyTree">
+        <div class="card">
+          <img src="/images/familyTree.png" />
+          <h5>Family Tree</h5>
+        </div>
+      </a>
 
-    <a href="\tools">
-      <div class="card">
-        <img src="https://i.dlpng.com/static/png/492379_preview.png">
-        <h5>Useful Tools</h5>
-      </div>
-    </a>
+      <a href="\music">
+        <div class="card">
+          <img src="/images/music.jpg" />
+          <h5>Music</h5>
+        </div>
+      </a>
 
-    <a href="\familyTree">
-      <div class="card">
-        <img src="http://www.jemome.com/cdn/2014/07/family-tree-to-download-icon_68354.png">
-        <h5>Family Tree</h5>
-      </div>
-    </a>
+      <a href="\computerScience">
+        <div class="card">
+          <img src="/images/computerScience.png" />
+          <h5>Computer Science</h5>
+        </div>
+      </a>
 
-    <a href="\music">
-      <div class="card">
-        <img src="https://previews.123rf.com/images/faysalfarhan/faysalfarhan1711/faysalfarhan171107108/88912006-music-icon-isolated-on-elegant-cyan-blue-round-button-abstract-illustration.jpg">
-        <h5>Music</h5>
-      </div>
-    </a>
-  
-    <a href="\computerScience">
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/480px-Circle-icons-computer.svg.png">
-        <h5>Computer Science</h5>
-      </div>
-    </a>
+      <a href="\geography">
+        <div class="card">
+          <img src="/images/geography.png" />
+          <h5>Geography</h5>
+        </div>
+      </a>
 
-    <a href="\geography">
-      <div class="card">
-         <img src="http://tenangodedoria.hidalgo.gob.mx/images/iconos/geo%20icon.png">
-         <h5>Geography</h5>
-      </div>
-    </a>
-   
-    <a href="\cars">
-      <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9Q0wBuqI2j9gNP3exUbVeeC2tiB51OeHw1q1VbhnwIptLUPx9">
-        <h5>Cars</h5>
-      </div>
-    </a>
+      <a href="\cars">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9Q0wBuqI2j9gNP3exUbVeeC2tiB51OeHw1q1VbhnwIptLUPx9"
+          />
+          <h5>Cars</h5>
+        </div>
+      </a>
+    </div>
 
+    <footer>
+      <%- include('partials/footer') %>
+    </footer>
 
-  </div>
-
-  <footer>
-    <%- include('partials/footer') %>
-  </footer>
-
-  <%- include('partials/scripts') %>
-
-</body>
-
+    <%- include('partials/scripts') %>
+  </body>
 </html>
