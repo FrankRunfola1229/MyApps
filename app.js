@@ -16,8 +16,8 @@ app.get("/", function (req, res) {
 })
 
 // nfl route
-app.get("/nfl", function (req, res) {
-   res.render("nfl")
+app.get("/sports", function (req, res) {
+   res.render("sports")
 })
 
 // root route
