@@ -45,7 +45,7 @@ h2 {
 img {
    height: 210px;
    width: 220px;
-   margin: 8px 3px;
+   margin: 8px auto;
 }
 
 .landing-container a {
