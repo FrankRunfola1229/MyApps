@@ -38,13 +38,14 @@ h2 {
    border: None;
    box-shadow: 2px 2px 2px 3px #c9c7c7;
    background-color: white;
-   vertical-align: middle;
+   vertical-align: middle; 
+   Padding: 0px;
 }
 
 img {
    height: 210px;
    width: 220px;
-   margin: 5px auto;
+   margin: 8px auto;
 }
 
 .landing-container a {
