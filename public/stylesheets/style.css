@@ -7,8 +7,6 @@ h2, h4{
    margin-top: 15px;
 }
 
-
-
 .container-fluid {
    background-color: whitesmoke;
    width: 90%;
@@ -36,9 +34,9 @@ h2, h4{
 .card {
    margin: 7px 3px;
    height: 250px;
-   width: 250px;
+   width: 255px;
    border: None;
-   box-shadow: 2px 2px 2px 2px #c9c7c7;
+   box-shadow: 2.5px 2px 2px 2.5px #c9c7c7;
    background-color: white;
    vertical-align: middle; 
    Padding: 0px 5px;
