@@ -46,7 +46,7 @@ nav-link {
 }
 
 .card {
-   margin: 7px 10px;
+   margin: 7px 7px;
    height: 185px;
    width: 185px;
    border: None;
@@ -181,13 +181,13 @@ table {
 
 @media only screen and (max-width: 470px) {
    .card {
-      height: 165px;
-      width: 165px;
+      height: 175px;
+      width: 175px;
    }
 
    img {
-      height: 120px;
-      width: 120px;
+      height: 135px;
+      width: 135px;
    }
 }
 
@@ -208,8 +208,8 @@ table {
    }
 
    img {
-      height: 105px;
-      width: 105px;
+      height: 110px;
+      width: 110px;
    }
 }
 
