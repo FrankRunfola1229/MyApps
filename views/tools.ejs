@@ -13,26 +13,6 @@
     <!-- **************** CONTAINER ********************-->
     <div class="container-fluid">
 
-        <!-- Modal HTML -->
-        <div id="myModal" class="modal fade">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">List Statistics</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p style="text-align:center" id="modalMsg"></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
         <!-- ROW 1 -->
         <form action="/compare-2-lists-difference-tool" method="POST" enctype="multipart/form-data" id="LDForm">
 
@@ -48,17 +28,7 @@
                         <div class="panel-body" style="padding: 0px">
                             <textarea id="txtBoxA" class="form-control LDSwitchArea" name="lstA" rows="10"></textarea>
                         </div>
-                        <div class="panel-footer clearfix">
-                            <div class="pull-left">
-                                <a id="mvA2B" class="btn btn-default" data-toggle="tooltip" title="Move A to B">A <i class="fa fa-arrow-right" aria-hidden="true"></i> B</a>
-                            </div>
-                            <div class="pull-right">
-                                <a href="javascript:;" onclick="copyLBtoClipboard('#copyListA')" id="copyListA" data-clipboard-action="copy" data-clipboard-target="#txtBoxA" class="btn btn-default" data-toggle="tooltip" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
-                                <a id="sortA" class="btn btn-default" data-toggle="tooltip" title="Sort"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i></a>
-                                <a id="statsA" class="btn btn-default" data-toggle="tooltip" title="Stats"><i class="fa fa-bar-chart" aria-hidden="true"></i></a>
-                                <a id="binA" class="btn btn-default" data-toggle="tooltip" title="Clear"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
 
@@ -71,17 +41,7 @@
                         <div class="panel-body" style="padding: 0px">
                             <textarea id="txtBoxB" class="form-control LDSwitchArea" name="lstB" rows="10"></textarea>
                         </div>
-                        <div class="panel-footer clearfix">
-                            <div class="pull-left">
-                                <a id="mvB2A" class="btn btn-default" data-toggle="tooltip" title="Move B to A">A <i class="fa fa-arrow-left" aria-hidden="true"></i> B</a>
-                            </div>
-                            <div class="pull-right">
-                                <a href="javascript:;" onclick="copyLBtoClipboard('#copyListB')" id="copyListB" data-clipboard-action="copy" data-clipboard-target="#txtBoxB" class="btn btn-default" data-toggle="tooltip" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
-                                <a id="sortB" class="btn btn-default" data-toggle="tooltip" title="Sort"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i></a>
-                                <a id="statsB" class="btn btn-default" data-toggle="tooltip" title="Stats"><i class="fa fa-bar-chart" aria-hidden="true"></i></a>
-                                <a id="binB" class="btn btn-default" data-toggle="tooltip" title="Clear"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -90,97 +50,11 @@
                 <input type="submit" form="LDForm" class="btn btn-lg btn-primary" value="Compare Lists">
             </div>
             <!-- </form> -->
-
-            <div class="row">
-                <div class="col-xs-12 text-right">
-                    <!-- Type=button prevents it submitting -->
-                    <button type="button" class="blue fa fa-2x fa-list pull-right" aria-hidden="true" data-toggle="tooltip" title="Options" id="btnConfig"></button>
-                    <button type="button" class="blue fa fa-2x fa-laptop pull-right" aria-hidden="true" data-toggle="tooltip" title="Switch View" id="LDSwitcher"></button>
-                </div>
-            </div>
-
-            <!-- END ROW 1 -->
-
-
-            <br />
-
-            <div class="col-md-12 col-xs-12" id="ldConfig" style="display:block;">
-                <input type="hidden" id="configView" name="configView" value="block">
-                <div class="col-md-3 col-xs-12">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="caseSen" name="caseSen" value=1 checked>
-                            Case Sensitive
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="ignoreSpace" name="ignoreSpace" value=1 checked>
-                            Ignore Begin End Spaces
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="ignoreExtra" name="ignoreExtra" value=1 checked>
-                            Ignore Extra Spaces
-                        </label>
-                    </div>
-                    <!-- <div class="checkbox"> -->
-                    <!-- <label> -->
-                    <!-- <input type="checkbox" id="ignoreDup" name="ignoreDup" value=1 > -->
-                    <!-- Ignore Duplicates -->
-                    <!-- </label> -->
-                    <!-- </div> -->
-                </div>
-                <div class="col-md-3 col-xs-12">
-
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="ignoreZero" name="ignoreZero" value=1>
-                            Ignore Leading Zeroes
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="lineNum" name="lineNum" value=1>
-                            Line Numbered
-                        </label>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-12">
-                    <div class="input-group">
-                        <span class="input-group-addon"><span class="fa  fa-sort-amount-asc"></span></span>
-                        <select class="form-control" id="sortOption" name="sortOption">
-                            <option value="no-sort" selected>No Sort</option>
-                            <option value="az">Sort A->z</option>
-                            <option value="za">Sort z->A</option>
-                        </select>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon"><span class="fa fa-font"></span></span>
-                        <select class="form-control" id="caseChange" name="caseChange">
-                            <option value="no-case" selected>No Change</option>
-                            <option value="capitalize">Capitalize</option>
-                            <option value="upper">Uppercase</option>
-                            <option value="lower">Lowercase</option>
-                        </select>
-                    </div>
-
-                </div>
-                <div class="col-md-3 col-xs-12">
-
-                </div>
-
-            </div>
         </form>
 
 
-
-
-
         <div class="row">
-            <div class="col-md-4 col-xs-12 LDSwitch2">
+            <div class="col-md-4 col-xs-12 ">
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h4>A Only <span id="linesAOnly" class="badge bdg-size pull-right">0</span></h4>
@@ -188,16 +62,11 @@
                     <div class="panel-body" style="padding: 0px">
                         <textarea id="txtAOnly" class="form-control" rows="10" placeholder="Values in A Only"></textarea>
                     </div>
-                    <div class="panel-footer clearfix">
-                        <div class="pull-right">
-                            <a href="javascript:;" onclick="copyLBtoClipboard('#copyAout')" id="copyAout" data-clipboard-action="copy" data-clipboard-target="#txtAOnly" class="btn btn-default" data-toggle="tooltip" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
-                            <a id="statsAOnly" class="btn btn-default" data-toggle="tooltip" title="Stats"><i class="fa fa-bar-chart" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
-            <div class="col-md-4 col-xs-12 LDSwitch2">
+            <div class="col-md-4 col-xs-12 ">
                 <div class="panel panel-danger">
                     <div class="panel-heading">
                         <h4>A &cap; B <span id="linesAuB" class="badge bdg-size pull-right">0</span></h4>
@@ -205,15 +74,10 @@
                     <div class="panel-body" style="padding: 0px">
                         <textarea id="txtAnB" class="form-control" rows="10" name="AunionB" placeholder="Values in A AND B"></textarea>
                     </div>
-                    <div class="panel-footer clearfix">
-                        <div class="pull-right">
-                            <a href="javascript:;" onclick="copyLBtoClipboard('#copyAuB')" id="copyAuB" data-clipboard-action="copy" data-clipboard-target="#txtAnB" class="btn btn-default" data-toggle="tooltip" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
-                            <a id="statsAnB" class="btn btn-default" data-toggle="tooltip" title="Stats"><i class="fa fa-bar-chart" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
-            <div class="col-md-4 col-xs-12 LDSwitch2">
+            <div class="col-md-4 col-xs-12">
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h4>B Only <span id="linesBOnly" class="badge bdg-size pull-right">0</span></h4>
@@ -221,21 +85,11 @@
                     <div class="panel-body" style="padding: 0px">
                         <textarea id="txtBOnly" class="form-control" rows="10" placeholder="Values in B Only"></textarea>
                     </div>
-                    <div class="panel-footer clearfix">
-                        <div class="pull-right">
-                            <a href="javascript:;" onclick="copyLBtoClipboard('#copyBout')" id="copyBout" data-clipboard-action="copy" data-clipboard-target="#txtBOnly" class="btn btn-default" data-toggle="tooltip" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
-                            <a id="statsBOnly" class="btn btn-default" data-toggle="tooltip" title="Stats"><i class="fa fa-bar-chart" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
                 </div>
             </div>
-
         </div>
 
 
-
-
-        <br />
         <div class="row">
             <div class="col-md-4 col-xs-12" id="adDiv1">
                 <div class="panel panel-success">
@@ -246,7 +100,7 @@
                     </script>
                 </div>
             </div>
-            <div class="col-md-4 col-xs-12 LDSwitch2" id="adDiv2">
+            <div class="col-md-4 col-xs-12" id="adDiv2">
                 <div class="panel panel-success">
                     <div class="panel-heading">
                         <h4>A &cup; B <span id="linesAnB" class="badge bdg-size pull-right">0</span></h4>
@@ -254,12 +108,7 @@
                     <div class="panel-body" style="padding: 0px">
                         <textarea id="txtAuB" class="form-control" rows="10" placeholder="Values in A OR B"></textarea>
                     </div>
-                    <div class="panel-footer clearfix">
-                        <div class="pull-right">
-                            <a href="javascript:;" onclick="copyLBtoClipboard('#copyAorB')" id="copyAorB" data-clipboard-action="copy" data-clipboard-target="#txtAuB" class="btn btn-default" data-toggle="tooltip" title="Copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
-                            <a id="statsAuB" class="btn btn-default" data-toggle="tooltip" title="Stats"><i class="fa fa-bar-chart" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
@@ -267,9 +116,6 @@
                 <div class="panel panel-success">
                     <!-- daRespBotImg -->
                     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4891741009754652" data-ad-slot="5800403132" data-ad-format="auto"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
                 </div>
             </div>
         </div>
