@@ -1,48 +1,56 @@
+body {
+   background-color: #aaaaaa;
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 
+.container {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin: auto;
+   height: auto;
+   background-color: rgb(169, 197, 192);
+   box-shadow: 5px 5px 15px 10px #8d8a89;
+}
 
 .flex-container {
-    justify-content: center;
-    text-align: center;
+   justify-content: center;
+   text-align: center;
 }
 
 img {
-    border: 3px solid #ddd;
-    width: 30%;
+   width: 30%;
 }
 
 button {
-    display: block;
-    margin: auto;
-    margin: 1px;
+   display: block;
+   margin: auto;
+   margin: 1px;
 }
 
 #total {
-    font-size: 1.5em;
-    text-align: center;
+   font-size: 1.5em;
+   text-align: center;
 }
-
 table {
-    text-align: center;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    background-color: rgb(180, 214, 211);
-    border-collapse: separate;
-    border-spacing: 2px;
+   text-align: center;
+   box-shadow: 10px 10px 5px #aaaaaa;
+   background-color: rgb(180, 214, 211);
+   border-collapse: separate;
+   border-spacing: 2px;
 }
-
 .table {
-    margin: auto;
-    width: 60%;
+   margin: auto;
+   width: 60%;
 }
 
 .table thead th,
 .table thead td {
-    font-size: 1.3rem;
-    padding: 5px;
+   font-size: 1.3rem;
+   padding: 5px;
 }
-
 .table tbody th,
 .table tbody td {
-    padding: 4px;
+   padding: 4px;
 }
 
 /***********************
@@ -50,42 +58,42 @@ table {
 ***********************/
 
 #gearsContainer {
-    visibility: hidden;
-    z-index: -1;
+   visibility: hidden;
+   z-index: -1;
 }
 
 .gear {
-    position: absolute;
-    /* z-index: -10; */
-    width: 40px;
-    height: 40px;
-    animation: spin 5s infinite;
+   position: absolute;
+   /* z-index: -10; */
+   width: 40px;
+   height: 40px;
+   animation: spin 5s infinite;
 }
 
 .two {
-    left: 40px;
-    width: 80px;
-    height: 80px;
-    animation: spin-reverse 5s infinite;
+   left: 40px;
+   width: 80px;
+   height: 80px;
+   animation: spin-reverse 5s infinite;
 }
 
 .three {
-    top: 45px;
-    left: -10px;
-    width: 60px;
-    height: 60px;
+   top: 45px;
+   left: -10px;
+   width: 60px;
+   height: 60px;
 }
 
 @keyframes spin {
-    50% {
-        transform: rotate(360deg);
-    }
+   50% {
+      transform: rotate(360deg);
+   }
 }
 
 @keyframes spin-reverse {
-    50% {
-        transform: rotate(-360deg);
-    }
+   50% {
+      transform: rotate(-360deg);
+   }
 }
 
 /***********************
@@ -96,41 +104,38 @@ table {
 		RESPONSIVE RESIZING
 ***********************************************/
 @media only screen and (max-width: 800px) {
-    body {
-        background-color: #aaaaaa;
-    }
+   body {
+      background-color: #aaaaaa;
+   }
 
-    .container {
-        width: 90%;
-        height: 50%;
-    }
+   .container {
+      width: 90%;
+      height: 50%;
+   }
 
-    img {
-        width: 10em;
-    }
+   img {
+      width: 10em;
+   }
+   .table {
+      width: 100%;
+   }
+   #title {
+      font-size: 2em;
+   }
 
-    .table {
-        width: 100%;
-    }
-
-    #title {
-        font-size: 2em;
-    }
-
-    .table thead th,
-    .table thead td {
-        font-size: 1rem;
-    }
-
-    .table tbody th,
-    .table tbody td {
-        font-size: .8rem;
-    }
+   .table thead th,
+   .table thead td {
+      font-size: 1rem;
+   }
+   .table tbody th,
+   .table tbody td {
+      font-size: .8rem;
+   }
 }
 
 @media only screen and (max-width: 400px) {
-    .btn {
-        font-size: .8em;
-        padding: .4em;
-    }
+   .btn {
+      font-size: .8em;
+      padding: .4em;
+   }
 }

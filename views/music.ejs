@@ -3,10 +3,11 @@
 
 <head>
     <%- include('partials/head') %>
-    <link rel="stylesheet" href="/stylesheets/music.css" />
+    <link rel="stylesheet" href="/stylesheets/styleMusic.css" />
 </head>
 
 <body>
+    <!-- **************** NAVIGATION ********************-->
     <%- include('partials/nav') %>
 
     <!-- **************** CONTAINER ********************-->
@@ -15,17 +16,15 @@
         <h2 id="title">Music</h2>
 
         <!-- ***************** TABLE ********************-->
-        <div>
-            <img src="/images/underConstruction.jpg" class="underConstruction my-2">
-        </div>
-
-        <footer>
-            <%- include('partials/footer') %>
-        </footer>
+        <div> <img src="/images/underConstruction.jpg" class="underConstruction my-2"> </div>
     </div>
 
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+
+    <%- include('partials/scripts') %>
     <script type="text/javascript" src="javascripts/music.js"></script>
 </body>
-
 
 </html>
