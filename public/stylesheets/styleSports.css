@@ -46,20 +46,20 @@ nav-link {
 }
 
 .card {
-   margin: 7px 7px;
-   height: 185px;
-   width: 185px;
+   margin: 7px 5px;
+   height: 195px;
+   width: 195px;
    border: None;
    box-shadow: 2.5px 2px 2px 2.5px #c9c7c7;
    background-color: white;
    vertical-align: middle;
-   Padding: 0px 5px;
+   Padding: 0px 3px;
 }
 
 img {
-   height: 130px;
-   width: 130px;
-   margin: 8px auto;
+   height: 140px;
+   width: 140px;
+   margin: 5px auto;
 }
 
 .landing-container a {
@@ -167,27 +167,17 @@ table {
    .table tbody td {
       font-size: 75%;
    }
-
-   .card {
-      height: 150px;
-      width: 150px;
-   }
-
-   img {
-      height: 115px;
-      width: 115px;
-   }
 }
 
 @media only screen and (max-width: 470px) {
    .card {
-      height: 175px;
-      width: 175px;
+      height: 185px;
+      width: 180px;
    }
 
    img {
-      height: 135px;
-      width: 135px;
+      height: 150px;
+      width: 145px;
    }
 }
 
