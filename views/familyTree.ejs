@@ -3,57 +3,29 @@
 
 <head>
     <%- include('partials/head') %>
-
+    <link rel="stylesheet" href="/stylesheets/familyTree.css" />
 </head>
 
 <body>
     <%- include('partials/nav') %>
 
-    <div class="landing-container">
-        <a href="\">
-            <div class="card">
-                <img class="card-img-top" src="">
-                <h5>Category 1</h5>
-            </div>
-        </a>
-        <a href="\">
-            <div class="card">
-                <img class="card-img-top" src="">
-                <h5>Category 2</h5>
-            </div>
-        </a>
-        <a href="\">
-            <div class="card">
-                <img class="card-img-top" src="">
-                <h5>Category 3</h5>
-            </div>
-        </a>
-        <a href="\">
-            <div class="card">
-                <img class="card-img-top" src="">
-                <h5>Category 4</h5>
-            </div>
-        </a>
-        <a href="\">
-            <div class="card">
-                <img class="card-img-top" src="">
-                <h5>Category 5</h5>
-            </div>
-        </a>
-        <a href="\">
-            <div class="card">
-                <img class="card-img-top" src="">
-                <h5>Category 5</h5>
-            </div>
-        </a>
+    <!-- **************** CONTAINER ********************-->
+    <div class="container-fluid">
+
+        <h2 id="title">Family Tree</h2>
+
+        <!-- ***************** TABLE ********************-->
+        <div>
+            <img src="/images/underConstruction.jpg" class="underConstruction my-2">
+        </div>
+
+        <footer>
+            <%- include('partials/footer') %>
+        </footer>
     </div>
 
-    <footer>
-        <%- include('partials/footer') %>
-    </footer>
-
-    <%- include('partials/scripts') %>
-
+    <script type="text/javascript" src="javascripts/familyTree.js"></script>
 </body>
+
 
 </html>
