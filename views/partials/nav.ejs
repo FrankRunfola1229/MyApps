@@ -1,58 +1,42 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+<nav class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark">
    <!-- Brand -->
-   <a class="navbar-brand font-weight-bold" href="/">
-      <img style="height:32px; width:32px" src="/images/home.png" />
-   </a>
+   <a id="navbarBrand"" href="/"> <img src="/images/home.png" /> </a>
+
 
    <!-- Toggler/collapsibe Button -->
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
    </button>
 
 
-   <!-- Navbar links -->
-   <div class="collapse navbar-collapse" id="navbarContent">
+   <!--navbar-collapse -->
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
          <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="/movies">Movies</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="/sports">Sports</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="/tools">Tools</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="/music">Music</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="/ComputerScience">Computer Science</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="/geography">Geography</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="/cars">Cars</a>
+            <a class="nav-link" href="#">Link</a>
          </li>
 
+         <!-- Dropdown-toggle Button -->
          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Dropdown
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item text-dark" href="/">Home <span class="sr-only">(current)</span></a>
+               <a class="dropdown-item text-dark" href="/movies">Movies</a>
+               <a class="dropdown-item text-dark" href="/sports">Sports</a>
+               <a class="dropdown-item text-dark" href="/tools">Tools</a>
+               <a class="dropdown-item text-dark" href="/music">Music</a>
+               <a class="dropdown-item text-dark" href="/ComputerScience">Computer Science</a>
+               <a class="dropdown-item text-dark" href="/geography">Geography</a>
+               <a class="dropdown-item text-dark" href="/cars">Cars</a>
                <div class="dropdown-divider"></div>
-               <a class="dropdown-item" href="#">Something else here</a>
+               <a class="dropdown-item text-dark disabled" href="/familyTree">Family Tree</a>
             </div>
          </li>
-
-         <li class="nav-item">
-            <a class="nav-link disabled" href="/familyTree">Family Tree</a>
-         </li>
-
       </ul>
       <form class="form-inline my-2 my-lg-0">
          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

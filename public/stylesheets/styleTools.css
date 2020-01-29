@@ -11,13 +11,13 @@ h4 {
 .container-fluid {
    background-color: whitesmoke;
    width: 90%;
-   margin: 1rem auto auto auto;
+   margin: 50px auto auto auto;
    padding: .3rem 0px;
    box-shadow: 5px 55px 50px -20px #b6b6b6;
 }
 
 /*********************************************
-   /**         LANDING PAGE START              **/
+    /**         LANDING PAGE START              **/
 /*********************************************/
 .underConstruction {
    width: 200px;

@@ -1,68 +1,77 @@
 body {
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 h2,
 h4 {
-    margin-top: 15px;
+   margin-top: 15px;
+}
+.navbar-dark .navbar-nav .nav-link {
+   color: white;
 }
 
+nav-link {
+   color: black;
+}
+.navbar {
+   padding: .2rem 1rem;
+}
+#navbarBrand img {
+   height: 32px;
+   width: 32px;
+}
 .container-fluid {
-    background-color: whitesmoke;
-    width: 90%;
-    margin: 1rem auto auto auto;
-    padding: .3rem 0px;
-    box-shadow: 5px 55px 50px -20px #b6b6b6;
+   background-color: whitesmoke;
+   width: 90%;
+   margin: 1rem auto auto auto;
+   padding: 2rem 0px;
+   box-shadow: 5px 55px 50px -20px #221f1f;
 }
 
 /*********************************************
  /**         LANDING PAGE START              **/
 /*********************************************/
-.underConstruction {
-    width: 200px;
-    height: 200px;
-}
 
 .landing-container {
-    Background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    box-shadow: .8px 55px 50px -20px #b6b6b6;
-    margin: 20px auto 30px auto;
-    padding: 10px 150px 100px 150px;
+   Background-color: white;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+   width: 100%;
+   box-shadow: .8px 55px 50px -20px #b6b6b6;
+   margin: 40px auto 30px auto;
+   padding: 40px 150px 100px 150px;
 }
 
 .card {
-    margin: 7px 10px;
-    height: 185px;
-    width: 185px;
-    border: None;
-    box-shadow: 2.5px 2px 2px 2.5px #c9c7c7;
-    background-color: white;
-    vertical-align: middle;
-    Padding: 0px 5px;
+   margin: 7px 10px;
+   height: 185px;
+   width: 185px;
+   border: None;
+   box-shadow: 2.5px 2px 2px 2.5px #c9c7c7;
+   background-color: white;
+   vertical-align: middle;
+   Padding: 0px 5px;
 }
 
 img {
-    height: 130px;
-    width: 130px;
-    margin: 8px auto;
+   height: 130px;
+   width: 130px;
+   margin: 8px auto;
 }
 
 .landing-container a {
-    color: black;
+   color: black;
 }
 
 .card:hover {
-    box-shadow: 0 5px 10px 0 rgba(49, 48, 49, 0.486);
+   box-shadow: 0 5px 10px 0 rgba(49, 48, 49, 0.486);
 }
 
 a.btn:hover {
-    background-color: #41474d;
+   background-color: #41474d;
 }
 
 /*********************************************
@@ -70,158 +79,158 @@ a.btn:hover {
 /*********************************************/
 
 table {
-    box-shadow: 10px 10px 5px #aaaaaa;
-    background-color: rgb(180, 214, 211);
-    border-collapse: separate;
-    border-spacing: 2px;
+   box-shadow: 10px 10px 5px #aaaaaa;
+   background-color: rgb(180, 214, 211);
+   border-collapse: separate;
+   border-spacing: 2px;
 }
 
 .table {
-    margin: auto;
-    width: 50%;
+   margin: auto;
+   width: 50%;
 }
 
 .table thead th {
-    font-size: 150%;
-    padding: 10px 10px;
-    color: darkgray;
+   font-size: 150%;
+   padding: 10px 10px;
+   color: darkgray;
 }
 
 .table tbody td {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 5px;
-    font-size: 90%;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 5px 5px;
+   font-size: 90%;
 }
 
 #total {
-    font-size: 1.5em;
+   font-size: 1.5em;
 }
 
 @media only screen and (max-width: 900px) {
-    .landing-container {
-        padding: 5px;
-    }
+   .landing-container {
+      padding-left: 5px;
+      padding-right: 5px;
+   }
 }
 
 /***********************************************
          RESPONSIVE RESIZING
  ***********************************************/
 @media only screen and (max-width: 800px) {
+   .container-fluid,
+   .table {
+      width: 95%;
+   }
 
-    .container-fluid,
-    .table {
-        width: 95%;
-    }
+   #title {
+      font-size: 2em;
+   }
 
-    #title {
-        font-size: 2em;
-    }
+   .table thead th {
+      font-size: 120%;
+   }
 
-    .table thead th {
-        font-size: 120%;
-    }
-
-    .card {
-        margin: 7px 5px;
-    }
+   .card {
+      margin: 7px 5px;
+   }
 }
 
 @media only screen and (max-width: 600px) {
-    .container-fluid {
-        width: 98%;
-        padding: 1.5rem 2px;
-    }
+   .container-fluid {
+      width: 98%;
+      padding: 4rem 2px;
+   }
 
-    .row {
-        width: 85%;
-    }
+   .row {
+      width: 85%;
+   }
 
-    .table {
-        width: 100%;
-        margin: 0px;
-    }
+   .table {
+      width: 100%;
+      margin: 0px;
+   }
 
-    .table thead th {
-        font-size: 105%;
-    }
+   .table thead th {
+      font-size: 105%;
+   }
 
-    .table tbody td {
-        font-size: 80%;
-    }
+   .table tbody td {
+      font-size: 80%;
+   }
 }
 
 @media only screen and (max-width: 560px) {
-    h5 {
-        font-size: 1rem;
-    }
+   h5 {
+      font-size: 1rem;
+   }
 
-    .table tbody td {
-        font-size: 75%;
-    }
+   .table tbody td {
+      font-size: 75%;
+   }
 
-    .card {
-        height: 150px;
-        width: 150px;
-    }
+   .card {
+      height: 150px;
+      width: 150px;
+   }
 
-    img {
-        height: 115px;
-        width: 115px;
-    }
+   img {
+      height: 115px;
+      width: 115px;
+   }
 }
 
 @media only screen and (max-width: 470px) {
-    .card {
-        height: 165px;
-        width: 165px;
-    }
+   .card {
+      height: 145px;
+      width: 155px;
+   }
 
-    img {
-        height: 130px;
-        width: 130px;
-    }
+   img {
+      height: 105px;
+      width: 110px;
+   }
 }
 
 @media only screen and (max-width: 400px) {
-    .table tbody td {
-        font-size: 65%;
-    }
+   .table tbody td {
+      font-size: 65%;
+   }
 
-    .row {
-        width: 95%;
-    }
+   .row {
+      width: 95%;
+   }
 }
 
 @media only screen and (max-width: 380px) {
-    .card {
-        height: 140px;
-        width: 140px;
-    }
+   .card {
+      height: 140px;
+      width: 140px;
+   }
 
-    img {
-        height: 105px;
-        width: 110px;
-    }
+   img {
+      height: 105px;
+      width: 110px;
+   }
 }
 
 @media only screen and (max-width: 375px) {
-    .table tbody td {
-        font-size: 55%;
-    }
+   .table tbody td {
+      font-size: 55%;
+   }
 }
 
 @media only screen and (max-width: 350px) {
-    .card {
-        height: 130px;
-        width: 130px;
-    }
+   .card {
+      height: 130px;
+      width: 130px;
+   }
 
-    img {
-        height: 90px;
-        width: 90px;
-    }
+   img {
+      height: 90px;
+      width: 90px;
+   }
 
-    h5 {
-        font-size: .9rem;
-    }
+   h5 {
+      font-size: .9rem;
+   }
 }

@@ -61,6 +61,10 @@ app.get("/passing", function(req, res) {
 })
 
 // receiving route
+app.get("/rushing", function(req, res) {
+   res.render("rushing")
+})
+// receiving route
 app.get("/receiving", function(req, res) {
    res.render("receiving")
 })

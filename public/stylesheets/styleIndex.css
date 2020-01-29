@@ -7,7 +7,20 @@ h2,
 h4 {
    margin-top: 15px;
 }
+.navbar-dark .navbar-nav .nav-link {
+   color: white;
+}
 
+nav-link {
+   color: black;
+}
+.navbar {
+   padding: .2rem 1rem;
+}
+#navbarBrand img {
+   height: 32px;
+   width: 32px;
+}
 .container-fluid {
    background-color: whitesmoke;
    width: 90%;
@@ -28,8 +41,8 @@ h4 {
    justify-content: space-around;
    width: 100%;
    box-shadow: .8px 55px 50px -20px #b6b6b6;
-   margin: 20px auto 30px auto;
-   padding: 10px 150px 100px 150px;
+   margin: 40px auto 30px auto;
+   padding: 40px 150px 100px 150px;
 }
 
 .card {
@@ -95,7 +108,8 @@ table {
 
 @media only screen and (max-width: 900px) {
    .landing-container {
-      padding: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
    }
 }
 
@@ -103,7 +117,6 @@ table {
 		RESPONSIVE RESIZING
 ***********************************************/
 @media only screen and (max-width: 800px) {
-
    .container-fluid,
    .table {
       width: 95%;

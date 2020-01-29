@@ -6,7 +6,7 @@ body {
 
 .container {
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   margin: auto;
+   margin: 50px auto auto auto;
    height: auto;
    background-color: rgb(169, 197, 192);
    box-shadow: 5px 5px 15px 10px #8d8a89;
@@ -19,6 +19,7 @@ body {
 
 img {
    width: 30%;
+   height: 30%;
 }
 
 button {
