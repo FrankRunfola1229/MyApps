@@ -129,7 +129,7 @@ table {
 @media only screen and (max-width: 600px) {
     .container-fluid {
         width: 98%;
-        padding: 4rem 2px;
+        padding: 1.5rem 2px;
     }
 
     .row {
