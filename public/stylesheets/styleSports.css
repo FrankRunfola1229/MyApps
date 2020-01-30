@@ -57,8 +57,8 @@ nav-link {
 }
 
 img {
-   height: 140px;
-   width: 140px;
+   height: 150px;
+   width: 150px;
    margin: 3px auto;
 }
 
@@ -172,12 +172,12 @@ table {
 @media only screen and (max-width: 470px) {
    .card {
       height: 190px;
-      width: 185px;
+      width: 190px;
    }
 
    img {
       height: 160px;
-      width: 150px;
+      width: 160px;
    }
 }
 
