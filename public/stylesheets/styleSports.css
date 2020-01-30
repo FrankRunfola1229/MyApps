@@ -53,13 +53,13 @@ nav-link {
    box-shadow: 2.5px 2px 2px 2.5px #c9c7c7;
    background-color: white;
    vertical-align: middle;
-   Padding: 0px 3px;
+   Padding: 0px 1px;
 }
 
 img {
    height: 140px;
    width: 140px;
-   margin: 5px auto;
+   margin: 3px auto;
 }
 
 .landing-container a {
@@ -171,12 +171,12 @@ table {
 
 @media only screen and (max-width: 470px) {
    .card {
-      height: 185px;
+      height: 190px;
       width: 185px;
    }
 
    img {
-      height: 155px;
+      height: 160px;
       width: 150px;
    }
 }
