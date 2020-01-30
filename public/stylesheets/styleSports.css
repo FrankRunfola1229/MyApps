@@ -24,8 +24,8 @@ nav-link {
 .container-fluid {
    background-color: whitesmoke;
    width: 95%;
-   margin: 10px auto auto auto;
-   padding: 5px auto;
+   margin: 1px auto auto auto;
+   padding: 2px auto;
    box-shadow: 5px 55px 50px -20px #221f1f;
 }
 
