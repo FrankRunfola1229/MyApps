@@ -14,7 +14,7 @@
     <div class="landing-container">
 
         <!-- ROW 1 -->
-        <form action="/compare-2-lists-difference-tool" method="POST" enctype="multipart/form-data" id="LDForm">
+        <form action="/compare-2-lists-difference-tool" method="POST" enctype="multipart/form-data">
 
             <!-- Service Panels -->
             <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
@@ -22,10 +22,10 @@
                 <div class="col-md-6 col-xs-12 LDSwitch">
                     <div class="panel panel-success">
                         <div class="panel-heading">
-                            <h4>List A <span id="linesA" class="badge bdg-size pull-right" style="margin: 0px 0 0 5px" title="Lines:">0</span>
+                            <h4>List A <span id="linesA" class="badge bdg-size pull-right" title="Lines:">0</span>
                                 <span id="dupesA" class="badge bdg-size pull-right" title="Duplicates:"> 0</span></h4>
                         </div>
-                        <div class="panel-body" style="padding: 0px">
+                        <div class="panel-body">
                             <textarea id="txtBoxA" class="form-control LDSwitchArea" name="lstA" rows="10"></textarea>
                         </div>
 
@@ -35,10 +35,10 @@
                 <div class="col-md-6 col-xs-12 LDSwitch">
                     <div class="panel panel-success">
                         <div class="panel-heading">
-                            <h4>List B <span id="linesB" class="badge bdg-size pull-right" style="margin: 0px 0 0 5px" title="Lines:">0</span>
+                            <h4>List B <span id="linesB" class="badge bdg-size pull-right"  title="Lines:">0</span>
                                 <span id="dupesB" class="badge bdg-size pull-right" title="Duplicates:">0</span></h4>
                         </div>
-                        <div class="panel-body" style="padding: 0px">
+                        <div class="panel-body">
                             <textarea id="txtBoxB" class="form-control LDSwitchArea" name="lstB" rows="10"></textarea>
                         </div>
 
@@ -59,7 +59,7 @@
                     <div class="panel-heading">
                         <h4>A Only <span id="linesAOnly" class="badge bdg-size pull-right">0</span></h4>
                     </div>
-                    <div class="panel-body" style="padding: 0px">
+                    <div class="panel-body">
                         <textarea id="txtAOnly" class="form-control" rows="10" placeholder="Values in A Only"></textarea>
                     </div>
 
@@ -71,7 +71,7 @@
                     <div class="panel-heading">
                         <h4>A &cap; B <span id="linesAuB" class="badge bdg-size pull-right">0</span></h4>
                     </div>
-                    <div class="panel-body" style="padding: 0px">
+                    <div class="panel-body">
                         <textarea id="txtAnB" class="form-control" rows="10" name="AunionB" placeholder="Values in A AND B"></textarea>
                     </div>
 
