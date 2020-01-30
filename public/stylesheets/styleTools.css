@@ -41,9 +41,9 @@ select {
 }
 
 #ldConfig {
-   margin: 0 0 20px 0;
+   margin: auto;
    background: #f4f4f4;
-   padding: 1.5em;
+   padding: 1em;
    /* display:none; */
 }
 
