@@ -3,6 +3,18 @@ body {
    text-align:center;
 }
 
+.landing-container {
+   Background-color: white;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+   width: 100%;
+   box-shadow: .8px 55px 50px -20px #b6b6b6;
+   margin: 40px auto 30px auto;
+   padding: 40px 150px 100px 150px;
+}
+
 .container-fluid {
    background-color: whitesmoke;
    width: 95%;
