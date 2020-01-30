@@ -3,6 +3,14 @@ body {
    text-align:center;
 }
 
+.container-fluid {
+   background-color: whitesmoke;
+   width: 95%;
+   margin: 1px auto auto auto;
+   padding: 2px auto;
+   box-shadow: 5px 55px 50px -20px #221f1f;
+}
+
 h1 {
    font-family: arial, verdana, sans-serif;
    font-size: 2.5em;
