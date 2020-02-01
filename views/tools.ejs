@@ -13,80 +13,24 @@
     <!-- **************** CONTAINER ********************-->
     <div class="landing-container">
 
-        <!-- ROW 1 -->
-       <div class="container mx-auto">
-         <form action="/compare-2-lists-difference-tool" method="POST" enctype="multipart/form-data">
-
-            <!-- Service Panels -->
-            <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-            <div class="row">
-                <div class="col-md-6 col-xs-12 LDSwitch">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h4>List A <span id="linesA" class="badge bdg-size pull-right" title="Lines:">0</span>
-                                <span id="dupesA" class="badge bdg-size pull-right" title="Duplicates:"> 0</span></h4>
-                        </div>
-                        <div class="panel-body">
-                            <textarea id="txtBoxA" class="form-control LDSwitchArea" name="lstA" rows="5"></textarea>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xs-12 LDSwitch">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h4>List B <span id="linesB" class="badge bdg-size pull-right" title="Lines:">0</span>
-                                <span id="dupesB" class="badge bdg-size pull-right" title="Duplicates:">0</span></h4>
-                        </div>
-                        <div class="panel-body">
-                            <textarea id="txtBoxB" class="form-control LDSwitchArea" name="lstB" rows="5"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 text-center">
-                <input type="submit" form="LDForm" class="btn btn-lg btn-primary" value="Compare Lists">
-            </div>
-            <!-- </form> -->
-        </form>
-       </div>
-
-        <div class="row">
-            <div class="col-md-4 col-xs-12 ">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h4>A Only <span id="linesAOnly" class="badge bdg-size pull-right">0</span></h4>
-                    </div>
-                    <div class="panel-body">
-                        <textarea id="txtAOnly" class="form-control" rows="5" placeholder="Values in A Only"></textarea>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-xs-12 ">
-                <div class="panel panel-danger">
-                    <div class="panel-heading">
-                        <h4>A &cap; B <span id="linesAuB" class="badge bdg-size pull-right">0</span></h4>
-                    </div>
-                    <div class="panel-body">
-                        <textarea id="txtAnB" class="form-control" rows="5" name="AunionB" placeholder="Values in A AND B"></textarea>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h4>B Only <span id="linesBOnly" class="badge bdg-size pull-right">0</span></h4>
-                    </div>
-                    <div class="panel-body">
-                        <textarea id="txtBOnly" class="form-control" rows="5" placeholder="Values in B Only"></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
+<FORM name=form1 method="post">
+<TABLE cellSpacing=1 cellPadding=1 border=1>
+  <TBODY>
+  <TR>
+    <TD align=middle colSpan=3><B><FONT size=4>Percentage Calculator</FONT></B> 
+      </TD>
+  <TR>
+    <TD>What is <INPUT size=5 name=a> % of <INPUT size=5 name=b>?</TD>
+    <TD>Answer: <INPUT maxLength=40 size=5 name=total1></TD>
+    <TD><INPUT onclick=perc1() type=button value=Calculate></TD>
+  <TR>
+    <TD><INPUT size=5 name=c> is what percent of <INPUT size=5 
+name=d>?</TD>
+    <TD>Answer: <INPUT size=5 name=total2> %</TD>
+    <TD><INPUT onclick=perc2() type=button value=Calculate></TD>
+  <TR>
+    <TD align=middle 
+colSpan=3><INPUT type=reset value=Reset></TD></TR></TBODY></TABLE></FORM>
 
 
         <div class="row">
@@ -108,7 +52,21 @@
         </footer>
 
         <%- include('partials/scripts') %>
-        <script type="text/javascript" src="Scripts/tools.js"></script>
+        <script>
+<!-------------------------------------->
+function perc1() {
+ a = document.form1.a.value/100;
+ b = a*document.form1.b.value;
+ document.form1.total1.value = b
+ }
+function perc2() {
+ a = document.form1.c.value;
+ b = document.form1.d.value;
+ c = a/b;
+ d = c*100;
+ document.form1.total2.value = d
+ }
+</SCRIPT>
 </body>
 
 </html>
