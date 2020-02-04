@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <%- include('partials/head') %>
     <link rel="stylesheet" href="/stylesheets/styleTools.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- **************** NAVIGATION ********************-->
     <%- include('partials/nav') %>
 
     <!-- **************** CONTAINER ********************-->
-    <div class="landing-container">
+    <div class="container">
+      <h2 id="title">Tools</h2>
 
-<FORM name=form1 method="post">
-<TABLE cellSpacing=1 cellPaddjing=1 border=1>
-  <TBODY>
-  <TR>
-    <TD align=middle colSpan=3><B><FONT size=4>Percentage Calculator</FONT></B> 
-      </TD>
-  <TR>
-    <TD>What is <INPUT size=5 name=a> % of <INPUT size=5 name=b>?</TD>
-    <TD>Answer: <INPUT maxLength=40 size=5 name=total1></TD>
-    <TD><INPUT onclick=perc1() type=button value=Calculate></TD>
-  <TR>
-    <TD><INPUT size=5 name=c> is what percent of <INPUT size=5 
-name=d>?</TD>
-    <TD>Answer: <INPUT size=5 name=total2> %</TD>
-    <TD><INPUT onclick=perc2() type=button value=Calculate></TD>
-  <TR>
-    <TD align=middle 
-colSpan=3><INPUT type=reset value=Reset></TD></TR></TBODY></TABLE></FORM>
+      <!-- ***************** TABLE ********************-->
+      <div class=" row ">
+        <div class="col-md-12">
+          <form action="/submit-student-data" method="post">
+            First Name: <input name="firstName" type="text" /> <br />
+            Last Name: <input name="lastName" type="text" /> <br />
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
 
+      <div class=" row ">
+        <div class="col-md-12">
+          <form action="" method="post">
+            <label for="team_name">Enter name: </label>
+            <input
+              id="team_name"
+              type="text"
+              name="name_field"
+              value="Default name for team."
+            />
+            <input type="submit" value="OK" />
+          </form>
+        </div>
+      </div>
 
-        <footer>
-            <%- include('partials/footer') %>
-        </footer>
+      <div class=" row ">
+        <div class="col-md-12">
+          <form action="" class=" my-2">
+            <input type=" text" id="uname" name="name" placeholder="%" />
+            <span>OF</span>
+            <input type="text" id="uname" name="name" placeholder="#" />
+            <span>=</span>
+            <input type="text" id="uname" name="name" placeholder="#" />
+            <button type="button" class="btn btn-primary">Calculate</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-        <%- include('partials/scripts') %>
-        <script>
-<!-------------------------------------->
-function perc1() {
- a = document.form1.a.value/100;
- b = a*document.form1.b.value;
- document.form1.total1.value = b
- }
-function perc2() {
- a = document.form1.c.value;
- b = document.form1.d.value;
- c = a/b;
- d = c*100;
- document.form1.total2.value = d
- }
-</SCRIPT>
-</body>
+    <!-- **************** FOOTER ********************-->
+    <footer>
+      <%- include('partials/footer') %>
+    </footer>
 
+    <!-- **************** SCRIPTS ********************-->
+    <%- include('partials/scripts') %>
+    <script type=" text/javascript" src="javascripts/tools.js"></script>
+  </body>
 </html>

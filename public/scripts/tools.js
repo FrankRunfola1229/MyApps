@@ -1,26 +1,24 @@
-// Highlight the menu clicked
-$(document).on("click", ".nav li", function(e) {
-   $(this).addClass("active").siblings().removeClass("active")
-})
-
-$('[data-toggle="tooltip"]').tooltip({
-   trigger: "hover"
-})
-
-$(".btn").click(function(event) {
-   // Removes focus of the button.
-   $(this).blur()
-})
-
-$(document).ready(function() {
-   $(".dropdown").on("show.bs.dropdown", function(e) {
-      var linkText = $(e.relatedTarget).text() // Get the link text
-   })
-})
-
-window.dataLayer = window.dataLayer || []
-function gtag() {
-   dataLayer.push(arguments)
+// Create Table Header elem
+const createTh = (data, tr) => {
+   const th = document.createElement("th")
+   th.innerText = data
+   th.setAttribute("scope", "row")
+   tr.appendChild(th)
 }
-gtag("js", new Date())
-gtag("config", "UA-2344909-14")
+
+
+function
+perc1() {
+   a = document.form1.a.value / 100;
+   b = a * document.form1.b.value;
+   document.form1.total1.value = b
+}
+
+function
+perc2() {
+   a = document.form1.c.value;
+   b = document.form1.d.value;
+   c = a / b;
+   d = c * 100;
+   document.form1.total2.value = d
+}
