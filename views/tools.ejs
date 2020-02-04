@@ -1,55 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%- include('partials/head') %>
-    <link rel="stylesheet" href="/stylesheets/styleTools.css" />
-  </head>
 
-  <body>
-    <!-- **************** NAVIGATION ********************-->
-    <%- include('partials/nav') %>
+<head>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="/stylesheets/styleTools.css" />
+</head>
 
-    <!-- **************** CONTAINER ********************-->
-    <div class="container">
-      <h2 id="title">Tools</h2>
+<body>
 
-      <!-- ***************** TABLE ********************-->
-      <div class=" row ">
-        <div class="col-md-12">
-          <form action="/submit-student-data" method="post">
-            First Name: <input name="firstName" type="text" /> <br />
-            Last Name: <input name="lastName" type="text" /> <br />
-            <input type="submit" />
-          </form>
-        </div>
-      </div>
+  <!-- **************** NAVIGATION ********************-->
+  <%- include('partials/nav') %>
 
-      <div class=" row ">
-        <div class="col-md-12">
-          <form action="" method="post">
-            <label for="team_name">Enter name: </label>
-            <input
-              id="team_name"
-              type="text"
-              name="name_field"
-              value="Default name for team."
-            />
-            <input type="submit" value="OK" />
-          </form>
-        </div>
-      </div>
+  <!-- **************** CONTAINER ********************-->
+  <div class="container">
+    <h2 id="title">Tools</h2>
 
-      <div class=" row ">
-        <div class="col-md-12">
-          <form action="" class=" my-2">
-            <input type=" text" id="uname" name="name" placeholder="%" />
-            <span>OF</span>
-            <input type="text" id="uname" name="name" placeholder="#" />
-            <span>=</span>
-            <input type="text" id="uname" name="name" placeholder="#" />
-            <button type="button" class="btn btn-primary">Calculate</button>
-          </form>
-        </div>
+    <!-- ***************** TABLE ********************-->
+    <div class=" row ">
+      <div class="col-md-12">
+        <form action="/percentage" method="post">
+          <input name="part" type="text" placeholder="part" /> <br />
+          <input name="whole" type="text" placeholder="whole" /> <br />
+          <input type="submit" />
+        </form>
+        <h1><%= result %> %</h1>
       </div>
     </div>
 
@@ -60,6 +34,7 @@
 
     <!-- **************** SCRIPTS ********************-->
     <%- include('partials/scripts') %>
-    <script type=" text/javascript" src="javascripts/tools.js"></script>
-  </body>
+    <!--<script type=" text/javascript" src="javascripts/tools.js"></script>-->
+</body>
+
 </html>
