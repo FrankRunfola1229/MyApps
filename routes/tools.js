@@ -4,7 +4,7 @@ const form = require("express-form")
 const field = form.field
 
 // tools route
-router.get("/tools", function(req, res) {
+router.get("/", function(req, res) {
    res.render("tools", { result: "0" }) //res.render(view [, locals] [, callback])
 })
 
@@ -30,3 +30,4 @@ router.post(
       res.render("tools", { result: result })
    }
 )
+module.exports = router

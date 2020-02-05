@@ -2,25 +2,26 @@ const express = require("express")
 const router = express.Router()
 
 // nfl route
-router.get("/sports", function(req, res) {
+router.get("/", function(req, res) {
    res.render("sports")
 })
 
 // passing route
 router.get("/passing", function(req, res) {
-   res.render("passing")
+   res.render("sports/passing")
 })
 
 // receiving route
 router.get("/rushing", function(req, res) {
-   res.render("rushing")
+   res.render("sports/rushing")
 })
 // receiving route
 router.get("/receiving", function(req, res) {
-   res.render("receiving")
+   res.render("sports/receiving")
 })
 
 // defense route
 router.get("/defense", function(req, res) {
-   res.render("defense")
+   res.render("sports/defense")
 })
+module.exports = router

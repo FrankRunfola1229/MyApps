@@ -1,8 +1,8 @@
 const express = require("express")
 const router = express.Router()
 
-// root route
+// computers
 router.get("/", function(req, res) {
-   res.render("movies")
+   res.render("computers")
 })
 module.exports = router

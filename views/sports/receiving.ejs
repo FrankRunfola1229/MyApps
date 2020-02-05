@@ -2,16 +2,20 @@
 <html lang="en">
 
 <head>
-   <%- include('partials/head') %>
+   <%- include('../partials/head') %>
    <link rel="stylesheet" href="/stylesheets/styleSports.css" />
 </head>
 
 <body>
    <!-- **************** NAVIGATION ********************-->
-   <%- include('partials/nav') %>
+   <%- include('../partials/nav') %>
 
    <!-- **************** CONTAINER ********************-->
    <div class="container-fluid">
+
+      <div class="container" style="text-align: start;">
+         <a href="/sports">Go Back</a>
+      </div>
 
       <h2 id="title">Receiving Yards</h2>
 
@@ -35,11 +39,11 @@
       </div>
 
       <footer>
-         <%- include('partials/footer') %>
+         <%- include('../partials/footer') %>
       </footer>
    </div>
 
-   <script type="text/javascript" src="scripts/receiving.js"></script>
+   <script type="text/javascript" src="/scripts/receiving.js"></script>
 </body>
 
 </html>

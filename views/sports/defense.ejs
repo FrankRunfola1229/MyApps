@@ -2,31 +2,31 @@
 <html lang="en">
 
 <head>
-   <%- include('partials/head') %>
+   <%- include('../partials/head') %>
    <link rel="stylesheet" href="/stylesheets/styleSports.css" />
 </head>
 
 <body>
    <!-- **************** NAVIGATION ********************-->
-   <%- include('partials/nav') %>
+   <%- include('../partials/nav') %>
 
    <!-- **************** CONTAINER ********************-->
    <div class="container-fluid">
+
+      <div class="container" style="text-align: start;">
+         <a href="/sports">Go Back</a>
+      </div>
 
       <h2 id="title">Defense</h2>
 
       <!-- ***************** TABLE ********************-->
       <div> <img src="/images/underConstruction.jpg" class="underConstruction my-2"> </div>
+      <footer>
+         <%- include('../partials/footer') %>
+      </footer>
    </div>
 
-   <!-- **************** FOOTER ********************-->
-   <footer>
-      <%- include('partials/footer') %>
-   </footer>
-
-   <!-- **************** SCRIPTS ********************-->
-   <%- include('partials/scripts') %>
-   <script type="text/javascript" src="javascripts/defense.js"></script>
+   <script type="text/javascript" src="/scripts/defense.js"></script>
 </body>
 
 </html>
