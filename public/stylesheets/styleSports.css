@@ -26,24 +26,11 @@ nav-link {
    width: 95%;
    margin: 1px auto auto auto;
    padding: 2px auto;
-   box-shadow: 5px 55px 50px -20px #221f1f;
 }
 
 /*********************************************
  /**         LANDING PAGE START              **/
 /*********************************************/
-
-.landing-container {
-   Background-color: white;
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-around;
-   width: 100%;
-   box-shadow: .8px 55px 50px -20px #b6b6b6;
-   margin: 40px auto 30px auto;
-   padding: 40px 150px 100px 150px;
-}
 
 .card {
    margin: 7px 5px;
