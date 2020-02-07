@@ -32,6 +32,8 @@ bower_components
 .lock-wscript
 
 # IDEs and editors
+
+package-lock.json
 .idea
 .project
 .classpath
