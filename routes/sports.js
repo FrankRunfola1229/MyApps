@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router()
 
 // nfl route
-router.get("/", (req, res) => {
+router.get("/", function(req, res){
    res.render("sports")
 })
 
