@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router()
 
 // root route
-router.get("/", function(req, res) {
+router.get("/", (req, res) => {
    res.render("movies")
 })
 module.exports = router
