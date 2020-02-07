@@ -4,17 +4,16 @@ const form = require("express-form")
 const field = form.field
 
 // tools route
-router.get("/", function(req, res) {
+router.get("/", (req, res) =>{
    res.render("tools", { result: "0" }) //res.render(view [, locals] [, callback])
 })
 
-router.post(
-   "/percentage",
+router.post("/percentage",
    form(
       field("part").trim().required().is(/^[0-9]{1,6}$/),
       field("whole").trim().required().is(/^[0-9]{1,6}$/)
    ),
-   function(req, res) {
+   (req, res) => {
       if (!req.form.isValid) {
          console.log(req.form.errors)
       }
@@ -24,7 +23,6 @@ router.post(
          part = req.body.part / 100
          whole = req.body.whole
          result = part * whole
-
          console.dir(`result = ${result}`)
       }
       res.render("tools", { result: result })
