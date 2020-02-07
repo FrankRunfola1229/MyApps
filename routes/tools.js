@@ -3,8 +3,8 @@ const router = express.Router()
 const form = require("express-form")
 const field = form.field
 
-// tools route
-router.get("/", (req, res) =>{
+// root route
+router.get("/", (req, res) => {
    res.render("tools", { result: "0" }) //res.render(view [, locals] [, callback])
 })
 
