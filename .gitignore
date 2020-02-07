@@ -33,7 +33,6 @@ bower_components
 
 # IDEs and editors
 _config.yml
-package-lock.json
 .idea
 .project
 .classpath
