@@ -14,5 +14,63 @@ h1 {
    text-align: center;
    align-items: center;
    justify-items: center;
+   padding: 20px;
    /* adjusted */
+}
+
+.card {
+   height: 360px;
+   width: 50%;
+
+}
+
+form {
+   margin: 10px auto;
+}
+
+input {
+   width: 70%;
+   border-radius: 10px;
+}
+
+h1 {
+   margin: auto;
+}
+
+h6 {
+   color: grey;
+   width: 100%;
+}
+
+
+@media only screen and (max-width: 767px) {
+   .card {
+
+      width: 75%;
+   }
+
+
+}
+
+@media only screen and (max-width: 470px) {
+   .card {
+
+      width: 90%;
+   }
+
+   form {
+      margin: 10px auto;
+   }
+
+   h6 {
+      color: grey;
+      width: 100%
+   }
+}
+
+
+@media only screen and (max-width: 335px) {
+   h2 {
+      font-size: 1.5rem;
+   }
 }

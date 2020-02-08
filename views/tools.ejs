@@ -13,19 +13,23 @@
 
   <!-- **************** CONTAINER ********************-->
   <div class="container">
-    <h1 id="title" class="my-3">Tools</h1>
+    <h1 id="title">Tools</h1>
 
-    <div class="card bg-light" style="height:320px; width:25vw; ">
+    <div class="card bg-light">
       <h2>Percent Calculator</h2>
       <div class="card-body p-2">
-        <form action="/tools" method="post" class="my-1">
-          <input name="part" type="text" class=" rounded w-50" placeholder="part" /> <br>
-          <input name="whole" type="text" class=" rounded  w-50" placeholder="whole" /><br>
+        <form action="/tools" method="post">
+          <div class="input-group-append">
+            <input type="text" name="part" class="form-control" placeholder="Part" required />
+          </div>
+          <div class="input-group-append">
+            <input type="text" name="whole" class="form-control" placeholder="whole" required />
+          </div>
           <input type="submit" class=" w-50 my-3 btn btn-primary" />
         </form>
 
-        <h6 class="color: grey my-0" style="width:100%"> <%= operation %> </h6> <br>
-        <h1 class=".text-primary"><%= result %> % </h1>
+        <h6> <%= operation %> </h6>
+        <h2 class=".text-primary"><%= result %> % </h2>
       </div>
     </div>
 
