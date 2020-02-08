@@ -35,9 +35,10 @@ router.post("/",
          console.dir(`part = ${part}`)
          console.dir(`whole = ${whole}`)
          resultDecimal = (part / whole)
-         operation = `(${part} / ${whole}) * 100 = ${resultDecimal}`
-         console.dir(operation)
+
          result = resultDecimal * 100
+         operation = `(${part} / ${whole}) * 100 = ${result}`
+         console.dir(operation)
 
          console.dir(`${resultDecimal} * 100 =  ${result} %`)
          console.dir(`----------------`)
