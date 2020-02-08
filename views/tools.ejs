@@ -13,28 +13,34 @@
 
   <!-- **************** CONTAINER ********************-->
   <div class="container">
-    <h2 id="title">Tools</h2>
+    <h1 id="title" class="my-3">Tools</h1>
 
-    <!-- ***************** TABLE ********************-->
-    <div class="row">
-      <div class="col-md-6">
-        <form action="/percentage" method="post">
-          <input name="part" type="text" placeholder="part" /> 
-          <input name="whole" type="text" placeholder="whole" /> 
-          <input type="submit" class="class="btn btn-primary"/>
+    <div class="card bg-light" style="height:320px; width:25vw; ">
+      <h2>Percent Calculator</h2>
+      <div class="card-body p-2">
+        <form action="/tools" method="post" class="my-1">
+          <input name="part" type="text" class=" rounded w-50" placeholder="part" /> <br>
+          <input name="whole" type="text" class=" rounded  w-50" placeholder="whole" /><br>
+          <input type="submit" class=" w-50 my-3 btn btn-primary" />
         </form>
-        <h3><%= result %> %</h3>
+
+        <h6 class="color: grey my-0" style="width:100%"> <%= operation %> </h6> <br>
+        <h1 class=".text-primary"><%= result %> % </h1>
       </div>
     </div>
 
-    <!-- **************** FOOTER ********************-->
-    <footer>
-      <%- include('partials/footer') %>
-    </footer>
 
-    <!-- **************** SCRIPTS ********************-->
-    <%- include('partials/scripts') %>
-    <!--<script type=" text/javascript" src="javascripts/tools.js"></script>-->
+  </div>
+
+
+  <!-- **************** FOOTER ********************-->
+  <footer>
+    <%- include('partials/footer') %>
+  </footer>
+
+  <!-- **************** SCRIPTS ********************-->
+  <%- include('partials/scripts') %>
+  <!-- <script type=" text/javascript" src="/scripts/tools.js"> </script> -->
 </body>
 
 </html>

@@ -1,6 +1,4 @@
-body {
-   text-align: center;
-}
+body {}
 
 
 h1 {
@@ -9,7 +7,12 @@ h1 {
 }
 
 .container {
-   margin: 3rem auto;
-   width: 75%;
-   box-shadow: 2.5px 2px 2px 2.5px #c9c7c7;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   display: grid;
+   grid-template-columns: 1fr;
+   text-align: center;
+   align-items: center;
+   justify-items: center;
+   /* adjusted */
 }
