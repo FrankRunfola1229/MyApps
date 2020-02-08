@@ -23,10 +23,15 @@ nav-link {
 }
 .container-fluid {
    background-color: whitesmoke;
-   width: 99%;
-   margin: 1px auto auto auto;
-   padding: 2px auto;
+   width: 90%;
+   margin: .3rem auto .3rem auto;
+   padding: 2rem 0px;
+   box-shadow: 2.5px 2px 2px 2.5px #c9c7c7;
 }
+
+/*********************************************
+/**         LANDING PAGE START              **/
+/*********************************************/
 
 .landing-container {
    Background-color: white;
@@ -34,11 +39,10 @@ nav-link {
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-around;
-   width: 99%;
+   width: 100%;
    margin: 30px auto 30px auto;
    padding: 5px 150px 30px; 150px;
 }
-
 /*********************************************
  /**         LANDING PAGE START              **/
 /*********************************************/
