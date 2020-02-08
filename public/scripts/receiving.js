@@ -3,7 +3,7 @@ const tbody = document.querySelector("tbody")
 let count = 0
 
 const readJsonFile = () => {
-   fetch("ReceivingData.json") //
+   fetch("/../../ReceivingData.json")
       .then(response => response.json())
       .then(data => createTable(data))
       .catch(err => {})

@@ -1,78 +1,37 @@
 const express = require("express");
 const app = express();
+const bodyParser = require("body-parser");
+
+// requiring routes
+const indexRoutes = require("./routes/index");
+const moviesRoutes = require("./routes/movies");
+const sportsRoutes = require("./routes/sports");
+const toolsRoutes = require("./routes/tools");
+const musicRoutes = require("./routes/music");
+const computersRoutes = require("./routes/computers");
+const familyTreeRoutes = require("./routes/familyTree");
+var url = process.env.DATABASEURL;
+
 //==================================================================================================
 /// To serve static files such as images, CSS files, and JavaScript files,
 //  use the express.static built-in middleware function in Express. (express.static(root, [options]))
 //==================================================================================================
-app.use(express.static("public")); //https://expressjs.com/en/starter/static-files.html
-app.use(express.static("data"));
+//routes.initialize(app)
 
 // view engine setup
 app.set("view engine", "ejs");
 
-// root route
-app.get("/", function(req, res) {
-  res.render("index");
-});
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(__dirname + "/public")); // https://expressjs.com/en/starter/static-files.html
+app.use(express.static(__dirname + "/data"));
 
-// nfl route
-app.get("/sports", function(req, res) {
-  res.render("sports");
-});
-
-// root route
-app.get("/movies", function(req, res) {
-  res.render("movies");
-});
-
-// tools route
-app.get("/tools", function(req, res) {
-  res.render("tools");
-});
-
-//familyTree route
-app.get("/familyTree", function(req, res) {
-  res.render("familyTree");
-});
-
-// music route
-app.get("/music", function(req, res) {
-  res.render("music");
-});
-
-// music route
-app.get("/computerScience", function(req, res) {
-  res.render("computerScience");
-});
-
-// music route
-app.get("/geography", function(req, res) {
-  res.render("geography");
-});
-
-// passing route
-app.get("/cars", function(req, res) {
-  res.render("cars");
-});
-
-// passing route
-app.get("/passing", function(req, res) {
-  res.render("passing");
-});
-
-// receiving route
-app.get("/rushing", function(req, res) {
-  res.render("rushing");
-});
-// receiving route
-app.get("/receiving", function(req, res) {
-  res.render("receiving");
-});
-
-// defense route
-app.get("/defense", function(req, res) {
-  res.render("defense");
-});
+app.use("/", indexRoutes);
+app.use("/movies", moviesRoutes);
+app.use("/sports", sportsRoutes);
+app.use("/tools", toolsRoutes);
+app.use("/music", musicRoutes);
+app.use("/familyTree", familyTreeRoutes);
+app.use("/computers", computersRoutes);
 
 app.get("/flex", function(req, res) {
   res.render("flex");

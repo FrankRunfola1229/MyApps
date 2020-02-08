@@ -2,21 +2,25 @@
 <html lang="en">
 
 <head>
-   <%- include('partials/head') %>
+   <%- include('../partials/head') %>
    <link rel="stylesheet" href="/stylesheets/styleSports.css" />
 </head>
 
 <body>
    <!-- **************** NAVIGATION ********************-->
-   <%- include('partials/nav') %>
+   <%- include('../partials/nav') %>
 
    <!-- **************** CONTAINER ********************-->
    <div class="container-fluid">
+     
+      <div class="container" style="text-align:start">
+         <a href="/sports" class="btn btn-info">Go Back</a>
+      </div>
 
-      <h2 id="title">Receiving Yards</h2>
+      <h2 id="title">Passing Yards</h2>
 
       <!-- ***************** TABLE ********************-->
-      <div class="table-responsive-md my-3">
+      <div class="table-responsive-md ">
          <table class="table table-striped table-dark">
             <thead>
                <span> + denotes HOF </span>
@@ -33,13 +37,13 @@
             <tbody>
          </table>
       </div>
-
-      <footer>
-         <%- include('partials/footer') %>
-      </footer>
    </div>
+   
+   <footer>
+      <%- include('../partials/footer') %>
+   </footer>
 
-   <script type="text/javascript" src="scripts/receiving.js"></script>
+   <script type="text/javascript" src="/scripts/passing.js"></script>
 </body>
 
 </html>

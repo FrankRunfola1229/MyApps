@@ -2,34 +2,35 @@
 <html lang="en">
 
 <head>
-    <%- include('partials/head') %>
+    <%- include('../partials/head') %>
+
     <link rel="stylesheet" href="/stylesheets/styleSports.css" />
 </head>
 
 <body>
     <!-- **************** NAVIGATION ********************-->
-    <%- include('partials/nav') %>
+    <%- include('../partials/nav') %>
 
     <div class="landing-container">
-        <a href="\passing">
+        <a href="\sports\passing">
             <div class="card">
                 <img src="/images/passing.png" />
                 <h6>Passing</h6>
             </div>
         </a>
-        <a href="\rushing">
+        <a href="\sports\rushing">
             <div class="card">
                 <img src="/images/rushing.png" />
                 <h6>Rushing</h6>
             </div>
         </a>
-        <a href="\receiving">
+        <a href="\sports\receiving">
             <div class="card">
                 <img src="/images/receiving.png" />
                 <h6>Receiving</h6>
             </div>
         </a>
-        <a href="\defense">
+        <a href="\sports\defense">
             <div class="card">
                 <img src="/images/defense.png" />
                 <h6>Defense</h6>
@@ -37,10 +38,10 @@
         </a>
     </div>
     <footer>
-        <%- include('partials/footer') %>
+        <%- include('../partials/footer') %>
     </footer>
 
-    <%- include('partials/scripts') %>
+    <%- include('../partials/scripts') %>
     <script type="text/javascript" src="scripts/sports.js"></script>
 </body>
 

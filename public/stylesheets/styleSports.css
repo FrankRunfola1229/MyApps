@@ -23,14 +23,14 @@ nav-link {
 }
 .container-fluid {
    background-color: whitesmoke;
-   width: 95%;
-   margin: 1px auto auto auto;
-   padding: 2px auto;
-   box-shadow: 5px 55px 50px -20px #221f1f;
+   width: 90%;
+   margin: .3rem auto .3rem auto;
+   padding: 5px 0px;
+   box-shadow: 2.5px 2px 2px 2.5px #c9c7c7;
 }
 
 /*********************************************
- /**         LANDING PAGE START              **/
+/**         LANDING PAGE START              **/
 /*********************************************/
 
 .landing-container {
@@ -40,10 +40,12 @@ nav-link {
    align-items: center;
    justify-content: space-around;
    width: 100%;
-   box-shadow: .8px 55px 50px -20px #b6b6b6;
-   margin: 40px auto 30px auto;
-   padding: 40px 150px 100px 150px;
+   margin: 30px auto 30px auto;
+   padding: 5px 150px 30px 150px;
 }
+/*********************************************
+ /**         LANDING PAGE START              **/
+/*********************************************/
 
 .card {
    margin: 7px 5px;
@@ -138,7 +140,7 @@ table {
 @media only screen and (max-width: 600px) {
    .container-fluid {
       width: 98%;
-      padding: 4rem 2px;
+      padding: 20px 2px;
    }
 
    .row {
