@@ -7,6 +7,7 @@ h2,
 h4 {
    margin-top: 15px;
 }
+
 .navbar-dark .navbar-nav .nav-link {
    color: white;
 }
@@ -14,19 +15,22 @@ h4 {
 nav-link {
    color: black;
 }
+
 .navbar {
    padding: .2rem 1rem;
 }
+
 #navbarBrand img {
    height: 32px;
    width: 32px;
 }
+
 .container-fluid {
    background-color: whitesmoke;
    width: 90%;
-   margin: 1rem auto auto auto;
+   margin: .3rem auto .3rem auto;
    padding: 2rem 0px;
-   box-shadow: 5px 55px 50px -20px #221f1f;
+   box-shadow: 2.5px 2px 2px 2.5px #c9c7c7;
 }
 
 /*********************************************
@@ -40,9 +44,9 @@ nav-link {
    align-items: center;
    justify-content: space-around;
    width: 100%;
-   box-shadow: .8px 55px 50px -20px #b6b6b6;
-   margin: 40px auto 30px auto;
-   padding: 40px 150px 100px 150px;
+   margin: 30px auto 30px auto;
+   padding: 5px 150px 30px;
+   150px;
 }
 
 .card {
@@ -117,6 +121,7 @@ table {
 		RESPONSIVE RESIZING
 ***********************************************/
 @media only screen and (max-width: 800px) {
+
    .container-fluid,
    .table {
       width: 95%;
