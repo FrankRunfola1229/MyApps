@@ -10,7 +10,6 @@ const toolsRoutes = require("./routes/tools")
 const musicRoutes = require("./routes/music")
 const computersRoutes = require("./routes/computers")
 const familyTreeRoutes = require("./routes/familyTree")
-var url = process.env.DATABASEURL
 
 //==================================================================================================
 /// To serve static files such as images, CSS files, and JavaScript files,
@@ -20,11 +19,7 @@ var url = process.env.DATABASEURL
 // view engine setup
 app.set("view engine", "ejs")
 
-app.use(
-   bodyParser.urlencoded({
-      extended: true
-   })
-)
+app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 app.use(bodyParser.raw())
 
@@ -39,11 +34,7 @@ app.use("/music", musicRoutes)
 app.use("/familyTree", familyTreeRoutes)
 app.use("/computers", computersRoutes)
 
-app.get("/flex", function(req, res) {
-   res.render("flex")
-})
-
-var port = process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 app.listen(port, function() {
    console.log("The Server Has Started!..")
