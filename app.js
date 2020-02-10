@@ -10,7 +10,6 @@ const toolsRoutes = require("./routes/tools")
 const musicRoutes = require("./routes/music")
 const computersRoutes = require("./routes/computers")
 const familyTreeRoutes = require("./routes/familyTree")
-var url = process.env.DATABASEURL
 
 //==================================================================================================
 /// To serve static files such as images, CSS files, and JavaScript files,
@@ -35,7 +34,8 @@ app.use("/computers", computersRoutes)
 
 var port = process.env.PORT || 3000
 
-app.listen(port, function() {
+const server = app.listen(port, function() {
    console.log("The Server Has Started!..")
    console.log("Port= " + port)
+   console.log(`Express running → PORT ${server.address().port}`)
 })

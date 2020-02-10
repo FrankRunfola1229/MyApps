@@ -1,7 +1,22 @@
 const express = require("express")
 const router = express.Router()
-// music route
-router.get("/", function(req, res) {
-   res.render("music")
+const cors = require("cors")
+router.use(cors())
+require("dotenv").config({ path: "variables.env" })
+
+const music = [
+   {
+      name: "beatles",
+      votes: 100
+   },
+   {
+      name: "rollingStones",
+      votes: 70
+   }
+]
+
+router.get("/", (req, res) => {
+   res.json(music)
 })
+
 module.exports = router
