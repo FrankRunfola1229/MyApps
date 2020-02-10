@@ -3,28 +3,23 @@ const margin = { top: 20, right: 20, bottom: 30, left: 40 }
 const width = 960 - margin.left - margin.right
 const height = 500 - margin.top - margin.bottom
 
+// ------------------------------------------------------------
 // set the ranges for the graph
-const x = d3
-   .scaleBand()
-   .range([
-      0,
-      width
-   ])
-   .padding(0.1)
+// ------------------------------------------------------------
+const x = d3.scaleBand().range([0,width]).padding(0.1)
+const y = d3.scaleLinear().range([height,0])
 
-const y = d3.scaleLinear().range([
-   height,
-   0
-])
-
+// ------------------------------------------------------------
 // append the container for the graph to the page
+// ------------------------------------------------------------
 const container = d3.select("body").append("div").attr("class", "container")
-
 container.append("h1").text("Who will win the 2018/19 Premier League Season?")
 
+// ------------------------------------------------------------
 // append the svg object to the body of the page
 // append a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
+// ------------------------------------------------------------
 const svg = container
    .append("svg")
    .attr("width", width + margin.left + margin.right)
@@ -35,8 +30,12 @@ const svg = container
 // Create a skeleton structure for a tooltip and append it to the page
 const tip = d3.select("body").append("div").attr("class", "tooltip")
 
+// ------------------------------------------------------------
 // Get the music data from the `/music` endpoint
-fetch("http://localhost:3000/music").then(response => response.json()).then(poll => {
+// ------------------------------------------------------------
+fetch("http://localhost:3000/music")
+   .then(response => response.json())
+   .then(poll => {
    // add the x Axis
    svg
       .append("g")
@@ -50,6 +49,8 @@ fetch("http://localhost:3000/music").then(response => response.json()).then(poll
    update(poll)
 })
 
+// ------------------------------------------------------------
+// ------------------------------------------------------------
 function update(poll) {
    // Scale the range of the data in the x axis
    x.domain(
@@ -59,15 +60,12 @@ function update(poll) {
    )
 
    // Scale the range of the data in the y axis
-   y.domain([
-      0,
-      d3.max(poll, d => {
-         return d.votes + 200
-      })
-   ])
+   y.domain([0,d3.max(poll, d => {return d.votes + 200})])
 
+   // ------------------------------------------------------------
    // Select all bars on the graph, take them out, and exit the previous data set.
    // Enter the new data and append the rectangles for each object in the poll array
+   // ------------------------------------------------------------
    svg
       .selectAll(".bar")
       .remove()
