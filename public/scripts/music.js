@@ -26,10 +26,11 @@ const svg = container
    .append("svg")
    .attr("width", width + margin.left + margin.right)
    .attr("height", height + margin.top + margin.bottom)
-   .append("g")
-   .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+   .append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
+// ------------------------------------------------------------
 // Create a skeleton structure for a tooltip and append it to the page
+// ------------------------------------------------------------
 const tip = d3.select("body").append("div").attr("class", "tooltip")
 
 // ------------------------------------------------------------
