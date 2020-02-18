@@ -11,17 +11,18 @@ const musicRoutes = require("./routes/music")
 const computersRoutes = require("./routes/computers")
 const familyTreeRoutes = require("./routes/familyTree")
 
-//==================================================================================================
-/// To serve static files such as images, CSS files, and JavaScript files,
-//  use the express.static built-in middleware function in Express. (express.static(root, [options]))
-//==================================================================================================
-
 // view engine setup
 app.set("view engine", "ejs")
 
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 app.use(bodyParser.raw())
+
+//==========================================================================
+//  To serve static files such as images, CSS files, and JavaScript files,
+//  use the express.static built-in middleware function in Express. 
+//  (express.static(root, [options]))
+//==========================================================================
 
 app.use(express.static(__dirname + "/public")) // https://expressjs.com/en/starter/static-files.html
 app.use(express.static(__dirname + "/data"))
