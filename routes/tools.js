@@ -3,9 +3,7 @@ const express = require("express")
 const router = express.Router()
 const bodyParser = require("body-parser");
 
-router.use(bodyParser.urlencoded({
-   extended: true
-}));
+router.use(bodyParser.urlencoded({extended: true}));
 router.use(bodyParser.json());
 router.use(bodyParser.raw());
 
@@ -35,18 +33,13 @@ router.post("/",
          console.dir(`part = ${part}`)
          console.dir(`whole = ${whole}`)
          resultDecimal = (part / whole)
-
          result = resultDecimal * 100
          operation = `(${part} / ${whole}) * 100 = ${result}`
          console.dir(operation)
-
          console.dir(`${resultDecimal} * 100 =  ${result} %`)
          console.dir(`----------------`)
       }
-      res.render("tools", {
-         operation: operation,
-         result: result
-      })
+      res.render("tools", { operation: operation, result: result})
    })
 
 module.exports = router
