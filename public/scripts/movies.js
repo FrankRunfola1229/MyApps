@@ -8,8 +8,8 @@ const thCount = document.querySelector("#count")
 const thPlanetName = document.querySelector("#planetName")
 const thPopulation = document.querySelector("#population")
 let count = 0
-const urlBase = "https://swapi.co/api/planets/"
-let urlNext = "https://swapi.co/api/planets/"
+const urlBase = "https://swapi.dev/api/planets/"
+let urlNext = "https://swapi.dev/api/planets/"
 
 const fetchNextPlanets = () => {
    if (!urlNext) {
