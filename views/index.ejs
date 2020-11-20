@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <%- include('partials/head') %>
-</head>
-
-<body>
-  <!-- **************** NAVIGATION ********************-->
-  <%- include('partials/nav') %>
+  <% layout('/layouts/boilerplate')%>
 
   <div class="landing-container">
 
@@ -22,38 +13,5 @@
         <img src="/images/sports.png" />
         <h5>Sports</h5>
       </div>
-    </a>
-    <a href="\tools">
-      <div class="card">
-        <img src="/images/tools.png" />
-        <h5>Useful Tools</h5>
-      </div>
-    </a>
-    <a href="\familyTree">
-      <div class="card">
-        <img src="/images/familyTree.png" />
-        <h5>Family Tree</h5>
-      </div>
-    </a>
-    <a href="\music">
-      <div class="card">
-        <img src="/images/music.jpg" />
-        <h5>Music</h5>
-      </div>
-    </a>
-    <a href="\computers">
-      <div class="card">
-        <img src="/images/computers.png" />
-        <h5>Computer Science</h5>
-      </div>
-    </a>
+    </a> 
   </div>
-
-  <footer>
-    <%- include('partials/footer') %>
-  </footer>
-
-  <%- include('partials/scripts') %>
-</body>
-
-</html>

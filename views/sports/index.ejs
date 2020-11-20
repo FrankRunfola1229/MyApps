@@ -1,48 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<% layout('/layouts/boilerplate')%>
+<link rel="stylesheet" href="/stylesheets/styleSports.css" />
 
-<head>
-    <%- include('../partials/head') %>
+<div class="landing-container">
+    <a href="\sports\passing">
+        <div class="card">
+            <img src="/images/passing.png" />
+            <h6>Passing</h6>
+        </div>
+    </a>
+    <a href="\sports\rushing">
+        <div class="card">
+            <img src="/images/rushing.png" />
+            <h6>Rushing</h6>
+        </div>
+    </a>
+    <a href="\sports\receiving">
+        <div class="card">
+            <img src="/images/receiving.png" />
+            <h6>Receiving</h6>
+        </div>
+    </a>
+    <a href="\sports\defense">
+        <div class="card">
+            <img src="/images/defense.png" />
+            <h6>Defense</h6>
+        </div>
+    </a>
+</div>
 
-    <link rel="stylesheet" href="/stylesheets/styleSports.css" />
-</head>
-
-<body>
-    <!-- **************** NAVIGATION ********************-->
-    <%- include('../partials/nav') %>
-
-    <div class="landing-container">
-        <a href="\sports\passing">
-            <div class="card">
-                <img src="/images/passing.png" />
-                <h6>Passing</h6>
-            </div>
-        </a>
-        <a href="\sports\rushing">
-            <div class="card">
-                <img src="/images/rushing.png" />
-                <h6>Rushing</h6>
-            </div>
-        </a>
-        <a href="\sports\receiving">
-            <div class="card">
-                <img src="/images/receiving.png" />
-                <h6>Receiving</h6>
-            </div>
-        </a>
-        <a href="\sports\defense">
-            <div class="card">
-                <img src="/images/defense.png" />
-                <h6>Defense</h6>
-            </div>
-        </a>
-    </div>
-    <footer>
-        <%- include('../partials/footer') %>
-    </footer>
-
-    <%- include('../partials/scripts') %>
-    <script type="text/javascript" src="scripts/sports.js"></script>
-</body>
-
-</html>
+<script type="text/javascript" src="../public/scripts/sports.js"></script>

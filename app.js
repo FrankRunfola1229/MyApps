@@ -1,4 +1,5 @@
 const express = require("express")
+const ejsMate = require("ejs-mate")
 const app = express()
 const bodyParser = require("body-parser")
 
@@ -6,12 +7,8 @@ const bodyParser = require("body-parser")
 const indexRoutes = require("./routes/index")
 const moviesRoutes = require("./routes/movies")
 const sportsRoutes = require("./routes/sports")
-const toolsRoutes = require("./routes/tools")
-const musicRoutes = require("./routes/music")
-const computersRoutes = require("./routes/computers")
-const familyTreeRoutes = require("./routes/familyTree")
 
-// view engine setup
+app.engine('ejs', ejsMate)
 app.set("view engine", "ejs")
 
 app.use(bodyParser.urlencoded({extended:true}))
@@ -30,12 +27,9 @@ app.use(express.static(__dirname + "/data"))
 app.use("/", indexRoutes)
 app.use("/movies", moviesRoutes)
 app.use("/sports", sportsRoutes)
-app.use("/tools", toolsRoutes)
-app.use("/music", musicRoutes)
-app.use("/familyTree", familyTreeRoutes)
-app.use("/computers", computersRoutes)
 
-const port = process.env.PORT || 3000
+
+const port = 3000
 
 app.listen(port, function() {
    console.log("The Server Has Started!..")
