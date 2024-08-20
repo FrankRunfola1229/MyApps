@@ -1,3 +1,8 @@
+//===================================================
+// npm install express
+// npm update -g         update all packages
+// http://localhost:3000/
+//===================================================
 const express = require("express")
 const ejsMate = require("ejs-mate")
 const app = express()
@@ -7,6 +12,7 @@ const bodyParser = require("body-parser")
 const indexRoutes = require("./routes/index")
 const moviesRoutes = require("./routes/movies")
 const sportsRoutes = require("./routes/sports")
+const toolsRoutes = require("./routes/tools")
 
 app.engine('ejs', ejsMate)
 app.set("view engine", "ejs")
@@ -27,7 +33,7 @@ app.use(express.static(__dirname + "/data"))
 app.use("/", indexRoutes)
 app.use("/movies", moviesRoutes)
 app.use("/sports", sportsRoutes)
-
+app.use("/tools", toolsRoutes)
 
 const port = 3000
 
