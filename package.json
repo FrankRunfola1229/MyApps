@@ -1,5 +1,5 @@
 {
-   "name": "nfl",
+   "name": "cool-data-stuff",
    "version": "1.0.0",
    "description": "",
    "main": "app.js",
@@ -27,12 +27,12 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/FrankRunfola1229/NFL.git"
+      "url": "git+https://github.com/FrankRunfola1229/cool-data-stuff.git"
    },
    "author": "Frank Runfola",
    "license": "ISC",
    "bugs": {
-      "url": "https://github.com/FrankRunfola1229/NFL/issues"
+      "url": "https://github.com/FrankRunfola1229/cool-data-stuff/issues"
    },
-   "homepage": "https://github.com/FrankRunfola1229/NFL#readme"
+   "homepage": "https://github.com/FrankRunfola1229/cool-data-stuff#readme"
 }
