@@ -4,6 +4,7 @@
    "description": "",
    "main": "app.js",
    "dependencies": {
+      "amplify": "^0.0.11",
       "cool-data-stuff": "file:",
       "cors": "^2.8.5",
       "d3": "^5.15.0",
