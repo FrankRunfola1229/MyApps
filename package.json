@@ -7,8 +7,6 @@
       "amplify": "^0.0.11",
       "cool-data-stuff": "file:",
       "cors": "^2.8.5",
-      "d3": "^5.15.0",
-      "dotenv": "^8.2.0",
       "ejs": "^3.0.1",
       "ejs-lint": "^0.3.0",
       "ejs-mate": "^3.0.0",
@@ -17,7 +15,6 @@
       "express-validator": "^6.4.0",
       "http-server": "^0.12.1",
       "index": "^0.4.0",
-      "nfl": "file:",
       "pusher": "^3.0.0",
       "request": "^2.88.0"
    },
