@@ -1,9 +1,10 @@
 {
-   "name": "nfl",
+   "name": "cool-data-stuff",
    "version": "1.0.0",
    "description": "",
    "main": "app.js",
    "dependencies": {
+      "cool-data-stuff": "file:",
       "cors": "^2.8.5",
       "d3": "^5.15.0",
       "dotenv": "^8.2.0",
@@ -15,6 +16,7 @@
       "express-validator": "^6.4.0",
       "http-server": "^0.12.1",
       "index": "^0.4.0",
+      "nfl": "file:",
       "pusher": "^3.0.0",
       "request": "^2.88.0"
    },
@@ -27,12 +29,12 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/FrankRunfola1229/NFL.git"
+      "url": "git+https://github.com/FrankRunfola1229/cool-data-stuff.git"
    },
    "author": "Frank Runfola",
    "license": "ISC",
    "bugs": {
-      "url": "https://github.com/FrankRunfola1229/NFL/issues"
+      "url": "https://github.com/FrankRunfola1229/cool-data-stuff/issues"
    },
-   "homepage": "https://github.com/FrankRunfola1229/NFL#readme"
+   "homepage": "https://github.com/FrankRunfola1229/cool-data-stuff#readme"
 }
